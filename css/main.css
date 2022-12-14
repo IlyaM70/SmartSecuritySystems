@@ -1,0 +1,67 @@
+:root{
+    --primary-color:#00A0E3;/* light-blue */
+    --bs-secondary: #007CC1;/* dark-blue */
+    --bs-red: #C80000;
+    --bs-black:#333334;
+    --bs-white: #fff;
+    --bs-gray: #CCD5DB;/* mid-grey-l */
+    --bs-gray-dark: #7E8489;/* dark-grey */
+    --bs-gray-100: #F3F3F3;/* grey-light-1 */
+    --bs-gray-200: #D2D2D2;/* tmp2 */
+    --bs-gray-300: #dee2e6;/* grey-white */
+    --bs-link-color:var(--bs-black);
+}
+
+/* Fonts Start */
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v34-latin_cyrillicopen-sans-v34-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v34-latin_cyrillicopen-sans-v34-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v34-latin_cyrillicopen-sans-v34-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v34-latin_cyrillicopen-sans-v34-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v34-latin_cyrillicopen-sans-v34-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v34-latin_cyrillicopen-sans-v34-latin_cyrillic-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+
+  /* raleway-600 - latin_cyrillic-ext */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/raleway-v28-latin_cyrillicraleway-v28-latin_cyrillic-ext-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/raleway-v28-latin_cyrillicraleway-v28-latin_cyrillic-ext-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v28-latin_cyrillicraleway-v28-latin_cyrillic-ext-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v28-latin_cyrillicraleway-v28-latin_cyrillic-ext-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v28-latin_cyrillicraleway-v28-latin_cyrillic-ext-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v28-latin_cyrillicraleway-v28-latin_cyrillic-ext-600.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
+/* Fonts End */
+
+
+/* Body Start */
+body{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+background-color: var(--bs-gray-100);
+color: var(--bs-black);
+
+}
+a{
+    text-decoration: none;
+    
+}
+/* Body End */
+
+/* Header Start */
+.header{
+    z-index: 2;
+}
+/* Header End */
