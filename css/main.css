@@ -44,11 +44,23 @@ a:hover{
     padding-bottom:11px;
 }
 
+
 .header-row-2{
     background-color: var(--bs-white);
+    height: 138px;
+}
+.w-23{
+    width: 23%;
+}
+.w-41{
+    width: 41%;
+}
+.w-12{
+    width: 12%;
 }
 .logo-svg{
-    
+    width: 195px;
+    height: 94px;
 }
 .header-row-2 .form-group{
     position: relative;
@@ -56,7 +68,7 @@ a:hover{
     
 }
 .header-row-2 .form-control{
-    border: 1px solid #D2D2D2;
+    border: 1px solid var(--bs-gray-200);
     border-radius: 2px;
     background-color: var(--bs-white);
    
@@ -70,5 +82,61 @@ a:hover{
     bottom: -1px;
     cursor: pointer;
 }
+.header-row-2 .main-row .row{
+    padding-top: 30px;
+}
+.h-42px{
+    height: 42px;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+    
+}
+.raleway-600{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    font-feature-settings: 'pnum' on, 'lnum' on;  
+}
+.c-pointer{
+    cursor: pointer;
+}
+.counter{
+    width: 30px;
+    height: 16px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    padding: 1px 10px;
+    font-family: 'Arial';
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--bs-white);
+}
+
+.header-row-3{
+    height: 48px;
+    background-color: var(--bs-black);
+}
+.h-48px{
+    height: 48px;
+}
+.catalog{
+    background-color: var(--primary-color);
+    height: inherit;
+    padding: 0px 16px;
+    gap: 12px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--bs-white);
+
+}
+
 
 /* Header End */
