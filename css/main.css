@@ -1,3 +1,4 @@
+/* Variables Start */
 :root{
     --primary-color:#00A0E3;/* light-blue */
     --bs-secondary: #007CC1;/* dark-blue */
@@ -11,10 +12,22 @@
     --bs-gray-300: #dee2e6;/* grey-white */
     --bs-link-color:var(--bs-black);
 }
-
-
-
-
+.navbar-dark {
+    --bs-navbar-color: var(--bs-white);
+    --bs-navbar-hover-color: var(--bs-gray);
+}
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-black),var(--bs-bg-opacity))!important;
+}
+.btn-link {
+   --bs-btn-hover-color: var(--primary-color);
+   --bs-btn-active-color: var(--primary-color);
+}
+.color-lb{
+    color: var(--primary-color);
+}
+/* Variables End */
 /* Body Start */
 body{
 font-family: 'Open Sans';
@@ -24,7 +37,6 @@ font-size: 14px;
 line-height: 20px;
 background-color: var(--bs-gray-100);
 color: var(--bs-black);
-
 }
 a{
     text-decoration: none;
@@ -34,7 +46,6 @@ a:hover{
     color: var(--primary-color);
 }
 /* Body End */
-
 /* Header Start */
 .header{
     z-index: 2;
@@ -43,8 +54,7 @@ a:hover{
     padding-top: 11px;
     padding-bottom:11px;
 }
-
-
+/* Header Row 2 Start */
 .header-row-2{
     background-color: var(--bs-white);
     height: 138px;
@@ -116,7 +126,8 @@ a:hover{
     line-height: 14px;
     color: var(--bs-white);
 }
-
+/* Header Row 2 End */
+/* Header Row 3 Start */
 .header-row-3{
     height: 48px;
     background-color: var(--bs-black);
@@ -137,6 +148,41 @@ a:hover{
     color: var(--bs-white);
 
 }
-
-
+.navbar {
+    --bs-navbar-nav-link-padding-x: 1rem;
+}
+.nav-link {
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: 14px;
+    font-weight: 20px;
+}
+.navbar-nav a:last-child{
+     padding-right: 0!important;
+}
+/* Catalog Dropdown Start*/
+#catalog{
+    background-color: var(--bs-white);
+    z-index: 2;
+    padding: 10px 0px
+    
+}
+.catalog-subitem{
+    padding: 0px 18px ;
+    gap: 18px;
+    width: 687px;
+    height: 588px;
+    background: var(--bs-white);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    border-radius: 0;
+}
+.open-sans-700{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+/* Catalog Dropdown End*/
 /* Header End */
+

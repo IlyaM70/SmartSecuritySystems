@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,25 +14,27 @@
     <!-- Style main -->
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <!-- Header Start -->
     <!-- Header Row 1 Start -->
     <header class="header position-absolute start-0 top-0 end-0">
         <div class="header-row-1 container">
             <div class="row">
-                <a href="" class="col-lg-3">Для монтажных организаций</a>   
-                <a href="" class="col-lg-3"></a>   
-                <a href="" class="col-lg-3 d-flex justify-content-end">Корпоративный сайт «Волкодав»</a>   
-                <a href="" class="col-lg-3">Глонасс/GPS мониторинг ООО «ФАМО»</a>   
-            </div> 
+                <a href="" class="col-lg-3">Для монтажных организаций</a>
+                <a href="" class="col-lg-3"></a>
+                <a href="" class="col-lg-3 d-flex justify-content-end">Корпоративный сайт «Волкодав»</a>
+                <a href="" class="col-lg-3">Глонасс/GPS мониторинг ООО «ФАМО»</a>
+            </div>
         </div>
-    <!-- Header Row 1 End -->
-    <!-- Header Row 2 Start --> 
+        <!-- Header Row 1 End -->
+        <!-- Header Row 2 Start -->
         <div class="header-row-2">
             <div class="container">
                 <div class="main-row row">
                     <div class="col-lg-2 w-23">
-                        <a href="#" class="row c-pointer"><img class="logo-svg" src="img/logo.svg"></a></div>   
+                        <a href="#" class="row c-pointer"><img class="logo-svg" src="img/logo.svg"></a>
+                    </div>
                     <div class="col-lg-4 w-41">
                         <div class="row">Наш магазин: г. Уфа, ул. Боткина, 3</div>
                         <div class="row">
@@ -40,59 +43,158 @@
                                 <input type="text" class="form-control h-42px" placeholder="Search">
                             </div>
                         </div>
-                    </div>   
+                    </div>
                     <div class="col-lg-2 w-12">
                         <div class="row align-items-end h-100">
                             <div class="h-42px d-flex align-items-center">
-                                <img class="icon c-pointer" src="img/heart.svg"><a class="ps-2 c-pointer">Избранное</a></div>
+                                <img class="icon c-pointer" src="img/heart.svg"><a class="ps-2 c-pointer">Избранное</a>
+                            </div>
                         </div>
-                    </div>   
+                    </div>
                     <div class="col-lg-2 w-12">
                         <a class="row raleway-600 c-pointer" href="tel:+73472949455">+7 347 294-94-55</a>
                         <div class="row">
                             <div class="h-42px d-flex align-items-center">
-                                <img class="icon c-pointer" src="img/cart.svg"><a class="ps-2 c-pointer">Корзина</a><span class="counter ms-2">1</span>
+                                <img class="icon c-pointer" src="img/cart.svg"><a
+                                    class="ps-2 c-pointer">Корзина</a><span class="counter ms-2">1</span>
                             </div>
                         </div>
-                    </div>   
+                    </div>
                     <div class="col-lg-2 w-12">
-                        <div class="row c-pointer d-flex justify-content-end">Заказать звонок</div>
+                        <a class="row c-pointer d-flex justify-content-end">Заказать звонок</a>
                         <div class="row">
                             <div class="h-42px d-flex align-items-center justify-content-end p-0">
                                 <img class="icon c-pointer" src="img/user.svg"><a class="ps-2 c-pointer">Мой профиль</a>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
-    <!-- Header Row 2 End -->
-    <!-- Header Row 3 Start -->
+        <!-- Header Row 2 End -->
+        <!-- Header Row 3 Start -->
         <div class="header-row-3">
-            <div class="container">
-                <div class="raw justify-content-between h-48px">
-                   <div class="catalog w-23 d-flex justify-content-between align-items-center">
-                    <span>Каталог товаров</span>
-                   </div> 
+            <div class="container p-0">
+                <div class="d-flex justify-content-between h-48px">
+                    <div class="catalog w-23 d-flex justify-content-between align-items-center">
+                        <span>Каталог товаров</span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#catalog"
+                            aria-controls="navbar" aria-expanded="false" area-label="Toggle navigation">
+                            <img class="c-pointer" src="img/menu.svg">
+                        </button>
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid p-0">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Как купить</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Доставка</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">О магазине</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Контакты</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Новости</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
+
+                <!-- Catalog DropDown Start -->
+                <div class="collapse navbar-collapse dropdown-nav raw w-23" id="catalog">
+
+                    <!-- Catalog Item 1 Start -->
+                    <div class="btn-group dropend w-100">
+                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img class="icon" src="img/vn.svg">
+                                <div class="ms-3">Видеонаблюдение</div>
+                            </div>
+                        </button>
+                        <!-- Catalog Subitem Start -->
+                        <div class="catalog-subitem dropdown-menu">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="catalog-subitem__item">
+                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
+                                        <div class="d-flex flex-column ">
+                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
+                                            <a href="#" class="py-2 c-pointer">Уличные</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
+                                    <div class="d-flex flex-column ">
+                                        <a href="#" class="py-2 c-pointer">Внутренние</a>
+                                        <a href="#" class="py-2 c-pointer">Уличные</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Catalog Subitem End -->
+                    </div>
+                    <!-- Catalog Item 1 End -->
+                    <!-- Catalog Item 2 Start -->
+                    <div class="btn-group dropend w-100">
+                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img class="icon" src="img/vn.svg">
+                                <div class="ms-3">Видеонаблюдение</div>
+                            </div>
+                        </button>
+                        <!-- Catalog Subitem Start -->
+                        <div class="catalog-subitem dropdown-menu">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="catalog-subitem__item">
+                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
+                                        <div class="d-flex flex-column ">
+                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
+                                            <a href="#" class="py-2 c-pointer">Уличные</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
+                                    <div class="d-flex flex-column ">
+                                        <a href="#" class="py-2 c-pointer">Внутренние</a>
+                                        <a href="#" class="py-2 c-pointer">Уличные</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Catalog Subitem End -->
+                    </div>
+                    <!-- Catalog Item 2 End -->
+                </div>
+                <!-- Catalog DropDown End -->
             </div>
         </div>
-
-
-
-
-
-    <!-- Header Row 3 End -->
+        <!-- Header Row 3 End -->
     </header>
     <!-- Header End -->
+
+
 
 
 
     <!-- Jquery -->
     <script src="js/jquery-3.6.2.min.js"></script>
     <!-- Bootstap Script -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Main Script -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
