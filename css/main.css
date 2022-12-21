@@ -202,7 +202,10 @@ a:hover{
 /* Catalog Dropdown Start*/
 #catalog{
     background-color: var(--bs-white);
-    padding: 10px 0px
+    padding: 10px 0px;
+    position: absolute;
+    z-index: 3;
+    width: 303px;
 }
 .catalog-subitem{
     padding: 0px 18px ;
@@ -302,14 +305,19 @@ a:hover{
 
 /* Carousel Block Start */
 .carousel-left{
-    width: 23%;
+    width: 303px;
+    background-color: var(--bs-white);
+}
+.carousel-left .btn-group button{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .carousel{
     width: 1002px;
 }
 .carousel-indicators {
     margin: 16px;
-    left: 90%;
+    left: 76%;
     display: block;
 
 }
@@ -324,22 +332,123 @@ a:hover{
 .carousel-indicators .active {
     background-color: var(--bs-secondary);
 }
-@media(max-width:1400px){
-    .carousel-left{
-        width: 26%;
+@media(max-width:1399px){
+    .carousel-left .btn-group button{
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+    .carousel-indicators{
+        left: 74%;
+    }
+    .carousel-left {
+        width: 262px;
+    }
+    .carousel{
+        width: 860px;
+    }
+}
+@media(max-width:1199px){
+    .carousel-left {
+        margin-left: 13px;
+        width: 22.6%;
+    }
+    .carousel{
+        width: 74%;
+    }
+    .carousel-indicators{
+        left: 73%;
+    }
+}
+@media(max-width:1151px){
+    .carousel-left .btn-group button {
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+}
+@media(max-width:1116px){
+    .carousel-left .btn-group button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .carousel{
+        height: 461px;
+    }
+    .carousel .carousel-inner .carousel-item{
+        height: 461px;
+    }
+    .carousel-indicators {
+        left: 72%;
+        bottom: -4%;
+    }
+    .carousel-left {
+       padding-bottom: 5px;
+    }
+}
+@media(max-width:1076px){
+    .carousel-indicators {
+        left: 71%;
+        bottom: 0;
+    }
+    .carousel-left .btn-group button {
+        padding-top: 9px;
+        padding-bottom: 9px;
     }
 
 }
-@media(max-width:992px){
+@media(max-width:1039px){
     .carousel-indicators {
+        left: 70%;
+        bottom: 1%;
+    }
+}
+@media(max-width:1004px){
+    .carousel-indicators {
+        left: 69%;
+        bottom: 3%;
+    }
+
+}
+@media(max-width:991px){
+    .carousel-left{
+        display: none;
+    }
+    .carousel{
+        width: 100%;
+        height: inherit;
+    }
+    .carousel .carousel-inner .carousel-item {
+        height: inherit;
+    }
+    .carousel-indicators {
+        right: 0;
+        bottom: -47px;
+        left: 0;
         display: flex;
-        left:0;
-        bottom: -65px;
-        margin: 0;
+        justify-content: center;
+        margin-right: 15%;
+        margin-bottom: 0;
+        margin-left: 15%;
     }
 }
 
 /* Carousel Block End */
+
+/* Top Sales Start */
+.icon-big{
+    width: 32px;
+    height: 32px;
+}
+.headline{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--bs-black);
+}
+/* Top Sales End */
+
 
 
 /* Heights */
