@@ -17,12 +17,17 @@
     --bs-navbar-hover-color: var(--bs-gray);
 }
 .bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-black),var(--bs-bg-opacity))!important;
+    background-color: var(--bs-black) !important
+}
+.bg-light {
+    background-color: var(--bs-white)!important;
 }
 .btn-link {
    --bs-btn-hover-color: var(--primary-color);
    --bs-btn-active-color: var(--primary-color);
+}
+.text-white {
+    color: var(--bs-white)!important;
 }
 .color-lb{
     color: var(--primary-color);
@@ -48,11 +53,30 @@ a:hover{
 /* Body End */
 /* Header Start */
 .header{
-    z-index: 2;
+    z-index: 3;
 }
 .header-row-1 a{
     padding-top: 11px;
     padding-bottom:11px;
+    
+}
+/* Header Row 1 Media */
+@media (max-width: 1400px) {
+    .header-row-1 a{
+        font-size: 13px;
+    }
+}
+@media (max-width: 1200px) {
+    .header-row-1 a{
+        font-size: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+@media (max-width: 1022px) {
+    .header-row-1 a{
+        font-size: 11px;
+    }
 }
 /* Header Row 2 Start */
 .header-row-2{
@@ -95,10 +119,6 @@ a:hover{
 .header-row-2 .main-row .row{
     padding-top: 30px;
 }
-.h-42px{
-    height: 42px;
-}
-
 .icon{
     width: 24px;
     height: 24px;
@@ -126,14 +146,29 @@ a:hover{
     line-height: 14px;
     color: var(--bs-white);
 }
+
+/* Header Row 2 Media */
+@media (max-width: 1400px) {
+    .raleway-600 {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1200px) {
+    .w-41 {
+        width: 35%;
+    }
+    .w-12 {
+        width: 14%;
+    }
+}
+@media (max-width: 992px) {
+    
+}
 /* Header Row 2 End */
 /* Header Row 3 Start */
 .header-row-3{
     height: 48px;
     background-color: var(--bs-black);
-}
-.h-48px{
-    height: 48px;
 }
 .catalog{
     background-color: var(--primary-color);
@@ -146,6 +181,8 @@ a:hover{
     line-height: 21px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: var(--bs-white);
+    transition: 0.2s;
+    z-index: 3;
 
 }
 .navbar {
@@ -165,9 +202,7 @@ a:hover{
 /* Catalog Dropdown Start*/
 #catalog{
     background-color: var(--bs-white);
-    z-index: 2;
     padding: 10px 0px
-    
 }
 .catalog-subitem{
     padding: 0px 18px ;
@@ -176,9 +211,10 @@ a:hover{
     height: 588px;
     background: var(--bs-white);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-    z-index: 2;
+    z-index: 3;
     border-radius: 0;
 }
+
 .open-sans-700{
     font-family: 'Open Sans';
     font-weight: 700;
@@ -187,5 +223,134 @@ a:hover{
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
 /* Catalog Dropdown End*/
+/* Header Row 3 End */
+/* Tablet Header Start*/
+/* Tablet Header Row 2 Start */
+.tablet-header-row-2{
+    background-color: var(--bs-white);
+    height: 128px;
+}
+#tablet-catalog{
+    position: absolute;
+    background-color: var(--bs-white);
+    z-index: 3;
+    width:33%;
+    padding: 10px 0px
+}
+/* Tablet Header Row 2 End */
+.tablet-header-search{
+    position: relative;
+    background-color: var(--bs-white);
+    height: 66px;
+}
+.tablet-header-search .search-svg{
+    bottom: 16px;
+}
+@media (max-width: 1400px) {
+    #catalog{
+        position: absolute;
+        z-index: 3;
+        width: 262px;
+    }
+}
+@media (max-width: 1199px) {
+    #catalog{
+        width: 270px;
+    }
+}
+@media (max-width: 1195px) {
+    #catalog{
+        width: 269px;
+    }
+}
+@media (max-width: 1187px) {
+    #catalog{
+        width: 22.5%;
+    }
+}
+@media (max-width: 992px) {
+    .catalog-subitem{width: 500px;}
+    .catalog-subitem__item .open-sans-700{
+        font-size: 15px;
+    }
+    .catalog-subitem__item a{
+        font-size: 13px;
+    }
+}
+/* Tablet Header Search End */
+/* Tablet Header End*/
+/* Mobile Header Row 3 Start*/
+#mobile-catalog{
+    position: absolute;
+    z-index: 3;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.mobile-catalog-left a{
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 16px;
+    
+
+}
+.mobile-catalog-right a{
+    color: var(--bs-white);
+    padding: 14px 0;
+}
+/* Mobile Header Row 3 End*/
 /* Header End */
 
+/* Carousel Block Start */
+.carousel-left{
+    width: 23%;
+}
+.carousel{
+    width: 1002px;
+}
+.carousel-indicators {
+    margin: 16px;
+    left: 90%;
+    display: block;
+
+}
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-color);
+    background-clip: padding-box;
+    border-radius: 100%;
+    
+}
+.carousel-indicators .active {
+    background-color: var(--bs-secondary);
+}
+@media(max-width:1400px){
+    .carousel-left{
+        width: 26%;
+    }
+
+}
+@media(max-width:992px){
+    .carousel-indicators {
+        display: flex;
+        left:0;
+        bottom: -65px;
+        margin: 0;
+    }
+}
+
+/* Carousel Block End */
+
+
+/* Heights */
+.h-48px{
+    height: 48px;
+}
+.h-42px{
+    height: 42px;
+}
+@media (max-width: 767px) {
+    .h-48px{
+        height: 42px;
+    }
+}
