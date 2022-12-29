@@ -10,13 +10,11 @@ $(".burger").click(
       $(".menu").removeClass("d-none");
       $(".cart").addClass("d-none");
       $(".catalog").addClass("w-100");
-      $(".burger img").attr('src','img/icons/close.svg');
     }
     else{
       $(".menu").addClass("d-none");
       $(".cart").removeClass("d-none");
       $(".catalog").removeClass("w-100");
-      $(".burger img").attr('src','img/icons/menu.svg');
     }
   }
 )
