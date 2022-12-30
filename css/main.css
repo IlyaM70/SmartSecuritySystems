@@ -260,7 +260,7 @@ a:hover {
 
 .catalog-subitem {
     padding: 0px 18px;
-    padding-bottom:100px;
+    padding-bottom: 100px;
     width: 687px;
     background: var(--bs-white);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -275,6 +275,7 @@ a:hover {
     line-height: 22px;
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
+
 /* Catalog Dropdown End*/
 /* Header Row 3 End */
 
@@ -490,6 +491,7 @@ a:hover {
         padding: 7px 0;
     }
 }
+
 /* Carousel Media End */
 /* Carousel Block End */
 
@@ -510,28 +512,31 @@ a:hover {
     color: var(--bs-black);
 }
 
-.link-colored{
-   font-size: 16px;
+.link-colored {
+    font-size: 16px;
     line-height: 137%;
     font-feature-settings: 'pnum' on, 'lnum' on;
-    color:var(--primary-color);
+    color: var(--primary-color);
 }
+
 /* Cards Block Media Start */
-@media(min-width:768px){
+@media(min-width:768px) {
     .icon-big {
         width: 30px;
         height: 30px;
     }
+
     .headline {
         font-size: 30px;
         line-height: 125%;
     }
 }
+
 /* Cards Block Media End */
 /* Cards Block End */
 
 /* Card Start */
-.card{
+.card {
     --card-padding-left: 0.5rem;
     --card-padding-right: 1rem;
     align-items: flex-start;
@@ -540,20 +545,20 @@ a:hover {
 }
 
 .card-body {
-    padding-left:var(--card-padding-left);
+    padding-left: var(--card-padding-left);
     padding-right: var(--card-padding-right);
     padding-top: 1rem;
     padding-bottom: 0;
     color: var(--bs-black);
 }
 
-.card-text{
+.card-text {
     font-size: 12px;
     line-height: 16px;
 }
 
 .card-footer {
-    padding-left:var(--card-padding-left);
+    padding-left: var(--card-padding-left);
     padding-right: var(--card-padding-right);
     padding-top: 0.5rem;
     padding-bottom: 1rem;
@@ -569,7 +574,7 @@ a:hover {
     display: flex;
 }
 
-.card-old-price{
+.card-old-price {
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
@@ -578,48 +583,74 @@ a:hover {
     color: var(--bs-gray-dark);
     margin-left: 10px;
 }
+
+.card-footer:last-child {
+    border-radius: unset;
+}
+
 /* Card Media Start */
-@media(min-width:992px){
+@media(min-width:992px) {
     .card-text {
         font-size: 14px;
         line-height: 20px;
     }
-    .card-footer{
+
+    .card-footer {
         font-size: 24px;
         line-height: 28px;
     }
 }
-@media(min-width:576px){
+
+@media(min-width:485px) {
     .card-img-top {
-    width: 245px;
-    margin: 0 auto;
-}
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    @media(min-width:768px) {
+        .card-img-top {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
 }
 
 /* Card Media End */
 /* Card End */
 
 /* Reviews Start */
-.reviews-carousel{
-    padding: 0 10px;
+.reviews-carousel {
+    margin-top: 20px;
+    margin-left: -16px;
 }
-.review{
-    width: 43%;
-}
-.review-img{
-    padding-bottom: 16px;
-}
-.review-footer{
-    background-color: var(--bs-black);
+
+.review-img {
     position: relative;
+    width: 100%;
 }
-.review-overlay{
+
+.review-img .card-img-top {
+    aspect-ratio: 1/1.1;
+}
+
+.review-overlay {
     position: absolute;
     left: 0;
-    top: -43px;
+    bottom: -1px;
     width: 100%
 }
-.review-text{
+
+.review-footer {
+    background-color: var(--bs-black);
+    position: relative;
+    min-height: 100px;
+    max-height: 150px;
+    padding: 16px;
+    width: 100%;
+}
+
+.review-text {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -628,8 +659,72 @@ a:hover {
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: var(--bs-white);
 }
+
+/* Reviews Media Start */
+@media(min-width:768px) {
+    .reviews-carousel {
+        margin-top: 24px;
+        margin-left: 0;
+    }
+
+    .owl-stage {
+        margin-left: -12px;
+    }
+
+    .review-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+/* Reviews Media End */
 /* Reviews End */
 
+/* Security Systems Start */
+.security-systems__body {
+    font-size: 11px;
+    line-height: 15px;
+    color: var(--bs-black);
+    background-color: var(--bs-white);
+    padding-bottom: 60px;
+}
+
+.headline-blue {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--primary-color);
+}
+
+.list-small-bullets li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.list-small-bullets li:before {
+    content: "•";
+    font-size: inherit;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+}
+/* Security Systems End */
+
+/* Footer Start */
+footer{
+    background-color: var(--bs-black);
+}
+.footer-row1 a{
+    margin-left: 20px;
+}
+.footer-row1 a:first-child{
+    margin-left: 0px;
+}
+/* Footer End */
 
 
 /* Heights */

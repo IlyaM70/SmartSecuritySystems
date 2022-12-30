@@ -3,7 +3,7 @@ var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-tog
 var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
   return new bootstrap.Dropdown(dropdownToggleEl)
 })
-// Modile Click On Burger Start
+// Modile Click On Burger
 $(".burger").click(
   function () {
     if ($(".menu").hasClass('d-none')) {
@@ -20,4 +20,31 @@ $(".burger").click(
     }
   }
 )
-// Modile Click On Burger End
+
+
+//Reviews Carousel 
+$(function() {
+  $('.owl-carousel').owlCarousel({
+    margin: 8,
+    loop: true,
+    items: 2.2,
+    autoplay:true,
+    responsive : {
+      600 : {
+        items:3.2
+      },
+      768 : {
+        items:4,
+      },
+      992 : {
+        items:4,
+        margin: 16
+      },
+      992 : {
+        items:5,
+        margin: 16
+      },
+    }
+    
+  });
+});
