@@ -1117,7 +1117,7 @@
     </div>
     <!-- BreadCrumbs End -->
 
-    <!-- Catalog Main Start -->
+    <!-- Catalog Header Start -->
     <div class="catalog-main container-xl">
         <div class="headline">Видеонаблюдение</div>
     </div>
@@ -1159,6 +1159,8 @@
             <div class="headline-blue text-black pt-3">Фильтры продукции</div>
 
             <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
+
+                <!-- Filter Item 1 Start -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -1185,25 +1187,150 @@
                                     <div class="progress"></div>
                                 </div>
                                 <div class="range-input">
-                                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                    <input type="range" class="range-min" min="0" max="10000" value="0" step="100">
+                                    <input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
+
+                                    <div class="marker marker-0"></div>
+                                    <div class="marker marker-20"></div>
+                                    <div class="marker marker-40"></div>
+                                    <div class="marker marker-60"></div>
+                                    <div class="marker marker-80"></div>
+                                    <div class="marker marker-100"></div>
+
                                 </div>
                             </div>
                         </div>
                         <!-- Price Range Slider End -->
-
-
-
-
                     </div>
                 </div>
+                <!-- Filter Item 1 End -->
+
+                <!-- Filter Item 2 Start -->
+                <div class="accordion-item mt-3">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            <span class="filter-header">Мегапиксели</span>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse  pb-2"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                0.3 Мп
+                            </label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                2 Мп
+                            </label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                2.4 Мп
+                            </label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                3 Мп
+                            </label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                4 Мп
+                            </label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                > 4 Мп
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Filter Item 2 End -->
+
+                <!-- Filter Item 3 Start -->
+                <div class="accordion-item mt-3">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <span class="filter-header">Исполнение</span>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse  pb-2"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Внутренняя
+                            </label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Уличная
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Filter Item 3 End -->
+
             </div>
-
-
-
         </div>
     </div>
     <!-- Filter Collapse End -->
+    <!-- Catalog Header End -->
+
+
+
+    <!-- Catalog Main Start -->
+    <div class="catalog-main container-xl">
+        <div class="row">
+            <!-- Side Bar Start -->
+            <div class="catalog-main__sidebar col-0"></div>
+            <!-- Side Bar End -->
+
+            <!-- Cards Start-->
+            <div class="col-12">
+                <div class="top-sales__cards row row-cols-2 row-cols-md-4 g-2 g-lg-3 mt-2 mt-md-4">
+                    <!-- Cards  Card 1 Start -->
+                    <a href="#" class="col">
+                        <div class="card h-100">
+                            <img src="img/card1.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">StarterKit Ajax (Контрольная панель + Датчик движения ...</p>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Сравнить
+                                        </label>
+                                    </div>
+                                    <img class="icon-small" src="/img/icons/star.svg">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-price">1 600 ₽</div>
+                                <div class="card-old-price"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Cards  Card 1 End -->
+                </div>
+            </div>
+            <!-- Cards End-->
+        </div>
+    </div>
+
+
 
     <!-- Catalog Main End -->
 

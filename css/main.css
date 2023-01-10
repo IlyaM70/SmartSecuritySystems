@@ -762,14 +762,14 @@ a:hover {
 
 /* BreadCrumbs End */
 
-/* Catalog Main Start */
+
 
 
 
 /* Filter  Start  */
 .filter {
     background-color: var(--bs-white);
-    padding: 0 16px;
+    padding: 0 16px 16px 16px;
 }
 
 .text-black {
@@ -880,14 +880,14 @@ input[type="number"]::-webkit-inner-spin-button {
 .slider {
     height: 5px;
     position: relative;
-    background: #ddd;
+    background: var(--primary-color);
     border-radius: 5px;
 }
 
 .slider .progress {
     height: 100%;
-    left: 25%;
-    right: 25%;
+    left: 0;
+    right: 0;
     position: absolute;
     border-radius: 5px;
     background: var(--primary-color);
@@ -906,51 +906,130 @@ input[type="number"]::-webkit-inner-spin-button {
     pointer-events: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    
+
 }
 
 input[type="range"]::-webkit-slider-thumb {
-    height: 17px;
-    width: 17px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    pointer-events: auto;
     -webkit-appearance: none;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0V8H0L8 0Z' fill='%2300A0E3'/%3E%3Cpath d='M8 0V8H16L8 0Z' fill='%2300A0E3'/%3E%3Crect y='8' width='16' height='8' fill='%2300A0E3'/%3E%3C/svg%3E");
+    appearance: none;
+    pointer-events: auto;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background-image: url("/img/icons/price-range.svg");
+    margin-top: 20px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 input[type="range"]::-moz-range-thumb {
-    height: 17px;
-    width: 17px;
-    border: none;
-    border-radius: 50%;
-    background: var(--primary-color);
-    pointer-events: auto;
     -moz-appearance: none;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-}
-
-/* input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
     appearance: none;
+    pointer-events: auto;
     width: 16px;
     height: 16px;
-    border: 0;
-    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0V8H0L8 0Z' fill='%2300A0E3'/%3E%3Cpath d='M8 0V8H16L8 0Z' fill='%2300A0E3'/%3E%3Crect y='8' width='16' height='8' fill='%2300A0E3'/%3E%3C/svg%3E");
-} */
+    position: relative;
+    background-image: url("/img/icons/price-range.svg");
+    margin-top: 20px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+input[type="range"]:first-of-type::-webkit-slider-thumb {
+    margin-left: -5px;
+}
+
+input[type="range"]:first-of-type::-moz-range-thumb {
+    margin-left: -5px;
+}
 
 
+.marker {
+    position: absolute;
+    width: 16px;
+    height: 0px;
+    border: 1px solid var(--primary-color);
+    transform: rotate(90deg);
+    bottom: 0;
+}
 
+.marker-0 {
+    left: -5px;
+}
+
+.marker-20 {
+    left: 57px;
+}
+
+.marker-40 {
+    left: 120px;
+}
+
+.marker-60 {
+    left: 182px;
+}
+
+.marker-80 {
+    left: 245px;
+}
+
+.marker-100 {
+    right: -5px;
+
+}
 
 /* Price Range End */
 
 
 
+.form-check-input {
 
+    background-color: var(--bs-white);
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--bs-gray);
+    border-radius: 2px;
+}
 
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: unset;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 2px;
+}
+
+.form-check-input:checked[type=checkbox] {
+    background-image: url("/img/icons/check.svg");
+}
+
+.form-check-input:focus {
+    border-color: var(--bs-gray);
+    outline: unset;
+    box-shadow: unset;
+}
+.form-check-label{
+    padding-left: 10px;
+    padding-top: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--bs-black);
+}
 
 /* Filter  End */
+
+
+
+
+/* Catalog Main Start */
+
+.icon-small{
+    width: 16px;
+    height: 16px;
+}
+
+
 
 /* Catalog Main End */
 
