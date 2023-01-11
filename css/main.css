@@ -986,6 +986,21 @@ input[type="range"]:first-of-type::-moz-range-thumb {
     .wrapper {
        width: 100%;
     }
+    .marker-20 {
+        left: 17%;
+    }
+    
+    .marker-40 {
+        left: 36%;
+    }
+    
+    .marker-60 {
+        left: 54%;
+    }
+    
+    .marker-80 {
+        left: 73%;
+    }
     
 }
 
@@ -1102,7 +1117,9 @@ input[type="range"]:first-of-type::-moz-range-thumb {
 }
 
 .catalog-main__sidebar .filter {
-    height: 596px;
+    
+    min-height: 655px;
+    max-height: 743px;
 }
 
 
