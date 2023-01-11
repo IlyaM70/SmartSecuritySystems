@@ -62,42 +62,96 @@ let minusRight = 0;
 
 priceInput.forEach((input) => {
   input.addEventListener("input", (e) => {
-    let minPrice = parseInt(priceInput[0].value),
+
+    let minPrice, maxPrice;
+
+    if ($(window).width() < 1200) {
+      minPrice = parseInt(priceInput[0].value);
       maxPrice = parseInt(priceInput[1].value);
+
+      
 
     if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
       if (e.target.className === "input-min") {
         rangeInput[0].value = minPrice;
 
-        if ((minPrice / rangeInput[0].max) * 100 < 91) plusLeft=4;
-        if ((minPrice / rangeInput[0].max) * 100 < 84) plusLeft=3;
-        if ((minPrice / rangeInput[0].max) * 100 < 61) plusLeft=2;
-        if ((minPrice / rangeInput[0].max) * 100 < 45) plusLeft=1;
-        if ((minPrice / rangeInput[0].max) * 100 < 28) plusLeft=0;
+        // if ((minPrice / rangeInput[0].max) * 100 < 91) plusLeft=4;
+        // if ((minPrice / rangeInput[0].max) * 100 < 84) plusLeft=3;
+        // if ((minPrice / rangeInput[0].max) * 100 < 61) plusLeft=2;
+        // if ((minPrice / rangeInput[0].max) * 100 < 45) plusLeft=1;
+        // if ((minPrice / rangeInput[0].max) * 100 < 28) plusLeft=0;
 
 
-        range.style.left = (((minPrice / rangeInput[0].max) * 100)+plusLeft) + "%";
+        range.style.left = (((minPrice / rangeInput[0].max) * 100) + plusLeft) + "%";
       } else {
         rangeInput[1].value = maxPrice;
 
 
-        if (((maxPrice / rangeInput[1].max) * 100) > 9) minusRight = 4;
-        if (((maxPrice / rangeInput[1].max) * 100) > 16) minusRight = 3;
-        if (((maxPrice / rangeInput[1].max) * 100) > 40) minusRight = 2;
-        if (((maxPrice / rangeInput[1].max) * 100) > 55) minusRight = 1;
-        if (((maxPrice / rangeInput[1].max) * 100) > 77) minusRight = 0;
+        // if (((maxPrice / rangeInput[1].max) * 100) > 9) minusRight = 4;
+        // if (((maxPrice / rangeInput[1].max) * 100) > 16) minusRight = 3;
+        // if (((maxPrice / rangeInput[1].max) * 100) > 40) minusRight = 2;
+        // if (((maxPrice / rangeInput[1].max) * 100) > 55) minusRight = 1;
+        // if (((maxPrice / rangeInput[1].max) * 100) > 77) minusRight = 0;
 
 
-        range.style.right = (100 - minusRight- (maxPrice / rangeInput[1].max) * 100) + "%";
+        range.style.right = (100 - minusRight - (maxPrice / rangeInput[1].max) * 100) + "%";
       }
     }
+    }
+    else {
+      minPrice = parseInt(priceInput[2].value);
+      maxPrice = parseInt(priceInput[3].value);
+
+      if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[3].max) {
+        if (e.target.className === "input-min") {
+          rangeInput[2].value = minPrice;
+  
+          // if ((minPrice / rangeInput[0].max) * 100 < 91) plusLeft=4;
+          // if ((minPrice / rangeInput[0].max) * 100 < 84) plusLeft=3;
+          // if ((minPrice / rangeInput[0].max) * 100 < 61) plusLeft=2;
+          // if ((minPrice / rangeInput[0].max) * 100 < 45) plusLeft=1;
+          // if ((minPrice / rangeInput[0].max) * 100 < 28) plusLeft=0;
+  
+  
+          range.style.left = (((minPrice / rangeInput[3].max) * 100) + plusLeft) + "%";
+        } else {
+          rangeInput[3].value = maxPrice;
+  
+  
+          // if (((maxPrice / rangeInput[1].max) * 100) > 9) minusRight = 4;
+          // if (((maxPrice / rangeInput[1].max) * 100) > 16) minusRight = 3;
+          // if (((maxPrice / rangeInput[1].max) * 100) > 40) minusRight = 2;
+          // if (((maxPrice / rangeInput[1].max) * 100) > 55) minusRight = 1;
+          // if (((maxPrice / rangeInput[1].max) * 100) > 77) minusRight = 0;
+  
+  
+          range.style.right = (100 - minusRight - (maxPrice / rangeInput[2].max) * 100) + "%";
+        }
+    }
+
   });
 });
 
 rangeInput.forEach((input) => {
   input.addEventListener("input", (e) => {
-    let minVal = parseInt(rangeInput[0].value),
+
+
+
+
+    let minVal, maxVal;
+
+    if ($(window).width() < 1200) {
+      minVal = parseInt(rangeInput[0].value);
       maxVal = parseInt(rangeInput[1].value);
+    }
+    else {
+      minVal = parseInt(rangeInput[2].value);
+      maxVal = parseInt(rangeInput[3].value);
+    }
+console.log(minVal);
+
+
+
 
     if (maxVal - minVal < priceGap) {
       if (e.target.className === "range-min") {
@@ -109,41 +163,31 @@ rangeInput.forEach((input) => {
       priceInput[0].value = minVal;
       priceInput[1].value = maxVal;
 
-      
-      
 
-      if ((minVal / rangeInput[0].max) * 100 < 91) plusLeft=4;
-      if ((minVal / rangeInput[0].max) * 100 < 84) plusLeft=3;
-      if ((minVal / rangeInput[0].max) * 100 < 61) plusLeft=2;
-      if ((minVal / rangeInput[0].max) * 100 < 45) plusLeft=1;
-      if ((minVal / rangeInput[0].max) * 100 < 28) plusLeft=0;
-      
-      
+
+
+      // if ((minVal / rangeInput[0].max) * 100 < 91) plusLeft = 4;
+      // if ((minVal / rangeInput[0].max) * 100 < 84) plusLeft = 3;
+      // if ((minVal / rangeInput[0].max) * 100 < 61) plusLeft = 2;
+      // if ((minVal / rangeInput[0].max) * 100 < 45) plusLeft = 1;
+      // if ((minVal / rangeInput[0].max) * 100 < 28) plusLeft = 0;
+
+
       range.style.left = (((minVal / rangeInput[0].max) * 100) - plusLeft) + "%";
-      
-      
-      
-     
-      
-      if (((maxVal / rangeInput[1].max) * 100) > 9) minusRight = 4;
-      if (((maxVal / rangeInput[1].max) * 100) > 16) minusRight = 3;
-      if (((maxVal / rangeInput[1].max) * 100) > 40) minusRight = 2;
-      if (((maxVal / rangeInput[1].max) * 100) > 55) minusRight = 1;
-      if (((maxVal / rangeInput[1].max) * 100) > 77) minusRight = 0;
+
+
+
+
+
+      // if (((maxVal / rangeInput[1].max) * 100) > 9) minusRight = 4;
+      // if (((maxVal / rangeInput[1].max) * 100) > 16) minusRight = 3;
+      // if (((maxVal / rangeInput[1].max) * 100) > 40) minusRight = 2;
+      // if (((maxVal / rangeInput[1].max) * 100) > 55) minusRight = 1;
+      // if (((maxVal / rangeInput[1].max) * 100) > 77) minusRight = 0;
 
       range.style.right = 100 - minusRight - ((maxVal / rangeInput[1].max) * 100) + "%";
     }
   });
 });
-
-// let thumb = $(`input[type="range"]::-webkit-slider-thumb`);
-// console.log(thumb.style.transform);
-
-
-let ranges = document.querySelectorAll('input[type=range]::-webkit-slider-thumb');
-console.log(ranges[0]);
-
-
-
 
 //////////////////////////// Price Range End
