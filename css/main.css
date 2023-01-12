@@ -1036,7 +1036,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .form-check-input:checked[type=checkbox] {
-    background-image: url("/img/icons/check.svg");
+    background-image: url("../img/icons/check.svg");
 }
 
 .form-check-input:focus {
