@@ -1147,8 +1147,38 @@
             </select>
         </div>
         <div class="d-flex">
-            <img class="icon c-pointer" src="img/icons/1-col.svg">
-            <img class="icon c-pointer ms-3" src="img/icons/many-col.svg">
+            <!-- 1 col btn Start -->
+            <svg class="1-col-btn icon c-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_85_2473)">
+                    <path
+                        d="M0 0V6H6V0H0ZM9.375 0V6H24V0H9.375ZM0 9V15H6V9H0ZM9.375 9V15H24V9H9.375ZM0 18V24H6V18H0ZM9.375 18V24H24V18H9.375Z"
+                        fill="#CCD5DB" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_85_2473">
+                        <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <!-- 1 col btn End -->
+
+            <!-- many cols btn Start -->
+            <svg class="many-cols-btn icon c-pointer ms-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_85_2474)">
+                    <rect width="10" height="10" fill="#00A0E3" />
+                    <rect y="14" width="10" height="10" fill="#00A0E3" />
+                    <rect x="14" y="14" width="10" height="10" fill="#00A0E3" />
+                    <rect x="14" width="10" height="10" fill="#00A0E3" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_85_2474">
+                        <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <!-- many cols btn End -->
         </div>
     </div>
     <!-- Catalog Sort End -->
@@ -1296,7 +1326,7 @@
     <div class="catalog-main container-xl mt-4 position-relative">
         <div class="row cols-1 cols-xl-2 g-xl-3">
             <!-- Side Bar Start -->
-            <div class="catalog-main__sidebar col-0 d-none d-xl-block col-xl-3 ps-xl-0">
+            <div class="catalog-main__sidebar col-0 d-none d-xl-flex flex-column col-xl-3 ps-xl-0">
                 <div class="sidebar-categories">
                     <div class="headline-blue text-black pt-3 pb-2">Категории</div>
                     <a href="" class="pt-3">Аксессуары</a>
@@ -1316,9 +1346,9 @@
 
                 <div class="filter mt-3">
                     <div class="headline-blue text-black pt-3">Фильтры продукции</div>
-        
+
                     <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
-        
+
                         <!-- Filter Item 1 Start -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -1330,7 +1360,7 @@
                             </h2>
                             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                                 aria-labelledby="panelsStayOpen-headingOne">
-        
+
                                 <!-- Price Range Slider Start -->
                                 <div class="d-flex">
                                     <div class="wrapper">
@@ -1346,17 +1376,18 @@
                                             <div class="progress"></div>
                                         </div>
                                         <div class="range-input">
-                                            <input type="range" class="range-min" min="0" max="100000" value="0" step="1000">
+                                            <input type="range" class="range-min" min="0" max="100000" value="0"
+                                                step="1000">
                                             <input type="range" class="range-max" min="0" max="100000" value="100000"
                                                 step="1000">
-        
+
                                             <div class="marker marker-0"></div>
                                             <div class="marker marker-20"></div>
                                             <div class="marker marker-40"></div>
                                             <div class="marker marker-60"></div>
                                             <div class="marker marker-80"></div>
                                             <div class="marker marker-100"></div>
-        
+
                                         </div>
                                     </div>
                                 </div>
@@ -1364,7 +1395,7 @@
                             </div>
                         </div>
                         <!-- Filter Item 1 End -->
-        
+
                         <!-- Filter Item 2 Start -->
                         <div class="accordion-item mt-3">
                             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
@@ -1415,7 +1446,7 @@
                             </div>
                         </div>
                         <!-- Filter Item 2 End -->
-        
+
                         <!-- Filter Item 3 Start -->
                         <div class="accordion-item mt-3">
                             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
@@ -1442,7 +1473,7 @@
                             </div>
                         </div>
                         <!-- Filter Item 3 End -->
-        
+
                     </div>
                 </div>
 
@@ -1452,367 +1483,452 @@
 
             <!-- Cards Start-->
             <div class="col-12 col-xl-9 pe-xl-0">
-                <div class="top-sales__cards row row-cols-2 g-2 row-cols-md-3 g-md-3 row-cols-lg-4">
-                    <!-- Cards  Card 1 Start -->
+                <div class="catalog-main__cads row row-cols-2 g-2 row-cols-md-3 g-md-3 row-cols-lg-4 cols-toggle">
+                    <!-- Cards  Card Start -->
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="" class="w-100 d-flex">
-                                <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="form-check my-0 py-0">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label" for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                    <img class="icon-small c-pointer" src="/img/icons/star.svg">
+                        <div class="card h-100 ">
+                            <div class="row g-0 row-cols-1">
+                                <div class="col">
+                                    <a href="" class="w-100 d-flex">
+                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                    </a>
                                 </div>
-                                <p class="card-in-stock">
-                                    <span class="dot"></span>
-                                    <span>есть на складе</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">14 990 ₽</div>
-                                <div class="card-old-price">15 000</div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                        <div class="card-compare mt-2">
+                                            <div class="form-check my-0 py-0">
+                                                <input class="form-check-input checkbox-small" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label compare-check-label"
+                                                    for="flexCheckDefault">
+                                                    Сравнить
+                                                </label>
+                                            </div>
+                                            <a href=""><img class="icon-small c-pointer" src="/img/icons/star.svg"></a>
+                                        </div>
+                                        <p class="card-in-stock">
+                                            <span class="dot"></span>
+                                            <span>есть на складе</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">14 990 ₽</div>
+                                        <div class="card-old-price">15 000</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Cards  Card 1 End -->
-                    <!-- Cards  Card 2 Start -->
+                    <!-- Cards  Card End -->
+                    <!-- Cards  Card Start -->
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="" class="w-100 d-flex">
-                                <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="form-check my-0 py-0">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label" for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                    <img class="icon-small c-pointer" src="/img/icons/star.svg">
+                        <div class="card h-100 ">
+                            <div class="row g-0 row-cols-1">
+                                <div class="col">
+                                    <a href="" class="w-100 d-flex">
+                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                    </a>
                                 </div>
-                                <p class="card-in-stock">
-                                    <span class="dot"></span>
-                                    <span>есть на складе</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">14 990 ₽</div>
-                                <div class="card-old-price">15 000</div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                        <div class="card-compare mt-2">
+                                            <div class="form-check my-0 py-0">
+                                                <input class="form-check-input checkbox-small" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label compare-check-label"
+                                                    for="flexCheckDefault">
+                                                    Сравнить
+                                                </label>
+                                            </div>
+                                            <a href=""><img class="icon-small c-pointer" src="/img/icons/star.svg"></a>
+                                        </div>
+                                        <p class="card-in-stock">
+                                            <span class="dot"></span>
+                                            <span>есть на складе</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">14 990 ₽</div>
+                                        <div class="card-old-price">15 000</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Cards  Card 2 End -->
-                    <!-- Cards  Card 3 Start -->
+                    <!-- Cards  Card End -->
+                    <!-- Cards  Card Start -->
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="" class="w-100 d-flex">
-                                <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="form-check my-0 py-0">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label" for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                    <img class="icon-small c-pointer" src="/img/icons/star.svg">
+                        <div class="card h-100 ">
+                            <div class="row g-0 row-cols-1">
+                                <div class="col">
+                                    <a href="" class="w-100 d-flex">
+                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                    </a>
                                 </div>
-                                <p class="card-in-stock">
-                                    <span class="dot"></span>
-                                    <span>есть на складе</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">14 990 ₽</div>
-                                <div class="card-old-price">15 000</div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                        <div class="card-compare mt-2">
+                                            <div class="form-check my-0 py-0">
+                                                <input class="form-check-input checkbox-small" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label compare-check-label"
+                                                    for="flexCheckDefault">
+                                                    Сравнить
+                                                </label>
+                                            </div>
+                                            <a href=""><img class="icon-small c-pointer" src="/img/icons/star.svg"></a>
+                                        </div>
+                                        <p class="card-in-stock">
+                                            <span class="dot"></span>
+                                            <span>есть на складе</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">14 990 ₽</div>
+                                        <div class="card-old-price">15 000</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Cards  Card 3 End -->
-                    <!-- Cards  Card 4 Start -->
+                    <!-- Cards  Card End -->
+                    <!-- Cards  Card Start -->
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="" class="w-100 d-flex">
-                                <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="form-check my-0 py-0">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label" for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                    <img class="icon-small c-pointer" src="/img/icons/star.svg">
+                        <div class="card h-100 ">
+                            <div class="row g-0 row-cols-1">
+                                <div class="col">
+                                    <a href="" class="w-100 d-flex">
+                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                    </a>
                                 </div>
-                                <p class="card-in-stock">
-                                    <span class="dot"></span>
-                                    <span>есть на складе</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">14 990 ₽</div>
-                                <div class="card-old-price">15 000</div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                        <div class="card-compare mt-2">
+                                            <div class="form-check my-0 py-0">
+                                                <input class="form-check-input checkbox-small" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label compare-check-label"
+                                                    for="flexCheckDefault">
+                                                    Сравнить
+                                                </label>
+                                            </div>
+                                            <a href=""><img class="icon-small c-pointer" src="/img/icons/star.svg"></a>
+                                        </div>
+                                        <p class="card-in-stock">
+                                            <span class="dot"></span>
+                                            <span>есть на складе</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">14 990 ₽</div>
+                                        <div class="card-old-price">15 000</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Cards  Card 4 End -->
-                    <!-- Cards  Card 5 Start -->
+                    <!-- Cards  Card End -->
+                    <!-- Cards  Card Start -->
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="" class="w-100 d-flex">
-                                <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="form-check my-0 py-0">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label" for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                    <img class="icon-small c-pointer" src="/img/icons/star.svg">
+                        <div class="card h-100 ">
+                            <div class="row g-0 row-cols-1">
+                                <div class="col">
+                                    <a href="" class="w-100 d-flex">
+                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                    </a>
                                 </div>
-                                <p class="card-in-stock">
-                                    <span class="dot"></span>
-                                    <span>есть на складе</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">14 990 ₽</div>
-                                <div class="card-old-price">15 000</div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                        <div class="card-compare mt-2">
+                                            <div class="form-check my-0 py-0">
+                                                <input class="form-check-input checkbox-small" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label compare-check-label"
+                                                    for="flexCheckDefault">
+                                                    Сравнить
+                                                </label>
+                                            </div>
+                                            <a href=""><img class="icon-small c-pointer" src="/img/icons/star.svg"></a>
+                                        </div>
+                                        <p class="card-in-stock">
+                                            <span class="dot"></span>
+                                            <span>есть на складе</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">14 990 ₽</div>
+                                        <div class="card-old-price">15 000</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Cards  Card 5 End -->
-                    <!-- Cards  Card 6 Start -->
+                    <!-- Cards  Card End -->
+                    <!-- Cards  Card Start -->
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="" class="w-100 d-flex">
-                                <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="form-check my-0 py-0">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label" for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                    <img class="icon-small c-pointer" src="/img/icons/star.svg">
+                        <div class="card h-100 ">
+                            <div class="row g-0 row-cols-1">
+                                <div class="col">
+                                    <a href="" class="w-100 d-flex">
+                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                    </a>
                                 </div>
-                                <p class="card-in-stock">
-                                    <span class="dot"></span>
-                                    <span>есть на складе</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">14 990 ₽</div>
-                                <div class="card-old-price">15 000</div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                        <div class="card-compare mt-2">
+                                            <div class="form-check my-0 py-0">
+                                                <input class="form-check-input checkbox-small" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label compare-check-label"
+                                                    for="flexCheckDefault">
+                                                    Сравнить
+                                                </label>
+                                            </div>
+                                            <a href=""><img class="icon-small c-pointer" src="/img/icons/star.svg"></a>
+                                        </div>
+                                        <p class="card-in-stock">
+                                            <span class="dot"></span>
+                                            <span>есть на складе</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">14 990 ₽</div>
+                                        <div class="card-old-price">15 000</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Cards  Card 6  End -->
-                    <!-- Cards  Card 7 Start -->
+                    <!-- Cards  Card End -->
+                    <!-- Cards  Card Start -->
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="" class="w-100 d-flex">
-                                <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="form-check my-0 py-0">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label" for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                    <img class="icon-small c-pointer" src="/img/icons/star.svg">
+                        <div class="card h-100 ">
+                            <div class="row g-0 row-cols-1">
+                                <div class="col">
+                                    <a href="" class="w-100 d-flex">
+                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                    </a>
                                 </div>
-                                <p class="card-in-stock">
-                                    <span class="dot"></span>
-                                    <span>есть на складе</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">14 990 ₽</div>
-                                <div class="card-old-price">15 000</div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                        <div class="card-compare mt-2">
+                                            <div class="form-check my-0 py-0">
+                                                <input class="form-check-input checkbox-small" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label compare-check-label"
+                                                    for="flexCheckDefault">
+                                                    Сравнить
+                                                </label>
+                                            </div>
+                                            <a href=""><img class="icon-small c-pointer" src="/img/icons/star.svg"></a>
+                                        </div>
+                                        <p class="card-in-stock">
+                                            <span class="dot"></span>
+                                            <span>есть на складе</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">14 990 ₽</div>
+                                        <div class="card-old-price">15 000</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Cards  Card 7 End -->
-                    <!-- Cards  Card 8 Start -->
+                    <!-- Cards  Card End -->
+                    <!-- Cards  Card Start -->
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="" class="w-100 d-flex">
-                                <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="form-check my-0 py-0">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label" for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                    <img class="icon-small c-pointer" src="/img/icons/star.svg">
+                        <div class="card h-100 ">
+                            <div class="row g-0 row-cols-1">
+                                <div class="col">
+                                    <a href="" class="w-100 d-flex">
+                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                    </a>
                                 </div>
-                                <p class="card-in-stock">
-                                    <span class="dot"></span>
-                                    <span>есть на складе</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">14 990 ₽</div>
-                                <div class="card-old-price">15 000</div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                        <div class="card-compare mt-2">
+                                            <div class="form-check my-0 py-0">
+                                                <input class="form-check-input checkbox-small" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label compare-check-label"
+                                                    for="flexCheckDefault">
+                                                    Сравнить
+                                                </label>
+                                            </div>
+                                            <a href=""><img class="icon-small c-pointer" src="/img/icons/star.svg"></a>
+                                        </div>
+                                        <p class="card-in-stock">
+                                            <span class="dot"></span>
+                                            <span>есть на складе</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">14 990 ₽</div>
+                                        <div class="card-old-price">15 000</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Cards  Card 8 End -->
-                    <!-- Cards  Card 9 Start -->
+                    <!-- Cards  Card End -->
+                    <!-- Cards  Card Start -->
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="" class="w-100 d-flex">
-                                <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="form-check my-0 py-0">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label" for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                    <img class="icon-small c-pointer" src="/img/icons/star.svg">
+                        <div class="card h-100 ">
+                            <div class="row g-0 row-cols-1">
+                                <div class="col">
+                                    <a href="" class="w-100 d-flex">
+                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                    </a>
                                 </div>
-                                <p class="card-in-stock">
-                                    <span class="dot"></span>
-                                    <span>есть на складе</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">14 990 ₽</div>
-                                <div class="card-old-price">15 000</div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                        <div class="card-compare mt-2">
+                                            <div class="form-check my-0 py-0">
+                                                <input class="form-check-input checkbox-small" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label compare-check-label"
+                                                    for="flexCheckDefault">
+                                                    Сравнить
+                                                </label>
+                                            </div>
+                                            <a href=""><img class="icon-small c-pointer" src="/img/icons/star.svg"></a>
+                                        </div>
+                                        <p class="card-in-stock">
+                                            <span class="dot"></span>
+                                            <span>есть на складе</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">14 990 ₽</div>
+                                        <div class="card-old-price">15 000</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Cards  Card 9 End -->
-                    <!-- Cards  Card 10 Start -->
+                    <!-- Cards  Card End -->
+                    <!-- Cards  Card Start -->
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="" class="w-100 d-flex">
-                                <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="form-check my-0 py-0">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label" for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                    <img class="icon-small c-pointer" src="/img/icons/star.svg">
+                        <div class="card h-100 ">
+                            <div class="row g-0 row-cols-1">
+                                <div class="col">
+                                    <a href="" class="w-100 d-flex">
+                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                    </a>
                                 </div>
-                                <p class="card-in-stock">
-                                    <span class="dot"></span>
-                                    <span>есть на складе</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">14 990 ₽</div>
-                                <div class="card-old-price">15 000</div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                        <div class="card-compare mt-2">
+                                            <div class="form-check my-0 py-0">
+                                                <input class="form-check-input checkbox-small" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label compare-check-label"
+                                                    for="flexCheckDefault">
+                                                    Сравнить
+                                                </label>
+                                            </div>
+                                            <a href=""><img class="icon-small c-pointer" src="/img/icons/star.svg"></a>
+                                        </div>
+                                        <p class="card-in-stock">
+                                            <span class="dot"></span>
+                                            <span>есть на складе</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">14 990 ₽</div>
+                                        <div class="card-old-price">15 000</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Cards  Card 10 End -->
-                    <!-- Cards  Card 11 Start -->
+                    <!-- Cards  Card End -->
+                    <!-- Cards  Card Start -->
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="" class="w-100 d-flex">
-                                <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="form-check my-0 py-0">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label" for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                    <img class="icon-small c-pointer" src="/img/icons/star.svg">
+                        <div class="card h-100 ">
+                            <div class="row g-0 row-cols-1">
+                                <div class="col">
+                                    <a href="" class="w-100 d-flex">
+                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                    </a>
                                 </div>
-                                <p class="card-in-stock">
-                                    <span class="dot"></span>
-                                    <span>есть на складе</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">14 990 ₽</div>
-                                <div class="card-old-price">15 000</div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                        <div class="card-compare mt-2">
+                                            <div class="form-check my-0 py-0">
+                                                <input class="form-check-input checkbox-small" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label compare-check-label"
+                                                    for="flexCheckDefault">
+                                                    Сравнить
+                                                </label>
+                                            </div>
+                                            <a href=""><img class="icon-small c-pointer" src="/img/icons/star.svg"></a>
+                                        </div>
+                                        <p class="card-in-stock">
+                                            <span class="dot"></span>
+                                            <span>есть на складе</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">14 990 ₽</div>
+                                        <div class="card-old-price">15 000</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Cards  Card 11 End -->
-                    <!-- Cards  Card 12 Start -->
+                    <!-- Cards  Card End -->
+                    <!-- Cards  Card Start -->
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="" class="w-100 d-flex">
-                                <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="form-check my-0 py-0">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label" for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                    <img class="icon-small c-pointer" src="/img/icons/star.svg">
+                        <div class="card h-100 ">
+                            <div class="row g-0 row-cols-1">
+                                <div class="col">
+                                    <a href="" class="w-100 d-flex">
+                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                    </a>
                                 </div>
-                                <p class="card-in-stock">
-                                    <span class="dot"></span>
-                                    <span>есть на складе</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="card-price">14 990 ₽</div>
-                                <div class="card-old-price">15 000</div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                        <div class="card-compare mt-2">
+                                            <div class="form-check my-0 py-0">
+                                                <input class="form-check-input checkbox-small" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label compare-check-label"
+                                                    for="flexCheckDefault">
+                                                    Сравнить
+                                                </label>
+                                            </div>
+                                            <a href=""><img class="icon-small c-pointer" src="/img/icons/star.svg"></a>
+                                        </div>
+                                        <p class="card-in-stock">
+                                            <span class="dot"></span>
+                                            <span>есть на складе</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">14 990 ₽</div>
+                                        <div class="card-old-price">15 000</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Cards  Card 12 End -->
+                    <!-- Cards  Card End -->
+
                 </div>
 
                 <!-- Pagination Start -->
@@ -1852,12 +1968,96 @@
             <!-- Cards End-->
         </div>
     </div>
-
-
-
     <!-- Catalog Main End -->
 
+    <!-- Security Systems Start -->
+    <div class="security-systems container-xl mt-3 mt-md-4">
+        <div class="d-flex justify-content-start align-items-center">
+            <div class="headline ms-2">Разновидности систем видеонаблюдения</div>
+        </div>
+    </div>
+    <!-- Security Systems - Body Start -->
+    <div class="security-systems__body mt-3">
+        <div class="container-xl">
+            <div class="pt-3">
+                <p>
+                    Система видеонаблюдения - это целый комплект камер и других технических устройств, главная функция
+                    которого - обеспечивать визуальный контроль охраняемой зоны.
+                </p>
+            </div>
+            <!-- Security Systems - Columns Start -->
+            <div class="row row-cols-1 row-cols-md-2 g-2">
+                <!-- Security Systems - Item 1 Start -->
+                <div class="col">
+                    <div class="headline-blue mt-1">Система видеонаблюдения для частного дома</div>
+                    <p class="mt-2">Чаще всего видеокамеры размещают за пределами помещения, в местах со слабым
+                        освещением. В таком случае каждая видеокамера должна оснащаться инфракрасной подсветкой, имеющей
+                        высокую герметичность, а также функцией обогрева видеокамеры. Ещё один немаловажный критерий -
+                        антивандальный особо прочный корпус.
+                    </p>
+                </div>
+                <!-- Security Systems - Item 1 End -->
+                <!-- Security Systems - Item 2 Start -->
+                <div class="col">
+                    <div class="headline-blue mt-1">Для магазина
+                    </div>
+                    <p class="mt-2">В торговом зале магазина обычно применяются видеокамеры купольной конструкции,
+                        которые ненавязчиво размещают на потолке. Во множестве случаев для экономии часть таких камер
+                        заменяют муляжами ради создания эффекта плотного слежения для покупателей. Кассы магазина
+                        оснащены вариофокальными видеокамерами, имеющими высокое разрешение.</p>
 
+
+                </div>
+                <!-- Security Systems - Item 2 End -->
+                <!-- Security Systems - Item 3 Start -->
+                <div class="col">
+                    <div class="headline-blue mt-1">Для офиса
+                    </div>
+                    <p class="mt-2">Такая система является небольшой. Её главная задача заключается не в аналитике, а в
+                        охране. Сегодня всё больше систем видеонаблюдения для офисов в Уфе функционирует на основе
+                        сетевых протоколов.
+                    </p>
+                </div>
+                <!-- Security Systems - Item 3 End -->
+                <!-- Security Systems - Item 4 Start -->
+                <div class="col">
+                    <div class="headline-blue mt-1">Для парковки
+                    </div>
+                    <p class="mt-2">Специфика автоматической парковочной системы состоит в сочетании охранного
+                        наблюдения с системой контроля доступа к территории паркинга и системой приёма оплаты за услуги
+                        автопарковки. Таким образом, такая система является полноценным парковочным комплексом,
+                        включающим 2 шлагбаума, систему опознания номеров автомобилей, состоящей из 2 видеокамер, общей
+                        системы наблюдения и платёжного терминала.
+                    </p>
+                </div>
+                <!-- Security Systems - Item 4 End -->
+                <!-- Security Systems - Item 5 Start -->
+                <div class="col">
+                    <div class="headline-blue mt-1">Наблюдение для коттеджного посёлка
+                    </div>
+                    <p class="mt-2">В данном случае, аналогично автопарковке, доступ к территории контролируется
+                        посредством распознания автомобильного номера. Настройки системы сделаны так, чтобы обеспечить
+                        автоматический подъём шлагбаума в случае, когда номерные знаки совпадают.
+                    </p>
+                </div>
+                <!-- Security Systems - Item 5 End -->
+                <!-- Security Systems - Item 6 Start -->
+                <div class="col">
+                    <div class="headline-blue mt-1">Система наблюдения для склада
+                    </div>
+                    <p class="mt-2">Такая система включает применение оборудования, которое защищено от вандализма, а
+                        также является предельно герметичным. Обычно система наблюдения для склада является составляющей
+                        комплекса организации, а центр управления ею и её мониторинга находится в офисе.
+                    </p>
+                </div>
+                <!-- Security Systems - Item 6 End -->
+            </div>
+            <!-- Security Systems - Columns End -->
+        </div>
+    </div>
+    <!-- Security Systems - Body End -->
+
+    <!-- Security Systems End -->
 
 
 

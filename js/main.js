@@ -155,32 +155,32 @@ rangeInput.forEach((input) => {
       } else {
         priceInput[0].value = minVal;
         priceInput[1].value = maxVal;
-  
-  
-  
-  
+
+
+
+
         // if ((minVal / rangeInput[0].max) * 100 < 91) plusLeft = 4;
         // if ((minVal / rangeInput[0].max) * 100 < 84) plusLeft = 3;
         // if ((minVal / rangeInput[0].max) * 100 < 61) plusLeft = 2;
         // if ((minVal / rangeInput[0].max) * 100 < 45) plusLeft = 1;
         // if ((minVal / rangeInput[0].max) * 100 < 28) plusLeft = 0;
-  
-  
+
+
         range.style.left = (((minVal / rangeInput[0].max) * 100) - plusLeft) + "%";
-  
-  
-  
-  
-  
+
+
+
+
+
         // if (((maxVal / rangeInput[1].max) * 100) > 9) minusRight = 4;
         // if (((maxVal / rangeInput[1].max) * 100) > 16) minusRight = 3;
         // if (((maxVal / rangeInput[1].max) * 100) > 40) minusRight = 2;
         // if (((maxVal / rangeInput[1].max) * 100) > 55) minusRight = 1;
         // if (((maxVal / rangeInput[1].max) * 100) > 77) minusRight = 0;
-  
+
         range.style.right = 100 - minusRight - ((maxVal / rangeInput[1].max) * 100) + "%";
       }
-      
+
     }
     else {
       minVal = parseInt(rangeInput[2].value);
@@ -196,35 +196,69 @@ rangeInput.forEach((input) => {
       } else {
         priceInput[2].value = minVal;
         priceInput[3].value = maxVal;
-  
-  
-  
-  
+
+
+
+
         // if ((minVal / rangeInput[0].max) * 100 < 91) plusLeft = 4;
         // if ((minVal / rangeInput[0].max) * 100 < 84) plusLeft = 3;
         // if ((minVal / rangeInput[0].max) * 100 < 61) plusLeft = 2;
         // if ((minVal / rangeInput[0].max) * 100 < 45) plusLeft = 1;
         // if ((minVal / rangeInput[0].max) * 100 < 28) plusLeft = 0;
-  
-  
+
+
         range.style.left = (((minVal / rangeInput[2].max) * 100) - plusLeft) + "%";
-  
-  
-  
-  
-  
+
+
+
+
+
         // if (((maxVal / rangeInput[1].max) * 100) > 9) minusRight = 4;
         // if (((maxVal / rangeInput[1].max) * 100) > 16) minusRight = 3;
         // if (((maxVal / rangeInput[1].max) * 100) > 40) minusRight = 2;
         // if (((maxVal / rangeInput[1].max) * 100) > 55) minusRight = 1;
         // if (((maxVal / rangeInput[1].max) * 100) > 77) minusRight = 0;
-  
+
         range.style.right = 100 - minusRight - ((maxVal / rangeInput[3].max) * 100) + "%";
       }
     }
 
-    
+
   });
 });
 
 //////////////////////////// Price Range End
+
+
+///////////////////////////// Columns Toggler
+
+let colsToggle = $(".cols-toggle");
+let oneColBtnColor = $(".1-col-btn > g > path");
+let manyColsBtnColor = $(".many-cols-btn > g > rect");
+let grayDark = "#CCD5DB"; /* mid-grey-l */
+let primaryColor = "#00A0E3";/* light-blue */
+let card = $(".catalog-main__cads .card .row");
+
+$(".1-col-btn").click(function () {
+
+  if (!colsToggle.hasClass("single")) {
+    colsToggle.removeClass("row-cols-2 g-2 row-cols-md-3 g-md-3 row-cols-lg-4");
+    colsToggle.addClass("row-cols-1 gy-2 single");
+    oneColBtnColor.attr("fill", primaryColor);
+    manyColsBtnColor.attr("fill", grayDark);
+    card.removeClass("row-cols-1");
+    card.addClass("row-cols-2");
+  }
+})
+
+$(".many-cols-btn").click(function () {
+
+  if (colsToggle.hasClass("single")) {
+    colsToggle.removeClass("row-cols-1 gy-2 single");
+    colsToggle.addClass("row-cols-2 g-2 row-cols-md-3 g-md-3 row-cols-lg-4");
+    manyColsBtnColor.attr("fill", primaryColor);
+    oneColBtnColor.attr("fill", grayDark);
+    card.removeClass("row-cols-2");
+    card.addClass("row-cols-1");
+   }
+})
