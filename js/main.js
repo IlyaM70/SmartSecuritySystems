@@ -262,3 +262,29 @@ $(".many-cols-btn").click(function () {
     card.addClass("row-cols-1");
    }
 })
+
+////////////////////// Quantity Input///////////////
+let min = 1;
+let max = 1000;
+$('.input-number-increment').click(function() {
+  var $input = $(this).parents('.input-number-group').find('.input-number');
+  var val = parseInt($input.val(), 10);
+  if($input.val()<max) $input.val(val + 1);
+});
+
+$('.input-number-decrement').click(function() {
+  var $input = $(this).parents('.input-number-group').find('.input-number');
+  var val = parseInt($input.val(), 10);
+  if($input.val()>min)  $input.val(val - 1);
+})
+
+let quantity = $(".input-number");
+quantity.change(function () { 
+  if (quantity.val()<min) {
+    quantity.val(min);
+}
+if (quantity.val()>max) {
+  quantity.val(max);
+}
+});
+

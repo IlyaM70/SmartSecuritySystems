@@ -18,6 +18,8 @@
     --bs-gray-300: #dee2e6;
     /* grey-white */
     --bs-link-color: var(--bs-black);
+    --pz-black:#2B2B2B
+    /* pz/black */
 }
 
 .navbar-dark {
@@ -516,7 +518,7 @@ a:hover {
     font-size: 16px;
     line-height: 137%;
     font-feature-settings: 'pnum' on, 'lnum' on;
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 /* Cards Block Media Start */
@@ -1243,26 +1245,203 @@ input[type="range"]::-moz-range-thumb {
 
 /* Thumbnail carousel Start  */
 
-/*  carousel      */
-
-/* .carousel-thumbnail .carousel-indicators {
-    bottom: 65px;
-} */
-
 .carousel-thumbnail .carousel-indicators button {
-    width: 100px !important;
+    width: 60px !important;
+    height: 60px !important;
 }
 
+.carousel-thumbnail .carousel-indicators .active {
+    background-color: unset;
+}
 
+.carousel-thumbnail .carousel-indicators [data-bs-target] {
+    background-color: var(--bs-white);
+    border-radius: 0;
+}
+
+.carousel-thumbnail .carousel-item {
+    background-color: var(--bs-white);
+}
+
+.carousel-thumbnail .carousel-item img {
+    width: 328px;
+    aspect-ratio: 1/0.82;
+    margin: 16px auto;
+}
+
+.carousel-thumbnail .carousel-indicators {
+    margin: 0;
+    margin-top: 10px;
+    position: unset;
+    justify-content: start;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carousel-thumbnail .carousel-indicators button {
+    border: 1px solid #CCD5DB;
+}
+
+.product-buy {
+    width: 100%;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--bs-white);
+}
+
+.link-colored-md {
+    font-size: 14px;
+    line-height: 20px;
+    font-feature-settings: unset;
+}
+
+/* Thumbnail carousel Media Start */
+@media (min-width:500px) {
+    .carousel-thumbnail .carousel-item img {
+        width: 350px;
+    }
+}
+
+@media (min-width:768px) {
+    .carousel-thumbnail .carousel-item img {
+        margin: 18px 35% 18px auto;
+    }
+
+    .carousel-thumbnail .carousel-indicators {
+        margin: 0;
+        margin-top: 8px;
+        position: absolute;
+        justify-content: start;
+        flex-direction: column;
+        width: 98px;
+        right: 0;
+        left: unset;
+        top: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .carousel-thumbnail .carousel-indicators button {
+        margin-top: 10px;
+    }
+
+}
+
+@media (min-width:992px) {
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-thumbnail .carousel-item img {
+        width: 400px;
+    }
+}
+
+@media (min-width:1200px) {
+    /* .carousel-thumbnail {
+        width: 100%;
+        max-width: 1140px;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-right: auto;
+        margin-left: auto;
+    } */
+}
+
+/* Thumbnail carousel Media End */
 
 /* Thumbnail carousel End  */
 
 
+/* Quantity Input Start */
+.quantity-input {
+    width: 108px;
+}
+
+.input-number-group {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.input-number-group input[type=number]::-webkit-inner-spin-button,
+.input-number-group input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* .input-number-group .input-group-button {
+    line-height: calc(64px/2 - 5px);
+  }
+   */
+.input-number-group .input-number {
+    width: 36px;
+    height: 34px;
+    vertical-align: middle;
+    text-align: center;
+    outline: none;
+    display: block;
+    margin: 0;
+    border: 1px solid var(--primary-color);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--bs-black);
+}
+
+.input-number-group .input-number,
+.input-number-group .input-number-decrement,
+.input-number-group .input-number-increment {
+    height: 36px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 0;
+}
+
+.input-number-group .input-number-decrement,
+.input-number-group .input-number-increment {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    background: var(--primary-color);
+    color: var(--bs-white);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.input-number-decrement {
+    padding-bottom: 4px;
+}
 
 
+/* Quantity Input End */
 
-
-
+/* Product Price Start */
+.product-price{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: var(--pz-black);
+}
+/* Product Price End */
 
 
 
