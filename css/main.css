@@ -18,8 +18,8 @@
     --bs-gray-300: #dee2e6;
     /* grey-white */
     --bs-link-color: var(--bs-black);
-    --pz-black:#2B2B2B
-    /* pz/black */
+    --pz-black: #2B2B2B
+        /* pz/black */
 }
 
 .navbar-dark {
@@ -1334,6 +1334,12 @@ input[type="range"]::-moz-range-thumb {
         margin-top: 10px;
     }
 
+    .product-buy .dot {
+        margin-top: 3px;
+    }
+
+
+
 }
 
 @media (min-width:992px) {
@@ -1344,17 +1350,38 @@ input[type="range"]::-moz-range-thumb {
     .carousel-thumbnail .carousel-item img {
         width: 400px;
     }
-}
 
-@media (min-width:1200px) {
-    /* .carousel-thumbnail {
+    .thumbnail-container {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
         width: 100%;
-        max-width: 1140px;
         padding-right: calc(var(--bs-gutter-x) * .5);
         padding-left: calc(var(--bs-gutter-x) * .5);
         margin-right: auto;
         margin-left: auto;
-    } */
+    }
+
+    .product-buy {
+        padding-right: 16px;
+        padding-left: 16px;
+        height: 100%;
+    }
+
+    .in-card-text {
+        padding-right: 20px;
+    }
+}
+
+@media (min-width:1200px) {
+    .thumbnail-container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width:1400px) {
+    .thumbnail-container {
+        max-width: 1320px;
+    }
 }
 
 /* Thumbnail carousel Media End */
@@ -1425,6 +1452,10 @@ input[type="range"]::-moz-range-thumb {
     font-size: 2rem;
     font-weight: 400;
 }
+.input-number-group .input-number-decrement:hover,
+.input-number-group .input-number-increment:hover {
+    background-color: var(--bs-secondary);
+}
 
 .input-number-decrement {
     padding-bottom: 4px;
@@ -1434,20 +1465,181 @@ input[type="range"]::-moz-range-thumb {
 /* Quantity Input End */
 
 /* Product Price Start */
-.product-price{
+.product-price {
     font-weight: 700;
     font-size: 30px;
     line-height: 41px;
     text-transform: uppercase;
     color: var(--pz-black);
 }
+
+@media (min-width:768px) {
+    .product-price {
+        font-size: 38px;
+        line-height: 52px;
+    }
+
+}
+
 /* Product Price End */
 
+/* Product In Card Start*/
+.in-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.in-card-text {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.btn {
+    --bs-btn-font-size: 14px;
+    --bs-btn-line-height: 20px;
+    --bs-btn-border-radius: 4px;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--primary-color);
+    --bs-btn-border-color: var(--primary-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-secondary);
+    --bs-btn-hover-border-color: var(--primary-color);
+}
+
+hr {
+    color: var(--bs-gray-dark);
+    opacity: 1;
+}
+
+.description-text {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 18px;
+}
+
+@media (min-width:768px) {
+    .description-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+/* Product In Card End*/
 
 
+/* Characteristics Start  */
+.characteristics .nav {
+    --bs-nav-link-padding-y: 1rem;
+}
+
+.nav-tabs {
+    --bs-nav-tabs-border-width: 0px;
+    --bs-nav-tabs-border-color: var(--bs-white);
+    --bs-nav-tabs-border-radius: 0;
+    --bs-nav-tabs-link-active-color: #495057;
+    --bs-nav-tabs-link-active-bg: #fff;
+}
+
+.characteristics .nav-link {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--bs-gray-dark);
+}
+
+.tab-content>.active {
+    background-color: var(--bs-white);
+}
+
+.characteristic-head {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.characteristic-item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 16px;
+}
+
+.characteristic-name {
+    font-size: 11px;
+    line-height: 15px;
+    border-bottom: 1px dashed var(--bs-black);
+    width: 27%;
+}
 
 
+.characteristic-value {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 8px;
+}
 
+.fade:not(.show) {
+    height: 0;
+}
+
+.fade {
+    background: var(--bs-white);
+}
+
+@media (min-width:768px) {
+    .characteristic-name {
+        width: 361px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .characteristic-value {
+        font-size: 15px;
+    }
+
+    .characteristic-head {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .characteristics .nav-link {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+}
+
+@media (min-width:992px) {
+    .characteristics {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (min-width:1200px) {
+    .characteristics {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width:1400px) {
+    .characteristics {
+        max-width: 1320px;
+    }
+}
+
+/* Characteristics End */
 
 
 
