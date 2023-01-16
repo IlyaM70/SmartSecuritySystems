@@ -290,7 +290,7 @@ quantity.change(function () {
 
 //////////////// Reach Text
 ClassicEditor
-  .create(document.querySelector('#editor'), {
+  .create(document.querySelector('#reviewMessage'), {
     language:'ru',
     toolbar: ['bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote'],
     
