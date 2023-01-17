@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Security Systems - Product</title>
+    <title>Smart Security Systems - Categories</title>
     <!-- Style Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Owl Carousel -->
@@ -97,9 +97,10 @@
             <div class="container-xl p-xl-0">
                 <div class="d-flex justify-content-between h-48px">
                     <div class="catalog w-23 d-flex justify-content-between align-items-center">
-                        <span>Каталог товаров</span>
+                        <a href="" class="text-white">Каталог товаров</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#catalog"
-                            aria-controls="navbar" aria-expanded="false" area-label="Toggle navigation">
+                            aria-controls="navbar" aria-expanded="false" area-label="Toggle navigation"
+                            id="header-dropdown-toggler">
                             <img class="c-pointer" src="img/icons/menu.svg">
                         </button>
                     </div>
@@ -1105,297 +1106,166 @@
     </header>
     <!-- Header End -->
 
-    <!-- BreadCrumbs Start -->
-    <div class="container-xl mt-3">
-        <nav style="--bs-breadcrumb-divider: url(/img/icons/breadcrumb.svg);" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Главная страница</a></li>
-                <li class="breadcrumb-item"><a href="#">Каталог</a></li>
-                <li class="breadcrumb-item"><a href="#">Видеонаблюдение</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a>Видеокамера TR-D7111 IR1W - беспроводная 1,3
-                        Мп. IP</a></li>
-            </ol>
-        </nav>
-    </div>
-    <!-- BreadCrumbs End -->
 
-
-    <!-- Thumbnail carousel Start -->
-
-    <!-- Header -->
-    <div class="container-xl mt-4">
-        <div class="d-flex justify-content-start align-items-center">
-            <div class="headline">Видеокамера TR-D7111 IR1W - беспроводная 1,3 Мп. IP</div>
+    <!-- Category Start -->
+    <div class="container-xl mt-5">
+        <div class="d-flex justify-content-between align-items-end">
+            <div class="d-flex">
+                <div class="headline">Категории товаров</div>
+            </div>
         </div>
-    </div>
-    <!-- Body -->
-    <div class="thumbnail-container mt-3">
-        <div class="row gx-0 gy-3 row-cols-1 row-cols-xl-2 gx-xl-3">
-            <div class="col col-xl-5">
-                <div class="carousel-thumbnail">
-                    <!-- data-bs-ride="carousel" -->
-                    <div id="carouselExampleCaptions" class="carousel slide">
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block" src="img/product1.png">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block" src="img/card2.png">
-                            </div>
-                        </div>
-
-
-                        <!--thumbnails-->
-
-                        <div class="carousel-indicators pb-2">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1">
-                                <img class="d-block w-100" src="img/product1.png" class="img-fluid">
-                            </button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                aria-label="Slide 2"><img class="d-block w-100" src="img/card2.png" class="img-fluid">
-                            </button>
-                        </div>
+        <!-- Category Cards Start -->
+        <div class="categories-page__main row row-cols-2 row-cols-md-4 g-2 g-lg-3 mt-2 mt-md-4 pb-5">
+            <!-- Category Card 1 Start -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="" class="d-flex w-100">
+                        <img src="img/category1.png" class="card-img-top img-fluid" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="" class="card-text">Видеонаблюдение</a>
                     </div>
                 </div>
             </div>
-            <div class="col col-xl-7">
-                <div class="product-buy mt-3">
-                    <div class="row g-3 row-cols-1">
-                        <!-- Chosen&Compare - in stock  -->
-                        <div class="col mt-xl-0">
-                            <div class="row g-3 row-cols-1 row-cols-md-2 d-xl-none">
-                                <!-- Chosen&Compare -->
-                                <div class="col">
-                                    <div
-                                        class="d-flex align-items-center justify-content-between justify-content-md-start">
-                                        <a class="c-pointer link-colored link-colored-md pe-md-3">
-                                            <img class="icon c-pointer" src="img/icons/heart-blue.svg">
-                                            <span class="ps-2">Добавить в избранное</span>
-                                        </a>
-                                        <div class="form-check my-0 py-0 ps-md-3">
-                                            <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                                id="flexCheckDefault">
-                                            <label
-                                                class="form-check-label compare-check-label link-colored link-colored-md"
-                                                for="flexCheckDefault">
-                                                Сравнить
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- in stock  -->
-                                <div class="col">
-                                    <div class="d-flex justify-content-end align-items-center">
-                                        <div class="card-in-stock mt-0">
-                                            <div class="dot"></div>
-                                            <div class="pb-1 pb-md-0">есть на складе</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Price -->
-                        <div class="col">
-                            <div class="d-flex justify-content-end align-items-center  justify-content-xl-between">
-                                <!-- in stock xl -->
-                                <div class="d-none d-xl-flex justify-content-start align-items-center">
-                                    <div class="card-in-stock mt-0">
-                                        <div class="dot"></div>
-                                        <div class="pb-1 pb-md-0">есть на складе</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center jusctify-content-between">
-                                    <div class="quantity-input input-group input-number-group">
-                                        <div class="input-group-button">
-                                            <span class="input-number-decrement">-</span>
-                                        </div>
-                                        <input class="input-number" type="number" value="1" min="1" max="1000">
-                                        <div class="input-group-button">
-                                            <span class="input-number-increment">+</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-price ps-3">2 480 ₽</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- In Card -->
-                        <div class="col">
-                            <div class="d-block d-xl-flex justify-content-end justify-content-xl-between">
-                                <!-- Chosen Xl -->
-                                <div
-                                    class="d-none d-xl-flex align-items-center justify-content-between justify-content-xl-start ">
-                                    <a class="c-pointer link-colored link-colored-md pe-md-3">
-                                        <img class="icon c-pointer" src="img/icons/heart-blue.svg">
-                                        <span class="ps-2">Добавить в избранное</span>
-                                    </a>
-                                    <div class="form-check my-0 py-0 ps-md-3">
-                                        <input class="form-check-input checkbox-small" type="checkbox" value=""
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label compare-check-label link-colored link-colored-md"
-                                            for="flexCheckDefault">
-                                            Сравнить
-                                        </label>
-                                    </div>
-                                </div>
-                                <!-- In-Card -->
-                                <div class="in-card">
-                                    <div class="in-card-text">Купить в 1 клик</div>
-                                    <button class="btn btn-primary">
-                                        <img class="icon" src="img/icons/card-white.svg">
-                                        <span class="ps-2">В корзину</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Description -->
-                        <div class="col">
-                            <hr>
-                            <div class="description-text">
-                                Беспроводная камера видеонаблюдения TRASSIR TR-D7111IR1W серии Smart Home предназначена
-                                для помещений.
-                            </div>
-                        </div>
+            <!-- Category Card 1 End -->
+            <!-- Category Card 2 Start -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="" class="d-flex w-100">
+                        <img src="img/category2.png" class="card-img-top img-fluid" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="" class="card-text">Акустические системы</a>
                     </div>
-
                 </div>
             </div>
+            <!-- Category Card 2 End -->
+            <!-- Category Card 3 Start -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="" class="d-flex w-100">
+                        <img src="img/category3.png" class="card-img-top img-fluid" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="" class="card-text">Антисептические средства</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Card 3 End -->
+            <!-- Category Card 4 Start -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="" class="d-flex w-100">
+                        <img src="img/category4.png" class="card-img-top img-fluid" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="" class="card-text">Мониторинг ГЛОНАСС/GPS</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Card 4 End -->
+            <!-- Category Card 5 Start -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="" class="d-flex w-100">
+                        <img src="img/category5.png" class="card-img-top img-fluid" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="" class="card-text">Охранно-пожарные системы</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Card 5 End -->
+            <!-- Category Card 6 Start -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="" class="d-flex w-100">
+                        <img src="img/category6.png" class="card-img-top img-fluid" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="" class="card-text">Рации (радиостанции)</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Card 6 End -->
+            <!-- Category Card 7 Start -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="" class="d-flex w-100">
+                        <img src="img/category7.png" class="card-img-top img-fluid" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="" class="card-text">Системы управления доступом</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Card 7 End -->
+            <!-- Category Card 8 Start -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="" class="d-flex w-100">
+                        <img src="img/category8.png" class="card-img-top img-fluid" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="" class="card-text">Системы контроля здоровья</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Card 8 End -->
+            <!-- Category Card 9 Start -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="" class="d-flex w-100">
+                        <img src="img/category9.png" class="card-img-top img-fluid" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="" class="card-text">Средства пожаротушения</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Card 9 End -->
+            <!-- Category Card 10 Start -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="" class="d-flex w-100">
+                        <img src="img/category10.png" class="card-img-top img-fluid" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="" class="card-text">Средства Индивидуальной Защиты</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Card 10 End -->
+            <!-- Category Card 11 Start -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="" class="d-flex w-100">
+                        <img src="img/category11.png" class="card-img-top img-fluid" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <a href="" class="card-text">Тепловизоры</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Card 11 End -->
+
+
         </div>
+        <!-- Category Cards End -->
     </div>
-
-    <!-- Thumbnail carousel End -->
-
-    <!-- Characteristics Start -->
-    <div class="characteristics mt-2">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <!-- Characteristics -->
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Характеристики</button>
-            </li>
-            <!-- Reviews -->
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Отзывы</button>
-            </li>
-
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <!-- Characteristics -->
-            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                tabindex="0">
-                <div class="container-xl pb-4">
-                    <!-- Characteristic 1 -->
-                    <div class="characteristic-head pt-3">Технические характеристики</div>
-                    <div class="characteristic-body">
-                        <div class="characteristic-item">
-                            <div class="characteristic-name">Тип камеры</div>
-                            <div class="characteristic-value">цветная</div>
-                        </div>
-                        <div class="characteristic-item">
-                            <div class="characteristic-name">Тип матрицы</div>
-                            <div class="characteristic-value">CMOS</div>
-                        </div>
-                        <div class="characteristic-item">
-                            <div class="characteristic-name">Фокусное расстояние</div>
-                            <div class="characteristic-value">2.8 мм</div>
-                        </div>
-                        <div class="characteristic-item">
-                            <div class="characteristic-name">Разрешение камеры</div>
-                            <div class="characteristic-value">1.3 Мп</div>
-                        </div>
-                        <div class="characteristic-item">
-                            <div class="characteristic-name">Исполнение</div>
-                            <div class="characteristic-value">внутренняя</div>
-                        </div>
-                        <div class="characteristic-item">
-                            <div class="characteristic-name">Wi-Fi</div>
-                            <div class="characteristic-value">есть</div>
-                        </div>
-                        <div class="characteristic-item">
-                            <div class="characteristic-name">Поддержка карт памяти</div>
-                            <div class="characteristic-value">есть</div>
-                        </div>
-                        <div class="characteristic-item">
-                            <div class="characteristic-name">Поддерживаемые карты памяти</div>
-                            <div class="characteristic-value">MicroSD до 128 ГБ</div>
-                        </div>
-                    </div>
-                    <!-- Characteristic 2 -->
-                    <div class="characteristic-head pt-3">Характеристики съемки</div>
-                    <div class="characteristic-body">
-                        <div class="characteristic-item">
-                            <div class="characteristic-name">Разрешение</div>
-                            <div class="characteristic-value">1280 х 960
-                            </div>
-                        </div>
-                        <div class="characteristic-item">
-                            <div class="characteristic-name">Скорость передачи видео</div>
-                            <div class="characteristic-value">25 кадр/с</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Reviews -->
-        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <div class="reviews container-xl pb-3">
-                <!-- Add review -->
-                <div class="reviews-add pt-3">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#reviewsAddBody" aria-expanded="false" aria-controls="reviewsAddBody">
-                        Добавить комментарий
-                    </button>
-
-                    <form class="collapse needs-validation" id="reviewsAddBody" novalidate>
-                        <div class="card card-body">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Ваше имя*</label>
-                                <input type="text" class="form-control" id="reviewName" placeholder="Иван Иванов"
-                                    required>
-                                <div class="invalid-feedback">
-                                    Заполните поле
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email*</label>
-                                <input type="email" class="form-control" id="reviewEmail" placeholder="name@example.com"
-                                    required>
-                                <div class="invalid-feedback">
-                                    Введите корректный email адресс
-                                </div>
-                            </div>
-                            <div class="mb-3 w-100 ckeditor-container">
-                                <label for="exampleFormControlTextarea1" class="form-label">Ваше сообщение</label>
-                                <textarea class="form-control ckeditor" id="reviewMessage" rows="3" required></textarea>
-                                <div class="invalid-feedback invalid-cke">
-                                    Введите сообщение
-                                </div>
-                            </div>
-                            <button class="btn btn-primary" type="submit">Отправить</button>
-                        </div>
-                    </form>
-                </div>
-                <!-- Reviews -->
-                <div class="reviews-comments">
-                    <div class="card mb-4 bg-grey-100 mt-3">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <div class="d-flex flex-row align-items-center">
-                                    <p class="small mb-0 ms-0">Андрей Морозов</p>
-                                </div>
-                            </div>
-                            <p>Работает!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Category End -->
 
 
-    <!-- Characteristics End -->
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1440,12 +1310,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Owl Carousel Script -->
     <script src="js/owl.carousel.min.js"></script>
-    <!-- CKEditor Script -->
-    <script src="js/ckeditor.js"></script>
-    <script src="js/ckeditor-ru.js"></script>
     <!-- Main Script -->
     <script src="js/main.js"></script>
-
 </body>
 
 </html>

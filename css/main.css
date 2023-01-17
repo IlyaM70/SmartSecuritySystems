@@ -18,8 +18,10 @@
     --bs-gray-300: #dee2e6;
     /* grey-white */
     --bs-link-color: var(--bs-black);
-    --pz-black: #2B2B2B
-        /* pz/black */
+    --pz-black: #2B2B2B;
+    /* pz/black */
+    --grey-white: #FAFAFA;
+    /* grey-white */
 }
 
 .navbar-dark {
@@ -33,6 +35,14 @@
 
 .bg-light {
     background-color: var(--bs-white) !important;
+}
+
+.bg-grey-dark {
+    background-color: var(--bs-gray-dark) !important;
+}
+
+.bg-grey-100 {
+    background-color: var(--bs-gray-100) !important;
 }
 
 .btn-link {
@@ -278,6 +288,35 @@ a:hover {
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
+.catalog-subitem__item .open-sans-700:hover {
+    color: var(--bs-secondary);
+}
+
+.hover-arrow:after {
+    content: url("/img/icons/arrow.svg");
+    opacity: 0;
+    transition: 0.3s;
+    padding-left: 15px;
+}
+
+.hover-arrow:hover:after {
+    opacity: 1;
+}
+
+.hover-border:hover {
+    border-left: 4px solid var(--primary-color);
+    border-radius: 0;
+    background-color: var(--grey-white);
+}
+
+.btn-check:checked+.btn:focus-visible,
+.btn.active:focus-visible,
+.btn.show:focus-visible,
+.btn:first-child:active:focus-visible,
+:not(.btn-check)+.btn:active:focus-visible {
+    box-shadow: none;
+}
+
 /* Catalog Dropdown End*/
 /* Header Row 3 End */
 
@@ -306,6 +345,8 @@ a:hover {
 .tablet-header-search .search-svg {
     bottom: 16px;
 }
+
+
 
 @media (max-width: 1400px) {
     #catalog {
@@ -546,14 +587,6 @@ a:hover {
     border: unset;
 }
 
-.card-body {
-    padding-left: var(--card-padding-left);
-    padding-right: var(--card-padding-right);
-    padding-top: 1rem;
-    padding-bottom: 0;
-    color: var(--bs-black);
-    width: 100%;
-}
 
 .card-text {
     font-size: 12px;
@@ -606,6 +639,24 @@ a:hover {
         font-size: 24px;
         line-height: 28px;
     }
+
+    .card:hover .card-footer::after {
+        opacity: 1;
+    }
+
+    .card-footer::after {
+        cursor: pointer;
+        position: absolute;
+        right: 16px;
+        bottom: 0;
+        opacity: 0;
+        content: url("data:image/svg+xml,%3Csvg width='42' height='42' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='42' height='42' rx='2' fill='%2300A0E3'/%3E%3Cpath d='M18 31C18.5523 31 19 30.5523 19 30C19 29.4477 18.5523 29 18 29C17.4477 29 17 29.4477 17 30C17 30.5523 17.4477 31 18 31Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M29 31C29.5523 31 30 30.5523 30 30C30 29.4477 29.5523 29 29 29C28.4477 29 28 29.4477 28 30C28 30.5523 28.4477 31 29 31Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 10H14L16.68 23.39C16.7714 23.8504 17.0219 24.264 17.3875 24.5583C17.7532 24.8526 18.2107 25.009 18.68 25L28.4 25C28.8693 25.009 29.3268 24.8526 29.6925 24.5583C30.0581 24.264 30.3086 23.8504 30.4 23.39L32 15L15 15' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+
+    .card-footer:hover::after {
+        content: url("data:image/svg+xml,%3Csvg width='42' height='42' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='42' height='42' rx='2' fill='%23007CC1'/%3E%3Cpath d='M18 31C18.5523 31 19 30.5523 19 30C19 29.4477 18.5523 29 18 29C17.4477 29 17 29.4477 17 30C17 30.5523 17.4477 31 18 31Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M29 31C29.5523 31 30 30.5523 30 30C30 29.4477 29.5523 29 29 29C28.4477 29 28 29.4477 28 30C28 30.5523 28.4477 31 29 31Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 10H14L16.68 23.39C16.7714 23.8504 17.0219 24.264 17.3875 24.5583C17.7532 24.8526 18.2107 25.009 18.68 25L28.4 25C28.8693 25.009 29.3268 24.8526 29.6925 24.5583C30.0581 24.264 30.3086 23.8504 30.4 23.39L32 15L15 15' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+
 }
 
 @media(min-width:485px) {
@@ -641,6 +692,7 @@ a:hover {
     margin-top: 20px;
     margin-left: -16px;
 }
+
 
 .review-img {
     position: relative;
@@ -694,6 +746,27 @@ a:hover {
     }
 }
 
+@media(min-width:992px) {
+    .reviews-carousel .card:hover .card-footer::after {
+        opacity: 1;
+    }
+
+    .reviews-carousel .card-footer::after {
+        cursor: pointer;
+        position: absolute;
+        right: 16px;
+        bottom: 0;
+        opacity: 0;
+        content: unset;
+    }
+
+    .reviews-carousel .card-footer:hover::after {
+        content: unset;
+    }
+}
+
+
+
 /* Reviews Media End */
 /* Reviews End */
 
@@ -731,6 +804,9 @@ a:hover {
 }
 
 /* Security Systems End */
+
+
+/* //////////////Catalog Page Start ///////////////*/
 
 
 /* BreadCrumbs Start */
@@ -1343,7 +1419,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:992px) {
-    .carousel {
+    .carousel-thumbnail .carousel {
         width: 100%;
     }
 
@@ -1452,6 +1528,7 @@ input[type="range"]::-moz-range-thumb {
     font-size: 2rem;
     font-weight: 400;
 }
+
 .input-number-group .input-number-decrement:hover,
 .input-number-group .input-number-increment:hover {
     background-color: var(--bs-secondary);
@@ -1646,7 +1723,55 @@ hr {
     height: 400px;
     width: 100%;
 }
+
 /* Product Reviews End */
+/* //////////////Product Page End ///////////////*/
+
+
+
+/* //////////////Categories Page Start ///////////////*/
+.categories-page__main .card {
+    --card-padding-left: 1rem;
+    --card-padding-right: 1rem;
+}
+
+.categories-page__main .card-body {
+    text-align: center;
+}
+
+.categories-page__main .card-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    width: 100%;
+}
+
+.categories-page__main .card-body {
+    padding-bottom: 18px;
+}
+
+.categories-page__main .card-img-top {
+    aspect-ratio: auto;
+    padding: 16px 16px 8px 15px;
+}
+
+
+
+
+
+
+
+
+/* //////////////Categories Page End ///////////////*/
+
+
+
+
+
+
 
 
 

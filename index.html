@@ -52,7 +52,7 @@
                         <div class="row">
                             <div class="form-group d-none d-lg-block">
                                 <img class="search-svg" src="img/icons/search.svg"></img>
-                                <input type="text" class="form-control h-42px" placeholder="Search">
+                                <input type="text" class="form-control h-42px" placeholder="Поиск по сайту">
                             </div>
                         </div>
                     </div>
@@ -97,9 +97,10 @@
             <div class="container-xl p-xl-0">
                 <div class="d-flex justify-content-between h-48px">
                     <div class="catalog w-23 d-flex justify-content-between align-items-center">
-                        <span>Каталог товаров</span>
+                        <a href="/categories.html" class="text-white">Каталог товаров</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#catalog"
-                            aria-controls="navbar" aria-expanded="false" area-label="Toggle navigation">
+                            aria-controls="navbar" aria-expanded="false" area-label="Toggle navigation"
+                            id="header-dropdown-toggler">
                             <img class="c-pointer" src="img/icons/menu.svg">
                         </button>
                     </div>
@@ -133,13 +134,14 @@
 
                 <!-- Catalog DropDown Start -->
                 <div class="collapse navbar-collapse dropdown-nav raw w-23" id="catalog">
+
                     <!-- Catalog DropDown Item 1 Start -->
-                    <div class="btn-group dropend w-100">
-                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                    <div class="btn-group dropend w-100 hover-dropend">
+                        <button type="button" class="btn btn-link text-decoration-none hover-border"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <div class="d-flex justify-content-start align-items-center">
                                 <img class="icon" src="img/icons/vn.svg">
-                                <div class="catalog-item__text">Видеонаблюдение</div>
+                                <a href="catalog.html" class="catalog-item__text">Видеонаблюдение</a>
                             </div>
                         </button>
                         <!-- Catalog DropDown Subitem Start -->
@@ -148,29 +150,32 @@
                                 <!-- Column 1 Start -->
                                 <div class="col">
                                     <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
+                                        <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеокамеры
+                                            аналоговые</a>
                                         <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
-                                            <a href="#" class="py-2 c-pointer">Мини камеры и видеоглазки</a>
-                                            <a href="#" class="py-2 c-pointer">Поворотные</a>
+                                            <a href="catalog.html" class="py-2 hover-arrow">Внутренние</a>
+                                            <a href="#" class="py-2 hover-arrow">Уличные</a>
+                                            <a href="#" class="py-2 hover-arrow">Мини камеры и видеоглазки</a>
+                                            <a href="#" class="py-2 hover-arrow">Поворотные</a>
                                         </div>
                                     </div>
                                     <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры сетевые (IP)</div>
+                                        <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеокамеры сетевые
+                                            (IP)</a>
                                         <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
-                                            <a href="#" class="py-2 c-pointer">Компактные</a>
-                                            <a href="#" class="py-2 c-pointer">Dahua</a>
+                                            <a href="#" class="py-2 hover-arrow">Внутренние</a>
+                                            <a href="#" class="py-2 hover-arrow">Уличные</a>
+                                            <a href="#" class="py-2 hover-arrow">Компактные</a>
+                                            <a href="#" class="py-2 hover-arrow">Dahua</a>
                                         </div>
                                     </div>
                                     <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеорегистраторы гибридные</div>
+                                        <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеорегистраторы
+                                            гибридные</a>
                                         <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">16 и более канальные</a>
-                                            <a href="#" class="py-2 c-pointer">4-канальные</a>
-                                            <a href="#" class="py-2 c-pointer">8-канальные</a>
+                                            <a href="#" class="py-2 hover-arrow">16 и более канальные</a>
+                                            <a href="#" class="py-2 hover-arrow">4-канальные</a>
+                                            <a href="#" class="py-2 hover-arrow">8-канальные</a>
                                         </div>
                                     </div>
                                 </div>
@@ -178,30 +183,31 @@
                                 <!-- Column 2 Start -->
                                 <div class="col">
                                     <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеорегистраторы сетевые (IP)
-                                        </div>
+                                        <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеорегистраторы
+                                            сетевые
+                                            (IP)</a>
                                         <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">16 и более канальные</a>
-                                            <a href="#" class="py-2 c-pointer">4-канальные</a>
-                                            <a href="#" class="py-2 c-pointer">8-канальные</a>
-                                        </div>
-                                    </div>
-                                    <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры AHD</div>
-                                        <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
+                                            <a href="#" class="py-2 hover-arrow">16 и более канальные</a>
+                                            <a href="#" class="py-2 hover-arrow">4-канальные</a>
+                                            <a href="#" class="py-2 hover-arrow">8-канальные</a>
                                         </div>
                                     </div>
                                     <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Аксессуары</div>
+                                        <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеокамеры AHD</a>
                                         <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">POE коммутаторы</a>
-                                            <a href="#" class="py-2 c-pointer">Жёсткие диски и Flash- накопители</a>
-                                            <a href="#" class="py-2 c-pointer">Микрофоны</a>
-                                            <a href="#" class="py-2 c-pointer">Муляжи камер</a>
-                                            <a href="#" class="py-2 c-pointer">Приемопередатчики</a>
-                                            <a href="#" class="py-2 c-pointer">Пульты для видеокамер</a>
+                                            <a href="#" class="py-2 hover-arrow">Внутренние</a>
+                                            <a href="#" class="py-2 hover-arrow">Уличные</a>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-subitem__item">
+                                        <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Аксессуары</a>
+                                        <div class="d-flex flex-column ">
+                                            <a href="#" class="py-2 hover-arrow">POE коммутаторы</a>
+                                            <a href="#" class="py-2 hover-arrow">Жёсткие диски и Flash- накопители</a>
+                                            <a href="#" class="py-2 hover-arrow">Микрофоны</a>
+                                            <a href="#" class="py-2 hover-arrow">Муляжи камер</a>
+                                            <a href="#" class="py-2 hover-arrow">Приемопередатчики</a>
+                                            <a href="#" class="py-2 hover-arrow">Пульты для видеокамер</a>
                                         </div>
                                     </div>
                                 </div>
@@ -213,98 +219,51 @@
                     <!-- Catalog DropDown Item 1 End -->
                     <!-- Catalog DropDown Item 2 Start -->
                     <div class="btn-group dropend w-100">
-                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a href="" class="btn btn-link text-decoration-none hover-border">
                             <div class="d-flex justify-content-start align-items-center">
                                 <img class="icon" src="img/icons/acoustic.svg">
                                 <div class="catalog-item__text">Акустические системы</div>
                             </div>
-                        </button>
-                        <!-- Catalog DropDown Subitem Start -->
-                        <div class="catalog-subitem dropdown-menu">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                        <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                    <div class="d-flex flex-column ">
-                                        <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                        <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Catalog DropDown Subitem End -->
+                        </a>
                     </div>
                     <!-- Catalog DropDown Item 2 End -->
                     <!-- Catalog DropDown Item 3 Start -->
                     <div class="btn-group dropend w-100">
-                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a href="" class="btn btn-link text-decoration-none hover-border">
                             <div class="d-flex justify-content-start align-items-center">
                                 <img class="icon" src="img/icons/antiseptic.svg">
                                 <div class="catalog-item__text">Антисептические средства</div>
                             </div>
-                        </button>
-                        <!-- Catalog DropDown Subitem Start -->
-                        <div class="catalog-subitem dropdown-menu">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                        <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                    <div class="d-flex flex-column ">
-                                        <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                        <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Catalog DropDown Subitem End -->
+                        </a>
                     </div>
                     <!-- Catalog DropDown Item 3 End -->
                     <!-- Catalog DropDown Item 4 Start -->
-                    <div class="btn-group dropend w-100">
-                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                    <div class="btn-group dropend w-100 hover-dropend">
+                        <button class="btn btn-link text-decoration-none hover-border" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <div class="d-flex justify-content-start align-items-center">
                                 <img class="icon" src="img/icons/monitoring.png">
-                                <div class="catalog-item__text">Мониторинг ГЛОНАСС/GPS</div>
+                                <a href="catalog.html" class="catalog-item__text">Мониторинг ГЛОНАСС/GPS</a>
                             </div>
                         </button>
                         <!-- Catalog DropDown Subitem Start -->
                         <div class="catalog-subitem dropdown-menu">
                             <div class="row">
+                                <!-- Column 1 Start -->
                                 <div class="col">
                                     <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                        <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
+                                        <div class="d-flex flex-column pt-3">
+                                            <a href="" class="py-2 hover-arrow">GPS маячок для детей и близких</a>
+                                            <a href="#" class="py-2 hover-arrow">GPS ошейник для животных</a>
+                                            <a href="#" class="py-2 hover-arrow">Дополнительное оборудование</a>
+                                            <a href="#" class="py-2 hover-arrow">Контроль параметров транспортных
+                                                средств</a>
+                                            <a href="#" class="py-2 hover-arrow">Мониторинг транспорта</a>
+                                            <a href="#" class="py-2 hover-arrow">GPS часы</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                    <div class="d-flex flex-column ">
-                                        <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                        <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    </div>
-                                </div>
+                                <!-- Column 1 End -->
                             </div>
                         </div>
                         <!-- Catalog DropDown Subitem End -->
@@ -312,238 +271,85 @@
                     <!-- Catalog DropDown Item 4 End -->
                     <!-- Catalog DropDown Item 5 Start -->
                     <div class="btn-group dropend w-100">
-                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a href="" class="btn btn-link text-decoration-none hover-border">
                             <div class="d-flex justify-content-start align-items-center">
                                 <img class="icon" src="img/icons/fire.svg">
                                 <div class="catalog-item__text">Охранно-пожарные системы</div>
                             </div>
-                        </button>
-                        <!-- Catalog DropDown Subitem Start -->
-                        <div class="catalog-subitem dropdown-menu">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                        <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                    <div class="d-flex flex-column ">
-                                        <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                        <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Catalog DropDown Subitem End -->
+                        </a>
                     </div>
                     <!-- Catalog DropDown Item 5 End -->
                     <!-- Catalog DropDown Item 6 Start -->
                     <div class="btn-group dropend w-100">
-                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a href="" type="button" class="btn btn-link text-decoration-none hover-border"
+                            data-bs-toggle="" aria-expanded="false">
                             <div class="d-flex justify-content-start align-items-center">
                                 <img class="icon" src="img/icons/walkie-talkie.svg">
                                 <div class="catalog-item__text">Рации (радиостанции)</div>
                             </div>
-                        </button>
-                        <!-- Catalog DropDown Subitem Start -->
-                        <div class="catalog-subitem dropdown-menu">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                        <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                    <div class="d-flex flex-column ">
-                                        <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                        <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Catalog DropDown Subitem End -->
+                        </a>
+
                     </div>
                     <!-- Catalog DropDown Item 6 End -->
                     <!-- Catalog DropDown Item 7 Start -->
                     <div class="btn-group dropend w-100">
-                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a href="" type="button" class="btn btn-link text-decoration-none hover-border"
+                            data-bs-toggle="" aria-expanded="false">
                             <div class="d-flex justify-content-start align-items-center">
                                 <img class="icon" src="img/icons/key.svg">
                                 <div class="catalog-item__text">Системы управления доступом</div>
                             </div>
-                        </button>
-                        <!-- Catalog DropDown Subitem Start -->
-                        <div class="catalog-subitem dropdown-menu">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                        <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                    <div class="d-flex flex-column ">
-                                        <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                        <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Catalog DropDown Subitem End -->
+                        </a>
                     </div>
                     <!-- Catalog DropDown Item 7 End -->
                     <!-- Catalog DropDown Item 8 Start -->
                     <div class="btn-group dropend w-100">
-                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a href="" type="button" class="btn btn-link text-decoration-none hover-border"
+                            data-bs-toggle="" aria-expanded="false">
                             <div class="d-flex justify-content-start align-items-center">
                                 <img class="icon" src="img/icons/health.svg">
                                 <div class="catalog-item__text">Системы контроля здоровья</div>
                             </div>
-                        </button>
-                        <!-- Catalog DropDown Subitem Start -->
-                        <div class="catalog-subitem dropdown-menu">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                        <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                    <div class="d-flex flex-column ">
-                                        <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                        <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Catalog DropDown Subitem End -->
+                        </a>
                     </div>
                     <!-- Catalog DropDown Item 8 End -->
                     <!-- Catalog DropDown Item 9 Start -->
                     <div class="btn-group dropend w-100">
-                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a href="" type="button" class="btn btn-link text-decoration-none hover-border"
+                            data-bs-toggle="" aria-expanded="false">
                             <div class="d-flex justify-content-start align-items-center">
                                 <img class="icon" src="img/icons/fire.svg">
                                 <div class="catalog-item__text">Средства пожаротушения</div>
                             </div>
-                        </button>
-                        <!-- Catalog DropDown Subitem Start -->
-                        <div class="catalog-subitem dropdown-menu">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                        <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                    <div class="d-flex flex-column ">
-                                        <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                        <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Catalog DropDown Subitem End -->
+                        </a>
                     </div>
                     <!-- Catalog DropDown Item 9 End -->
                     <!-- Catalog DropDown Item 10 Start -->
                     <div class="btn-group dropend w-100">
-                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a href="" type="button" class="btn btn-link text-decoration-none hover-border"
+                            data-bs-toggle="" aria-expanded="false">
                             <div class="d-flex justify-content-start align-items-center">
                                 <img class="icon" src="img/icons/protection.svg">
                                 <div class="catalog-item__text">Средства Индивидуальной Защиты</div>
                             </div>
-                        </button>
-                        <!-- Catalog DropDown Subitem Start -->
-                        <div class="catalog-subitem dropdown-menu">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                        <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                    <div class="d-flex flex-column ">
-                                        <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                        <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Catalog DropDown Subitem End -->
+                        </a>
                     </div>
                     <!-- Catalog DropDown Item 10 End -->
                     <!-- Catalog DropDown Item 11 Start -->
                     <div class="btn-group dropend w-100">
-                        <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a href="" type="button" class="btn btn-link text-decoration-none hover-border"
+                            data-bs-toggle="" aria-expanded="false">
                             <div class="d-flex justify-content-start align-items-center">
                                 <img class="icon" src="img/icons/thermal_imager.svg">
                                 <div class="catalog-item__text">Тепловизоры</div>
                             </div>
-                        </button>
-                        <!-- Catalog DropDown Subitem Start -->
-                        <div class="catalog-subitem dropdown-menu">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="catalog-subitem__item">
-                                        <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                        <div class="d-flex flex-column ">
-                                            <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                            <a href="#" class="py-2 c-pointer">Уличные</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                    <div class="d-flex flex-column ">
-                                        <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                        <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Catalog DropDown Subitem End -->
+                        </a>
                     </div>
                     <!-- Catalog DropDown Item 11 End -->
                 </div>
-                <!-- Catalog DropDown End -->
             </div>
+            <!-- Catalog DropDown End -->
+        </div>
         </div>
         <!-- Header Row 3 End -->
         <!-- Tablet Header Start -->
@@ -626,12 +432,12 @@
         <!-- Tablet Catalog DropDown Start -->
         <div class="collapse navbar-collapse dropdown-nav btn-group-vertical" id="tablet-catalog">
             <!-- Catalog DropDown Item 1 Start -->
-            <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+            <div class="btn-group dropend w-100 hover-dropend">
+                <button type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/vn.svg">
-                        <div class="catalog-item__text">Видеонаблюдение</div>
+                        <a href="catalog.html" class="catalog-item__text">Видеонаблюдение</a>
                     </div>
                 </button>
                 <!-- Catalog DropDown Subitem Start -->
@@ -640,29 +446,30 @@
                         <!-- Column 1 Start -->
                         <div class="col">
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
+                                <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеокамеры аналоговые</a>
                                 <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    <a href="#" class="py-2 c-pointer">Мини камеры и видеоглазки</a>
-                                    <a href="#" class="py-2 c-pointer">Поворотные</a>
+                                    <a href="catalog.html" class="py-2 hover-arrow">Внутренние</a>
+                                    <a href="#" class="py-2 hover-arrow">Уличные</a>
+                                    <a href="#" class="py-2 hover-arrow">Мини камеры и видеоглазки</a>
+                                    <a href="#" class="py-2 hover-arrow">Поворотные</a>
                                 </div>
                             </div>
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры сетевые (IP)</div>
+                                <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеокамеры сетевые (IP)</a>
                                 <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    <a href="#" class="py-2 c-pointer">Компактные</a>
-                                    <a href="#" class="py-2 c-pointer">Dahua</a>
+                                    <a href="#" class="py-2 hover-arrow">Внутренние</a>
+                                    <a href="#" class="py-2 hover-arrow">Уличные</a>
+                                    <a href="#" class="py-2 hover-arrow">Компактные</a>
+                                    <a href="#" class="py-2 hover-arrow">Dahua</a>
                                 </div>
                             </div>
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеорегистраторы гибридные</div>
+                                <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеорегистраторы
+                                    гибридные</a>
                                 <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">16 и более канальные</a>
-                                    <a href="#" class="py-2 c-pointer">4-канальные</a>
-                                    <a href="#" class="py-2 c-pointer">8-канальные</a>
+                                    <a href="#" class="py-2 hover-arrow">16 и более канальные</a>
+                                    <a href="#" class="py-2 hover-arrow">4-канальные</a>
+                                    <a href="#" class="py-2 hover-arrow">8-канальные</a>
                                 </div>
                             </div>
                         </div>
@@ -670,30 +477,30 @@
                         <!-- Column 2 Start -->
                         <div class="col">
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеорегистраторы сетевые (IP)
-                                </div>
+                                <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеорегистраторы сетевые
+                                    (IP)</a>
                                 <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">16 и более канальные</a>
-                                    <a href="#" class="py-2 c-pointer">4-канальные</a>
-                                    <a href="#" class="py-2 c-pointer">8-канальные</a>
-                                </div>
-                            </div>
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры AHD</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
+                                    <a href="#" class="py-2 hover-arrow">16 и более канальные</a>
+                                    <a href="#" class="py-2 hover-arrow">4-канальные</a>
+                                    <a href="#" class="py-2 hover-arrow">8-канальные</a>
                                 </div>
                             </div>
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Аксессуары</div>
+                                <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеокамеры AHD</a>
                                 <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">POE коммутаторы</a>
-                                    <a href="#" class="py-2 c-pointer">Жёсткие диски и Flash- накопители</a>
-                                    <a href="#" class="py-2 c-pointer">Микрофоны</a>
-                                    <a href="#" class="py-2 c-pointer">Муляжи камер</a>
-                                    <a href="#" class="py-2 c-pointer">Приемопередатчики</a>
-                                    <a href="#" class="py-2 c-pointer">Пульты для видеокамер</a>
+                                    <a href="#" class="py-2 hover-arrow">Внутренние</a>
+                                    <a href="#" class="py-2 hover-arrow">Уличные</a>
+                                </div>
+                            </div>
+                            <div class="catalog-subitem__item">
+                                <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Аксессуары</a>
+                                <div class="d-flex flex-column ">
+                                    <a href="#" class="py-2 hover-arrow">POE коммутаторы</a>
+                                    <a href="#" class="py-2 hover-arrow">Жёсткие диски и Flash- накопители</a>
+                                    <a href="#" class="py-2 hover-arrow">Микрофоны</a>
+                                    <a href="#" class="py-2 hover-arrow">Муляжи камер</a>
+                                    <a href="#" class="py-2 hover-arrow">Приемопередатчики</a>
+                                    <a href="#" class="py-2 hover-arrow">Пульты для видеокамер</a>
                                 </div>
                             </div>
                         </div>
@@ -705,98 +512,50 @@
             <!-- Catalog DropDown Item 1 End -->
             <!-- Catalog DropDown Item 2 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                <a href="" class="btn btn-link text-decoration-none hover-border">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/acoustic.svg">
                         <div class="catalog-item__text">Акустические системы</div>
                     </div>
-                </button>
-                <!-- Catalog DropDown Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Catalog DropDown Subitem End -->
+                </a>
             </div>
             <!-- Catalog DropDown Item 2 End -->
             <!-- Catalog DropDown Item 3 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                <a href="" class="btn btn-link text-decoration-none hover-border">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/antiseptic.svg">
                         <div class="catalog-item__text">Антисептические средства</div>
                     </div>
-                </button>
-                <!-- Catalog DropDown Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Catalog DropDown Subitem End -->
+                </a>
             </div>
             <!-- Catalog DropDown Item 3 End -->
             <!-- Catalog DropDown Item 4 Start -->
-            <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+            <div class="btn-group dropend w-100 hover-dropend">
+                <button class="btn btn-link text-decoration-none hover-border" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/monitoring.png">
-                        <div class="catalog-item__text">Мониторинг ГЛОНАСС/GPS</div>
+                        <a href="catalog.html" class="catalog-item__text">Мониторинг ГЛОНАСС/GPS</a>
                     </div>
                 </button>
                 <!-- Catalog DropDown Subitem Start -->
                 <div class="catalog-subitem dropdown-menu">
                     <div class="row">
+                        <!-- Column 1 Start -->
                         <div class="col">
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
+                                <div class="d-flex flex-column pt-3">
+                                    <a href="" class="py-2 hover-arrow">GPS маячок для детей и близких</a>
+                                    <a href="#" class="py-2 hover-arrow">GPS ошейник для животных</a>
+                                    <a href="#" class="py-2 hover-arrow">Дополнительное оборудование</a>
+                                    <a href="#" class="py-2 hover-arrow">Контроль параметров транспортных средств</a>
+                                    <a href="#" class="py-2 hover-arrow">Мониторинг транспорта</a>
+                                    <a href="#" class="py-2 hover-arrow">GPS часы</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
+                        <!-- Column 1 End -->
                     </div>
                 </div>
                 <!-- Catalog DropDown Subitem End -->
@@ -804,235 +563,83 @@
             <!-- Catalog DropDown Item 4 End -->
             <!-- Catalog DropDown Item 5 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                <a href="" class="btn btn-link text-decoration-none hover-border">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/fire.svg">
                         <div class="catalog-item__text">Охранно-пожарные системы</div>
                     </div>
-                </button>
-                <!-- Catalog DropDown Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Catalog DropDown Subitem End -->
+                </a>
             </div>
             <!-- Catalog DropDown Item 5 End -->
             <!-- Catalog DropDown Item 6 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                <a href="" type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle=""
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/walkie-talkie.svg">
                         <div class="catalog-item__text">Рации (радиостанции)</div>
                     </div>
-                </button>
-                <!-- Catalog DropDown Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Catalog DropDown Subitem End -->
+                </a>
+
             </div>
             <!-- Catalog DropDown Item 6 End -->
             <!-- Catalog DropDown Item 7 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                <a href="" type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle=""
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/key.svg">
                         <div class="catalog-item__text">Системы управления доступом</div>
                     </div>
-                </button>
-                <!-- Catalog DropDown Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Catalog DropDown Subitem End -->
+                </a>
             </div>
             <!-- Catalog DropDown Item 7 End -->
             <!-- Catalog DropDown Item 8 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                <a href="" type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle=""
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/health.svg">
                         <div class="catalog-item__text">Системы контроля здоровья</div>
                     </div>
-                </button>
-                <!-- Catalog DropDown Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Catalog DropDown Subitem End -->
+                </a>
             </div>
             <!-- Catalog DropDown Item 8 End -->
             <!-- Catalog DropDown Item 9 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                <a href="" type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle=""
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/fire.svg">
                         <div class="catalog-item__text">Средства пожаротушения</div>
                     </div>
-                </button>
-                <!-- Catalog DropDown Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Catalog DropDown Subitem End -->
+                </a>
             </div>
             <!-- Catalog DropDown Item 9 End -->
             <!-- Catalog DropDown Item 10 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                <a href="" type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle=""
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/protection.svg">
                         <div class="catalog-item__text">Средства Индивидуальной Защиты</div>
                     </div>
-                </button>
-                <!-- Catalog DropDown Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Catalog DropDown Subitem End -->
+                </a>
             </div>
             <!-- Catalog DropDown Item 10 End -->
             <!-- Catalog DropDown Item 11 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                <a href="" type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle=""
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/thermal_imager.svg">
                         <div class="catalog-item__text">Тепловизоры</div>
                     </div>
-                </button>
-                <!-- Catalog DropDown Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Catalog DropDown Subitem End -->
+                </a>
             </div>
             <!-- Catalog DropDown Item 11 End -->
+        </div>
+        <!-- Catalog DropDown  End -->
         </div>
 
         <!-- Tablet Catalog DropDown End -->
@@ -1111,12 +718,12 @@
         <!-- Carousel Left  Start -->
         <div class="carousel-left pt-3">
             <!-- Carousel Left Item 1 Start -->
-            <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+            <div class="btn-group dropend w-100 hover-dropend">
+                <button type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/vn.svg">
-                        <div class="catalog-item__text">Видеонаблюдение</div>
+                        <a href="catalog.html" class="catalog-item__text">Видеонаблюдение</a>
                     </div>
                 </button>
                 <!-- Carousel Left Subitem Start -->
@@ -1125,29 +732,30 @@
                         <!-- Column 1 Start -->
                         <div class="col">
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
+                                <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеокамеры аналоговые</a>
                                 <div class="d-flex flex-column ">
-                                    <a href="catalog.html" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    <a href="#" class="py-2 c-pointer">Мини камеры и видеоглазки</a>
-                                    <a href="#" class="py-2 c-pointer">Поворотные</a>
+                                    <a href="catalog.html" class="py-2 hover-arrow">Внутренние</a>
+                                    <a href="#" class="py-2 hover-arrow">Уличные</a>
+                                    <a href="#" class="py-2 hover-arrow">Мини камеры и видеоглазки</a>
+                                    <a href="#" class="py-2 hover-arrow">Поворотные</a>
                                 </div>
                             </div>
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры сетевые (IP)</div>
+                                <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеокамеры сетевые (IP)</a>
                                 <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                    <a href="#" class="py-2 c-pointer">Компактные</a>
-                                    <a href="#" class="py-2 c-pointer">Dahua</a>
+                                    <a href="#" class="py-2 hover-arrow">Внутренние</a>
+                                    <a href="#" class="py-2 hover-arrow">Уличные</a>
+                                    <a href="#" class="py-2 hover-arrow">Компактные</a>
+                                    <a href="#" class="py-2 hover-arrow">Dahua</a>
                                 </div>
                             </div>
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеорегистраторы гибридные</div>
+                                <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеорегистраторы
+                                    гибридные</a>
                                 <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">16 и более канальные</a>
-                                    <a href="#" class="py-2 c-pointer">4-канальные</a>
-                                    <a href="#" class="py-2 c-pointer">8-канальные</a>
+                                    <a href="#" class="py-2 hover-arrow">16 и более канальные</a>
+                                    <a href="#" class="py-2 hover-arrow">4-канальные</a>
+                                    <a href="#" class="py-2 hover-arrow">8-канальные</a>
                                 </div>
                             </div>
                         </div>
@@ -1155,29 +763,30 @@
                         <!-- Column 2 Start -->
                         <div class="col">
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеорегистраторы сетевые (IP)</div>
+                                <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеорегистраторы сетевые
+                                    (IP)</a>
                                 <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">16 и более канальные</a>
-                                    <a href="#" class="py-2 c-pointer">4-канальные</a>
-                                    <a href="#" class="py-2 c-pointer">8-канальные</a>
+                                    <a href="#" class="py-2 hover-arrow">16 и более канальные</a>
+                                    <a href="#" class="py-2 hover-arrow">4-канальные</a>
+                                    <a href="#" class="py-2 hover-arrow">8-канальные</a>
                                 </div>
                             </div>
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры AHD</div>
+                                <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Видеокамеры AHD</a>
                                 <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
+                                    <a href="#" class="py-2 hover-arrow">Внутренние</a>
+                                    <a href="#" class="py-2 hover-arrow">Уличные</a>
                                 </div>
                             </div>
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Аксессуары</div>
+                                <a href="" class="open-sans-700 color-lb pt-3 pb-1 d-block">Аксессуары</a>
                                 <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">POE коммутаторы</a>
-                                    <a href="#" class="py-2 c-pointer">Жёсткие диски и Flash- накопители</a>
-                                    <a href="#" class="py-2 c-pointer">Микрофоны</a>
-                                    <a href="#" class="py-2 c-pointer">Муляжи камер</a>
-                                    <a href="#" class="py-2 c-pointer">Приемопередатчики</a>
-                                    <a href="#" class="py-2 c-pointer">Пульты для видеокамер</a>
+                                    <a href="#" class="py-2 hover-arrow">POE коммутаторы</a>
+                                    <a href="#" class="py-2 hover-arrow">Жёсткие диски и Flash- накопители</a>
+                                    <a href="#" class="py-2 hover-arrow">Микрофоны</a>
+                                    <a href="#" class="py-2 hover-arrow">Муляжи камер</a>
+                                    <a href="#" class="py-2 hover-arrow">Приемопередатчики</a>
+                                    <a href="#" class="py-2 hover-arrow">Пульты для видеокамер</a>
                                 </div>
                             </div>
                         </div>
@@ -1189,98 +798,50 @@
             <!-- Carousel Left Item 1 End -->
             <!-- Carousel Left Item 2 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                <a href="" class="btn btn-link text-decoration-none hover-border">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/acoustic.svg">
                         <div class="catalog-item__text">Акустические системы</div>
                     </div>
-                </button>
-                <!-- Carousel Left Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel Left Subitem End -->
+                </a>
             </div>
             <!-- Carousel Left Item 2 End -->
             <!-- Carousel Left Item 3 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                <a href="" class="btn btn-link text-decoration-none hover-border">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/antiseptic.svg">
                         <div class="catalog-item__text">Антисептические средства</div>
                     </div>
-                </button>
-                <!-- Carousel Left Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel Left Subitem End -->
+                </a>
             </div>
             <!-- Carousel Left Item 3 End -->
             <!-- Carousel Left Item 4 Start -->
-            <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+            <div class="btn-group dropend w-100 hover-dropend">
+                <button class="btn btn-link text-decoration-none hover-border" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/monitoring.png">
-                        <div class="catalog-item__text">Мониторинг ГЛОНАСС/GPS</div>
+                        <a href="catalog.html" class="catalog-item__text">Мониторинг ГЛОНАСС/GPS</a>
                     </div>
                 </button>
                 <!-- Carousel Left Subitem Start -->
                 <div class="catalog-subitem dropdown-menu">
                     <div class="row">
+                        <!-- Column 1 Start -->
                         <div class="col">
                             <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
+                                <div class="d-flex flex-column pt-3">
+                                    <a href="" class="py-2 hover-arrow">GPS маячок для детей и близких</a>
+                                    <a href="#" class="py-2 hover-arrow">GPS ошейник для животных</a>
+                                    <a href="#" class="py-2 hover-arrow">Дополнительное оборудование</a>
+                                    <a href="#" class="py-2 hover-arrow">Контроль параметров транспортных средств</a>
+                                    <a href="#" class="py-2 hover-arrow">Мониторинг транспорта</a>
+                                    <a href="#" class="py-2 hover-arrow">GPS часы</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
+                        <!-- Column 1 End -->
                     </div>
                 </div>
                 <!-- Carousel Left Subitem End -->
@@ -1288,233 +849,79 @@
             <!-- Carousel Left Item 4 End -->
             <!-- Carousel Left Item 5 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                <a href="" class="btn btn-link text-decoration-none hover-border">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/fire.svg">
                         <div class="catalog-item__text">Охранно-пожарные системы</div>
                     </div>
-                </button>
-                <!-- Carousel Left Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel Left Subitem End -->
+                </a>
             </div>
             <!-- Carousel Left Item 5 End -->
             <!-- Carousel Left Item 6 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                <a href="" type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle=""
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/walkie-talkie.svg">
                         <div class="catalog-item__text">Рации (радиостанции)</div>
                     </div>
-                </button>
-                <!-- Carousel Left Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel Left Subitem End -->
+                </a>
+
             </div>
             <!-- Carousel Left Item 6 End -->
             <!-- Carousel Left Item 7 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                <a href="" type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle=""
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/key.svg">
                         <div class="catalog-item__text">Системы управления доступом</div>
                     </div>
-                </button>
-                <!-- Carousel Left Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel Left Subitem End -->
+                </a>
             </div>
             <!-- Carousel Left Item 7 End -->
             <!-- Carousel Left Item 8 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                <a href="" type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle=""
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/health.svg">
                         <div class="catalog-item__text">Системы контроля здоровья</div>
                     </div>
-                </button>
-                <!-- Carousel Left Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel Left Subitem End -->
+                </a>
             </div>
             <!-- Carousel Left Item 8 End -->
             <!-- Carousel Left Item 9 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                <a href="" type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle=""
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/fire.svg">
                         <div class="catalog-item__text">Средства пожаротушения</div>
                     </div>
-                </button>
-                <!-- Carousel Left Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel Left Subitem End -->
+                </a>
             </div>
             <!-- Carousel Left Item 9 End -->
             <!-- Carousel Left Item 10 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                <a href="" type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle=""
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/protection.svg">
                         <div class="catalog-item__text">Средства Индивидуальной Защиты</div>
                     </div>
-                </button>
-                <!-- Carousel Left Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel Left Subitem End -->
+                </a>
             </div>
             <!-- Carousel Left Item 10 End -->
             <!-- Carousel Left Item 11 Start -->
             <div class="btn-group dropend w-100">
-                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="dropdown"
+                <a href="" type="button" class="btn btn-link text-decoration-none hover-border" data-bs-toggle=""
                     aria-expanded="false">
                     <div class="d-flex justify-content-start align-items-center">
                         <img class="icon" src="img/icons/thermal_imager.svg">
                         <div class="catalog-item__text">Тепловизоры</div>
                     </div>
-                </button>
-                <!-- Carousel Left Subitem Start -->
-                <div class="catalog-subitem dropdown-menu">
-                    <div class="row">
-                        <div class="col">
-                            <div class="catalog-subitem__item">
-                                <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                                <div class="d-flex flex-column ">
-                                    <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                    <a href="#" class="py-2 c-pointer">Уличные</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="open-sans-700 color-lb pt-3 pb-1">Видеокамеры аналоговые</div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="py-2 c-pointer">Внутренние</a>
-                                <a href="#" class="py-2 c-pointer">Уличные</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel Left Subitem End -->
+                </a>
             </div>
             <!-- Carousel Left Item 11 End -->
         </div>
@@ -1586,7 +993,7 @@
             <a href="" class="link-colored">Показать все</a>
         </div>
         <!-- Cards Block 1 Cards Start -->
-        <div class="top-sales__cards row row-cols-2 row-cols-md-4 g-2 g-lg-3 mt-2 mt-md-4">
+        <div class="row row-cols-2 row-cols-md-4 g-2 g-lg-3 mt-2 mt-md-4">
             <!-- Cards Block 1 Card 1 Start -->
             <div class="col">
                 <div class="card h-100">

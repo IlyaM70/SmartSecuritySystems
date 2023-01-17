@@ -289,13 +289,112 @@ quantity.change(function () {
 });
 
 //////////////// Reach Text
-ClassicEditor
-  .create(document.querySelector('#reviewMessage'), {
-    language:'ru',
-    toolbar: ['bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote'],
-    
-    
-  })
-  .catch(error => {
-    console.log(error);
+if ($('#reviewMessage').length) {
+  let editor;
+  ClassicEditor
+    .create(document.querySelector('#reviewMessage'), {
+      language: 'ru',
+      toolbar: ['bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote'],
+
+
+    })
+    .then(newEditor => {
+      editor = newEditor;
+    })
+    .catch(error => {
+      console.log(error);
+    });
+
+  ////// CKE editor validation
+
+  $(".ckeditor-container").keydown(function (e) {
+    //console.log("keydown");
+    const editorData = editor.getData();
+    // console.log(editorData);
+
+    html = $(editorData).text();
+    if ($.trim(html) == '' || $.trim(html) == ' ') {
+      //console.log("html empty");
+      $(".invalid-cke").css("display", "block");
+    } else {
+      //console.log("html NOT empty");
+      $(".invalid-cke").css("display", "none");
+    }
   });
+
+  $("#reviewsAddBody").submit(function (e) {
+    //console.log("keydown");
+    const editorData = editor.getData();
+    //console.log(editorData);
+
+    html = $(editorData).text();
+    if ($.trim(html) == '') {
+      //console.log("html empty");
+      $(".invalid-cke").css("display", "block");
+    } else {
+      // console.log("html NOT empty");
+      $(".invalid-cke").css("display", "none");
+    }
+  });
+}
+
+
+
+
+
+//////////////// Input Validation
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+
+////////////////// Stop Dropdown on Desktop
+//console.log(location.pathname);
+if (location.pathname == "/" || location.pathname == "/index.php") {
+  if ($(window).width() > 991) $("#header-dropdown-toggler").attr("data-bs-target", "#none")
+  else $("#header-dropdown-toggler").attr("data-bs-target", "#catalog");
+}
+
+//////////////////////////// Hover DropDown
+
+let dropdownParent = $(".hover-dropend");
+let dropdownBtn = $(".hover-dropend .btn");
+
+
+if ($(window).width() > 991){
+  dropdownParent.hover(function () {
+    $(this).find('.btn').trigger("click");
+  
+  }, function () {
+    $(this).find('.dropdown-menu').removeClass("show");
+  }
+  );
+  
+  $(dropdownBtn).click(function (e) {
+    dropdownBtn.css("box-shadow", "none");
+  });
+  
+}
+
+$(".catalog-item__text").click(function (e) { 
+  let link = $(this).attr("href");
+  console.log(link);
+  window.location.href = link;
+});
+
