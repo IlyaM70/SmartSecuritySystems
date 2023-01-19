@@ -580,6 +580,12 @@ a:hover {
     }
 }
 
+@media(min-width:1400px) {
+    .headline {
+        font-size: 36px;
+    }
+}
+
 /* Cards Block Media End */
 /* Cards Block End */
 
@@ -1625,6 +1631,7 @@ input[type="range"]::-moz-range-thumb {
     --bs-btn-font-size: 14px;
     --bs-btn-line-height: 20px;
     --bs-btn-border-radius: 4px;
+    --bs-btn-padding-y: 11px;
 }
 
 .btn-primary {
@@ -1995,12 +2002,122 @@ hr {
     padding-left: 4px;
 }
 
-
-
-
-
 /* //////////////Card Page End ///////////////*/
 
+/* Input Form Start */
+
+.input-form {
+    width: 100%;
+    max-width: 360px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.input-form .input-group {
+    background: var(--bs-white);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-form .input-group-focused {
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+}
+.input-form .input-group-invalid {
+    border: 2px solid var(--bs-red);
+    border-radius: 4px;
+}
+
+.input-form .form-control {
+    padding: 0;
+    margin-left: 12px;
+    border: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--bs-black);
+}
+
+.input-form .form-control:focus {
+    color: var(--bs-black);
+    background-color: var(--bs-white);
+    border-color: rgba(0, 0, 0, 0.2);
+    outline: unset;
+    box-shadow: unset;
+}
+
+
+.input-form .input-label {
+    display: none;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--bs-gray-dark);
+    padding-top: 6px;
+    padding-left: 12px;
+
+}
+
+.input-form .form-control::placeholder {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--bs-gray-dark);
+}
+
+.input-form .input-icon {
+    margin-left: 6px;
+    margin-right: 1px;
+}
+
+.input-form .invalid-feedback {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: var(--bs-red);
+    display: none;
+    align-items: center;
+    position: absolute;
+    bottom: -20px;
+    left: 1px;
+}
+.is-invalid~.invalid-feedback, .is-invalid~.invalid-tooltip, .was-validated :invalid~.invalid-feedback, .was-validated :invalid~.invalid-tooltip {
+    display: flex;
+}
+
+.input-form .invalid-feedback .icon-small {
+    padding-right: 4px;
+}
+.input-form .input-group-error {
+    border: 2px solid var(--bs-red);
+    border-radius: 4px;
+}
+.input-form .form-control.is-valid, .was-validated .form-control:valid {
+    border-color: var(--primary-color);
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+.input-form .form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+.input-form .form-control.is-invalid, .was-validated .form-control:invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: none;
+}
+.input-form .form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+    border-color: unset;
+    box-shadow: unset;
+}
+
+
+/* Input Form End */
 
 
 

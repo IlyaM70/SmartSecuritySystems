@@ -307,7 +307,7 @@ if ($('#reviewMessage').length) {
 
   ////// CKE editor validation
 
-  $(".ckeditor-container").keydown(function (e) {
+  $(".ckeditor-container").keyup(function (e) {
     //console.log("keydown");
     const editorData = editor.getData();
     // console.log(editorData);
@@ -359,10 +359,56 @@ if ($('#reviewMessage').length) {
         event.stopPropagation()
       }
 
-      form.classList.add('was-validated')
+      form.classList.add('was-validated');
+
+      $.each($(".input-form .invalid-feedback").closest(".input-wrapper"), function () {
+        if ($(this).find(".invalid-feedback").css("display") == "flex") {
+          $(this).closest(".input-wrapper").attr("style", "padding-bottom:20px");
+          $(this).closest(".input-wrapper").find(".input-group").addClass("input-group-invalid");
+        }
+      });
+
+
     }, false)
   })
 })()
+$(".input-form .form-control")
+
+
+$(".input-form .form-control").keyup(function (e) {
+
+  $.each($(".input-form .form-control"), function (indexInArray, valueOfElement) {
+
+    console.log("change");
+    if ($(this).closest(".input-wrapper").find(".invalid-feedback").css("display") != "flex") {
+      $(this).closest(".input-wrapper").attr("style", "padding-bottom:0px");
+      $(this).closest(".input-wrapper").find(".input-group").removeClass("input-group-invalid");
+    }
+    else{
+      $.each($(".input-form .invalid-feedback").closest(".input-wrapper"), function () {
+        if ($(this).find(".invalid-feedback").css("display") == "flex") {
+          $(this).closest(".input-wrapper").attr("style", "padding-bottom:20px");
+          $(this).closest(".input-wrapper").find(".input-group").addClass("input-group-invalid");
+        }
+      });
+    }
+
+  });
+
+
+});
+
+
+
+
+
+
+
+//////////////////// Resistration page valid message
+
+
+
+
 
 ////////////////// Stop Dropdown on Desktop
 //console.log(location.pathname);
@@ -377,24 +423,44 @@ let dropdownParent = $(".hover-dropend");
 let dropdownBtn = $(".hover-dropend .btn");
 
 
-if ($(window).width() > 991){
+if ($(window).width() > 991) {
   dropdownParent.hover(function () {
     $(this).find('.btn').trigger("click");
-  
+
   }, function () {
     $(this).find('.dropdown-menu').removeClass("show");
   }
   );
-  
+
   $(dropdownBtn).click(function (e) {
     dropdownBtn.css("box-shadow", "none");
   });
-  
+
 }
 
-$(".catalog-item__text").click(function (e) { 
+$(".catalog-item__text").click(function (e) {
   let link = $(this).attr("href");
   console.log(link);
   window.location.href = link;
+});
+
+///////////////////// Input Group Focus
+let inputGroup = $(".input-form .input-group");
+let input = $(".input-form .form-control");
+let inputLabel = $(".input-form .input-label");
+let placeholder;
+
+input.focus(function (e) {
+  e.preventDefault();
+  $(this).closest(inputGroup).addClass("input-group-focused");
+  placeholder = $(this).closest(inputGroup).find(input).attr("placeholder")
+  $(this).closest(inputGroup).find(input).attr("placeholder", "");
+  $(this).closest(inputGroup).find(inputLabel).css("display", "block");
+});
+input.focusout(function (e) {
+  e.preventDefault();
+  $(this).closest(inputGroup).removeClass("input-group-focused");
+  $(this).closest(inputGroup).find(input).attr("placeholder", placeholder);
+  $(this).closest(inputGroup).find(inputLabel).css("display", "none");
 });
 
