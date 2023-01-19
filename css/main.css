@@ -2103,7 +2103,7 @@ hr {
 }
 
 .input-form .invalid-feedback .icon-small {
-    padding-right: 4px;
+    margin-right: 4px;
 }
 
 .input-form .input-group-error {
