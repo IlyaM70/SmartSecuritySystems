@@ -322,6 +322,11 @@ a:hover {
     box-shadow: none;
 }
 
+.dropend .btn {
+    --bs-btn-padding-y: 6px;
+}
+
+
 /* Catalog Dropdown End*/
 /* Header Row 3 End */
 
@@ -390,6 +395,12 @@ a:hover {
 
     .catalog-subitem__item a {
         font-size: 13px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .dropend .btn {
+        --bs-btn-padding-y: 5px;
     }
 }
 
@@ -2025,6 +2036,7 @@ hr {
     border: 2px solid var(--primary-color);
     border-radius: 4px;
 }
+
 .input-form .input-group-invalid {
     border: 2px solid var(--bs-red);
     border-radius: 4px;
@@ -2082,18 +2094,25 @@ hr {
     bottom: -20px;
     left: 1px;
 }
-.is-invalid~.invalid-feedback, .is-invalid~.invalid-tooltip, .was-validated :invalid~.invalid-feedback, .was-validated :invalid~.invalid-tooltip {
+
+.is-invalid~.invalid-feedback,
+.is-invalid~.invalid-tooltip,
+.was-validated :invalid~.invalid-feedback,
+.was-validated :invalid~.invalid-tooltip {
     display: flex;
 }
 
 .input-form .invalid-feedback .icon-small {
     padding-right: 4px;
 }
+
 .input-form .input-group-error {
     border: 2px solid var(--bs-red);
     border-radius: 4px;
 }
-.input-form .form-control.is-valid, .was-validated .form-control:valid {
+
+.input-form .form-control.is-valid,
+.was-validated .form-control:valid {
     border-color: var(--primary-color);
     padding-right: calc(1.5em + 0.75rem);
     background-image: none;
@@ -2101,17 +2120,22 @@ hr {
     background-position: right calc(0.375em + 0.1875rem) center;
     background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.input-form .form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+
+.input-form .form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
     border-color: none;
     box-shadow: none;
 }
 
-.input-form .form-control.is-invalid, .was-validated .form-control:invalid {
+.input-form .form-control.is-invalid,
+.was-validated .form-control:invalid {
     border-color: #dc3545;
     padding-right: calc(1.5em + 0.75rem);
     background-image: none;
 }
-.input-form .form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+
+.input-form .form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
     border-color: unset;
     box-shadow: unset;
 }
