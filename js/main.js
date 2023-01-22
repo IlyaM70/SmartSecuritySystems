@@ -65,7 +65,9 @@ priceInput.forEach((input) => {
 
     let minPrice, maxPrice;
 
-    if ($(window).width() < 1200) {
+    if (window.innerWidth < 1200)
+     {
+      //console.log("<1200");
       minPrice = parseInt(priceInput[0].value);
       maxPrice = parseInt(priceInput[1].value);
 
@@ -99,6 +101,7 @@ priceInput.forEach((input) => {
       }
     }
     else {
+      //console.log(">1200");
       minPrice = parseInt(priceInput[2].value);
       maxPrice = parseInt(priceInput[3].value);
 
@@ -142,7 +145,7 @@ rangeInput.forEach((input) => {
 
     let minVal, maxVal;
 
-    if ($(window).width() < 1200) {
+    if (window.innerWidth < 1200) {
       minVal = parseInt(rangeInput[0].value);
       maxVal = parseInt(rangeInput[1].value);
 

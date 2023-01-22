@@ -404,6 +404,12 @@ a:hover {
     }
 }
 
+@media (min-width: 1400px) {
+    .dropend .btn {
+        --bs-btn-padding-y: 6px;
+    }
+}
+
 /* Tablet Header Search End */
 /* Tablet Header End*/
 
@@ -1164,6 +1170,11 @@ input[type="range"]::-moz-range-thumb {
 
 
 /* Catalog Main Start */
+.col-xl-9-custom {
+    flex: 1 1 auto;
+    width: 75%;
+}
+
 .catalog-main__cads .card {
     --card-padding-left: 0.5rem;
     --card-padding-right: 0rem;
@@ -2142,6 +2153,32 @@ hr {
 
 
 /* Input Form End */
+
+/* /////////////////////User Page Start/////////////////////// */
+
+.user-left-item {
+    padding: 12px 16px;
+    margin-top: 10px;
+}
+
+.user-left-header {
+    padding: 12px 18px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.user-left-item a {
+    margin-left: 10px;
+}
+
+
+
+
+/* /////////////////////User Page End/////////////////////// */
+
 
 
 
