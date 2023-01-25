@@ -584,6 +584,18 @@ a:hover {
     color: var(--primary-color) !important;
 }
 
+.link-next-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--primary-color);
+    border-radius: 60px;
+    padding-left: 2px;
+}
+
+
 /* Cards Block Media Start */
 @media(min-width:768px) {
     .icon-big {
@@ -2174,12 +2186,209 @@ hr {
     margin-left: 10px;
 }
 
-
-
-
 /* /////////////////////User Page End/////////////////////// */
 
 
+
+/* /////////////////////Ordering Page Start/////////////////////// */
+
+.ordering {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ordering .accordion {
+    background-color: unset;
+}
+
+.ordering .accordion-button:after {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    background: var(--bs-gray-200);
+    border-radius: 24px;
+    content: "1";
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--bs-white);
+    margin-right: 22px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: none;
+    background: var(--primary-color);
+}
+
+.content-2::after {
+    content: "2" !important;
+}
+
+.content-3::after {
+    content: "3" !important;
+}
+
+.ordering .accordion-button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.ordering .form-check-input[type=radio] {
+    border-radius: 20px;
+    width: 16px;
+    height: 16px;
+
+}
+
+.ordering .form-check-input:checked {
+    background-color: var(--bs-white);
+    border: 1px solid var(--primary-color);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2300A0E3'/%3e%3c/svg%3e");
+}
+
+.ordering-left__buyer .btn,
+.ordering-left__delivery .btn {
+    --bs-btn-padding-y: 8px;
+}
+
+.ordering .input-form {
+    height: unset;
+}
+
+/* //////////Delivery Start */
+
+
+.ordering-left__delivery .form-check {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.ordering-left__delivery .form-check-label {
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+
+.ordering-left__delivery .form-check-input:checked+.btn-radio {
+    border: 2px solid var(--primary-color);
+    border-radius: 2px;
+    background: var(--bs-gray-100);
+}
+
+.ordering-left__delivery .form-check-input:checked+.btn-radio .btn-radio-check {
+    display: block;
+}
+
+.btn-radio {
+    background: var(--bs-gray-100);
+    border-radius: 2px;
+    position: relative;
+}
+
+.btn-radio-check {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: -3px;
+    right: -6px;
+    display: none;
+}
+
+.ordering-left__delivery .form-select {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.btn-delivery {
+    background: var(--bs-gray-100);
+    border: 1px solid var(--bs-gray-200);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(/img/icons/calendar.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+}
+
+.input-group-date {
+    width: 141px;
+    margin: 0;
+}
+
+.lift-to-floor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lift-to-floor .form-check-input {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.lift-to-floor .form-check-input:checked {
+    background-color: var(--bs-white);
+    border: 1px solid var(--bs-gray-200);
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 4L6 8.5L12.5 1' stroke='%23333334' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.lift-to-floor .form-check-label {
+    padding-left: 10px;
+    padding-top: 1px;
+}
+
+/* //////////Delivery End */
+
+/* //////////Payment Start */
+
+.ordering-left__payment .btn-radio {
+    background-color: var(--bs-white);
+    border: 1px solid var(--bs-gray-200);
+    border-radius: 2px;
+    width: 164px;
+}
+
+.ordering-left__payment .form-check-input:checked+.btn-radio {
+    border: 2px solid var(--primary-color);
+    border-radius: 2px;
+    background: var(--bs-white);
+}
+
+.ordering-left__payment .form-check-input:checked+.btn-radio .btn-radio-check {
+    display: block;
+}
+
+.ordering-left__payment .form-check {
+    padding-left: 0;
+}
+
+.ordering-left__payment .form-check-label {
+    padding-left: 0;
+}
+
+.btn-radio-txt {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+
+/* //////////Payment End */
+
+/* /////////////////////Ordering Page End///////////////////////// */
 
 
 

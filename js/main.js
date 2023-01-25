@@ -65,8 +65,7 @@ priceInput.forEach((input) => {
 
     let minPrice, maxPrice;
 
-    if (window.innerWidth < 1200)
-     {
+    if (window.innerWidth < 1200) {
       //console.log("<1200");
       minPrice = parseInt(priceInput[0].value);
       maxPrice = parseInt(priceInput[1].value);
@@ -345,7 +344,7 @@ if ($('#reviewMessage').length) {
 
 
 
-//////////////// Input Validation
+//////////////// Input Validation Start
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
@@ -382,12 +381,12 @@ $(".input-form .form-control").keyup(function (e) {
 
   $.each($(".input-form .form-control"), function (indexInArray, valueOfElement) {
 
-    console.log("change");
+    //console.log("change");
     if ($(this).closest(".input-wrapper").find(".invalid-feedback").css("display") != "flex") {
       $(this).closest(".input-wrapper").attr("style", "padding-bottom:0px");
       $(this).closest(".input-wrapper").find(".input-group").removeClass("input-group-invalid");
     }
-    else{
+    else {
       $.each($(".input-form .invalid-feedback").closest(".input-wrapper"), function () {
         if ($(this).find(".invalid-feedback").css("display") == "flex") {
           $(this).closest(".input-wrapper").attr("style", "padding-bottom:20px");
@@ -401,13 +400,7 @@ $(".input-form .form-control").keyup(function (e) {
 
 });
 
-
-
-
-
-
-
-//////////////////// Resistration page valid message
+//////////////////// Input Validation End
 
 
 
@@ -443,7 +436,7 @@ if ($(window).width() > 991) {
 
 $(".catalog-item__text").click(function (e) {
   let link = $(this).attr("href");
-  console.log(link);
+  //console.log(link);
   window.location.href = link;
 });
 
@@ -466,4 +459,48 @@ input.focusout(function (e) {
   $(this).closest(inputGroup).find(input).attr("placeholder", placeholder);
   $(this).closest(inputGroup).find(inputLabel).css("display", "none");
 });
+
+/////////// Date Focus
+
+let date = $(".input-date");
+let icon = $(".input-form .input-icon");
+let dateString;
+let day;
+let month;
+let year;
+
+date.focus(function () {
+
+  
+  if (!date.val()) {
+    dateString = date.val();
+    day = dateString.split(".")[0];
+    month = dateString.split(".")[1];
+    year = dateString.split(".")[2];
+    formatedDate = year + "-" + month + "-" + day;
+    date.val(formatedDate);
+  }
+
+  $(this).attr("type", "date");
+  $(this).closest(inputGroup).find(icon).css("display", "none");
+
+});
+
+date.focusout(function () {
+  $(this).attr("type", "text");
+  $(this).closest(inputGroup).find(icon).css("display", "block");
+
+  
+  dateString = date.val();
+  year = dateString.split("-")[0];
+  month = dateString.split("-")[1];
+  day = dateString.split("-")[2];
+  formatedDate = day + "." + month + "." + year;
+  date.val(formatedDate);
+
+  if (date.val()=="undefined.undefined.") {
+    date.val("");
+  }
+});
+
 
