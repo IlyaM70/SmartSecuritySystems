@@ -426,37 +426,16 @@ $(".input-form .form-check").click(function (e) {
 
 /////////////////////////////////Ordering Page Validation
 
-let formBuyer = $("#form-buyer");
-
-
-$("#submit-buyer").click(function () { 
-  
-  let feedback = formBuyer.find(".invalid-feedback");
- 
-  feedback.each(function (index, element) {
-    
-    if (element.style.display!="none") {
-      console.log("true");
-    } else {
-      console.log("false");
-    }
-  });
- 
-
-  
- });
-
-
-
-
-
-
-
-
-
-
-
-
+//////////////////
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
 
 //////////////////// Input Validation End
 
@@ -507,13 +486,13 @@ input.focus(function (e) {
   $(this).closest(inputGroup).addClass("input-group-focused");
   placeholder = $(this).closest(inputGroup).find(input).attr("placeholder")
 
-  if($(this).closest(inputGroup).find(input).attr("id")=="online_phone"){
+  if ($(this).closest(inputGroup).find(input).attr("id") == "online_phone") {
     $(this).closest(inputGroup).find(input).attr("placeholder", "+7(___)___-__-__");
   }
-  else{
+  else {
     $(this).closest(inputGroup).find(input).attr("placeholder", "");
   }
-  
+
   $(this).closest(inputGroup).find(inputLabel).css("display", "block");
 });
 input.focusout(function (e) {
@@ -534,7 +513,7 @@ let year;
 
 date.focus(function () {
 
-  
+
   if (!date.val()) {
     dateString = date.val();
     day = dateString.split(".")[0];
@@ -553,7 +532,7 @@ date.focusout(function () {
   $(this).attr("type", "text");
   $(this).closest(inputGroup).find(icon).css("display", "block");
 
-  
+
   dateString = date.val();
   year = dateString.split("-")[0];
   month = dateString.split("-")[1];
@@ -561,7 +540,7 @@ date.focusout(function () {
   formatedDate = day + "." + month + "." + year;
   date.val(formatedDate);
 
-  if (date.val()=="undefined.undefined.") {
+  if (date.val() == "undefined.undefined.") {
     date.val("");
   }
 });
@@ -584,11 +563,11 @@ function setCursorPosition(pos, e) {
 function mask(e) {
   //console.log('mask',e);
   var matrix = this.placeholder,// .defaultValue
-      i = 0,
-      def = matrix.replace(/\D/g, ""),
-      val = this.value.replace(/\D/g, "");
+    i = 0,
+    def = matrix.replace(/\D/g, ""),
+    val = this.value.replace(/\D/g, "");
   def.length >= val.length && (val = def);
-  matrix = matrix.replace(/[_\d]/g, function(a) {
+  matrix = matrix.replace(/[_\d]/g, function (a) {
     return val.charAt(i++) || "_"
   });
   this.value = matrix;
@@ -596,7 +575,7 @@ function mask(e) {
   i < matrix.length && matrix != this.placeholder ? i++ : i = matrix.indexOf("_");
   setCursorPosition(i, this)
 }
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("DOMContentLoaded", function () {
   var input = document.querySelector("#online_phone");
   input.addEventListener("input", mask, false);
   //input.focus();

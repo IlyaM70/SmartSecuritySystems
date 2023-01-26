@@ -735,9 +735,9 @@
     <!-- Main Start -->
     <div class="ordering container-xl mt-3">
         <form id="form-main"></form>
-        <div class="row w-100 row-cols-1 gy-3 gx-0 row-cols-md-2 ">
+        <div class="row w-100 row-cols-1 gy-3 gx-0 row-cols-md-2 gx-md-3">
             <!-- Ordering Left Start -->
-            <div class="ordering-left col">
+            <div class="ordering-left col col-md-9">
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                     <!-- Buyer Start -->
                     <div class="ordering-left__buyer accordion-item">
@@ -902,26 +902,30 @@
                                                 </div>
                                             </div>
                                             <div class="fw-bold mt-3">Адрес доставки</div>
-                                            <select class="mt-3 form-select" aria-label="Default select example">
-                                                <option selected>Open this select menu</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                            <div class="mt-3 d-flex flex-wrap">
-                                                <button class="btn btn-delivery">
-                                                    <img class="icon me-2" src="img/icons/change.svg">
-                                                    Изменить
-                                                </button>
-                                                <button class="btn btn-delivery ms-3">
-                                                    <img class="icon me-2" src="img/icons/trash-bin.svg">
-                                                    Удалить
-                                                </button>
-                                                <button class="btn btn-delivery mt-3">
-                                                    <img class="icon me-2" src="img/icons/plus.svg">
-                                                    Новый адресс
-                                                </button>
+
+                                            <div class="d-flex flex-column flex-lg-row">
+                                                <select class="mt-3 form-select" aria-label="Default select example">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <div class="mt-3 d-flex flex-wrap flex-lg-nowrap">
+                                                    <button class="btn btn-delivery">
+                                                        <img class="icon me-2" src="img/icons/change.svg">
+                                                        Изменить
+                                                    </button>
+                                                    <button class="btn btn-delivery">
+                                                        <img class="icon me-2" src="img/icons/trash-bin.svg">
+                                                        Удалить
+                                                    </button>
+                                                    <button class="btn btn-delivery">
+                                                        <img class="icon me-2" src="img/icons/plus.svg">
+                                                        Новый адресс
+                                                    </button>
+                                                </div>
                                             </div>
+
                                             <div class="fw-bold mt-3">Дополнительные параметры доставки (необязательно):
                                             </div>
                                             <div class="d-flex justify-content-between mt-3">
@@ -1152,7 +1156,7 @@
 
 
             <!-- Ordering Right Start -->
-            <div class="ordering-right bg-light col">
+            <div class="ordering-right bg-light col-md-3">
                 <div class="container-xl">
                     <div class="table-row-item px-0 flex-column">
                         <div class="w-100">
