@@ -376,7 +376,7 @@ if ($('#reviewMessage').length) {
 })()
 $(".input-form .form-control")
 
-
+//////////// Key Up in form
 $(".input-form .form-control").keyup(function (e) {
 
   $.each($(".input-form .form-control"), function (indexInArray, valueOfElement) {
@@ -400,9 +400,65 @@ $(".input-form .form-control").keyup(function (e) {
 
 });
 
+//////////// Check Click
+$(".input-form .form-check").click(function (e) {
+
+  $.each($(".input-form .form-check"), function (indexInArray, valueOfElement) {
+
+    //console.log("change");
+    if ($(this).closest(".input-wrapper").find(".invalid-feedback").css("display") != "flex") {
+      $(this).closest(".input-wrapper").attr("style", "padding-bottom:0px");
+      $(this).closest(".input-wrapper").find(".input-group").removeClass("input-group-invalid");
+    }
+    else {
+      $.each($(".input-form .invalid-feedback").closest(".input-wrapper"), function () {
+        if ($(this).find(".invalid-feedback").css("display") == "flex") {
+          $(this).closest(".input-wrapper").attr("style", "padding-bottom:20px");
+          $(this).closest(".input-wrapper").find(".input-group").addClass("input-group-invalid");
+        }
+      });
+    }
+
+  });
+
+
+});
+
+/////////////////////////////////Ordering Page Validation
+
+let formBuyer = $("#form-buyer");
+
+
+$("#submit-buyer").click(function () { 
+  
+  let feedback = formBuyer.find(".invalid-feedback");
+ 
+  feedback.each(function (index, element) {
+    
+    if (element.style.display!="none") {
+      console.log("true");
+    } else {
+      console.log("false");
+    }
+  });
+ 
+
+  
+ });
+
+
+
+
+
+
+
+
+
+
+
+
+
 //////////////////// Input Validation End
-
-
 
 
 
@@ -450,7 +506,14 @@ input.focus(function (e) {
   e.preventDefault();
   $(this).closest(inputGroup).addClass("input-group-focused");
   placeholder = $(this).closest(inputGroup).find(input).attr("placeholder")
-  $(this).closest(inputGroup).find(input).attr("placeholder", "");
+
+  if($(this).closest(inputGroup).find(input).attr("id")=="online_phone"){
+    $(this).closest(inputGroup).find(input).attr("placeholder", "+7(___)___-__-__");
+  }
+  else{
+    $(this).closest(inputGroup).find(input).attr("placeholder", "");
+  }
+  
   $(this).closest(inputGroup).find(inputLabel).css("display", "block");
 });
 input.focusout(function (e) {
@@ -460,7 +523,7 @@ input.focusout(function (e) {
   $(this).closest(inputGroup).find(inputLabel).css("display", "none");
 });
 
-/////////// Date Focus
+/////////// Date Focus Start
 
 let date = $(".input-date");
 let icon = $(".input-form .input-icon");
@@ -502,5 +565,43 @@ date.focusout(function () {
     date.val("");
   }
 });
+/////////// Date Focus End
 
+
+/////////////////////////////Phone Mask Start
+function setCursorPosition(pos, e) {
+  e.focus();
+  if (e.setSelectionRange) e.setSelectionRange(pos, pos);
+  else if (e.createTextRange) {
+    var range = e.createTextRange();
+    range.collapse(true);
+    range.moveEnd("character", pos);
+    range.moveStart("character", pos);
+    range.select()
+  }
+}
+
+function mask(e) {
+  //console.log('mask',e);
+  var matrix = this.placeholder,// .defaultValue
+      i = 0,
+      def = matrix.replace(/\D/g, ""),
+      val = this.value.replace(/\D/g, "");
+  def.length >= val.length && (val = def);
+  matrix = matrix.replace(/[_\d]/g, function(a) {
+    return val.charAt(i++) || "_"
+  });
+  this.value = matrix;
+  i = matrix.lastIndexOf(val.substr(-1));
+  i < matrix.length && matrix != this.placeholder ? i++ : i = matrix.indexOf("_");
+  setCursorPosition(i, this)
+}
+window.addEventListener("DOMContentLoaded", function() {
+  var input = document.querySelector("#online_phone");
+  input.addEventListener("input", mask, false);
+  //input.focus();
+  //setCursorPosition(3, input);
+});
+
+/////////////////////////////Phone Mask End
 

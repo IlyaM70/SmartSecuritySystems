@@ -734,15 +734,16 @@
 
     <!-- Main Start -->
     <div class="ordering container-xl mt-3">
-        <form>
-            <div class="row w-100 row-cols-1 gy-3 gx-0 row-cols-md-2 ">
-                <!-- Ordering Left Start -->
-                <div class="ordering-left col">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                        <!-- Buyer Start -->
-                        <form class="needs-validation" novalidate>
-                            <div class="ordering-left__buyer accordion-item">
-                                <div class="container-xl">
+        <form id="form-main"></form>
+        <div class="row w-100 row-cols-1 gy-3 gx-0 row-cols-md-2 ">
+            <!-- Ordering Left Start -->
+            <div class="ordering-left col">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <!-- Buyer Start -->
+                    <div class="ordering-left__buyer accordion-item">
+                        <div class="container-xl">
+                            <div class="input-form">
+                                <form id="form-buyer" class="needs-validation" novalidate>
                                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
@@ -754,318 +755,481 @@
                                         aria-labelledby="panelsStayOpen-headingOne">
                                         <div class="accordion-body">
                                             <div>Тип покупателя:</div>
-                                            <div class="d-flex mt-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio"
-                                                        name="inlineRadioOptions" id="individual" value="option1" required>
-                                                    <label class="form-check-label" for="individual">Физическое
-                                                        лицо</label>
-                                                    <div class="invalid-feedback">More example invalid feedback text
+                                            <div class="input-wrapper">
+                                                <div class="input-group input-group-radios">
+                                                    <div class="d-flex mt-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="inlineRadioOptions" id="individual"
+                                                                value="individual" required>
+                                                            <label class="form-check-label" for="individual">Физическое
+                                                                лицо</label>
+
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="inlineRadioOptions" id="legal" value="legal"
+                                                                required>
+                                                            <label class="form-check-label" for="legal">Юридическое
+                                                                лицо</label>
+                                                            <div class="invalid-feedback">
+                                                                <img class="icon-small"
+                                                                    src="img/icons/icon-exclamation.svg">
+                                                                Выберите один из вариантов
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="form-check ms-3">
-                                                    <input class="form-check-input" type="radio"
-                                                        name="inlineRadioOptions" id="legal" value="option2" required>
-                                                    <label class="form-check-label" for="legal">Юридическое
-                                                        лицо</label>
                                                 </div>
                                             </div>
                                             <div class="mt-3">Контактные данные:</div>
 
                                             <!-- Input Form Start -->
-                                            <div class="input-form mt-3">
-                                                <div class="input-wrapper">
-                                                    <div class="input-group">
-                                                        <label class="input-label">ФИО*</label>
-                                                        <div
-                                                            class="d-flex justify-content-between align-items-center my-1">
-                                                            <input type="text" class="form-control" placeholder="ФИО*">
+                                            <!-- <div class="input-form mt-3"> -->
+                                            <div class="input-wrapper">
+                                                <div class="input-group">
+                                                    <label class="input-label">ФИО*</label>
+                                                    <div class="d-flex justify-content-between align-items-center my-1">
+                                                        <input type="text" class="form-control" placeholder="ФИО*"
+                                                            required>
+                                                        <div class="invalid-feedback">
+                                                            <img class="icon-small"
+                                                                src="img/icons/icon-exclamation.svg">
+                                                            Заполните поле
                                                         </div>
                                                     </div>
-                                                    <div class="invalid-feedback">
-                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                        Ошибка
-                                                    </div>
                                                 </div>
-                                                <div class="input-wrapper">
-                                                    <div class="input-group mt-3">
-                                                        <label class="input-label">Телефон*</label>
-                                                        <div
-                                                            class="d-flex justify-content-between align-items-center my-1">
-                                                            <input type="tel" class="form-control"
-                                                                placeholder="Телефон*">
-                                                        </div>
-                                                    </div>
-                                                    <div class="invalid-feedback">
-                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                        Ошибка
-                                                    </div>
-                                                </div>
-                                                <div class="input-wrapper">
-                                                    <div class="input-group mt-3">
-                                                        <label class="input-label">E-mail (необязательно)</label>
-                                                        <div
-                                                            class="d-flex justify-content-between align-items-center my-1">
-                                                            <input type="email" class="form-control"
-                                                                placeholder="E-mail (необязательно)*">
-                                                        </div>
-                                                    </div>
-                                                    <div class="invalid-feedback">
-                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                        Ошибка
-                                                    </div>
-                                                </div>
-                                                <button type="submit"
-                                                    class="mt-3 btn btn-primary d-flex justify-content-center align-items-center">
-                                                    <img class="icon me-2" src="img/icons/arrow-white.svg">
-                                                    <div>Далeе</div>
-                                                </button>
+
                                             </div>
+                                            <div class="input-wrapper">
+                                                <div class="input-group mt-3">
+                                                    <label class="input-label">Телефон*</label>
+                                                    <div class="d-flex justify-content-between align-items-center my-1">
+                                                        <input type="tel" id="online_phone" name="phone" maxlength="50"
+                                                            pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                                                            class="form-control" placeholder="Телефон*" required>
+                                                        <div class="invalid-feedback">
+                                                            <img class="icon-small"
+                                                                src="img/icons/icon-exclamation.svg">
+                                                            Введите корректный номер телефона
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="input-wrapper">
+                                                <div class="input-group mt-3">
+                                                    <label class="input-label">E-mail (необязательно)</label>
+                                                    <div class="d-flex justify-content-between align-items-center my-1">
+                                                        <input type="email" class="form-control"
+                                                            placeholder="E-mail (необязательно)*" required>
+                                                        <div class="invalid-feedback">
+                                                            <img class="icon-small"
+                                                                src="img/icons/icon-exclamation.svg">
+                                                            Введите корректный e-mail адресс
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- Submit -->
+                                            <button type="submit"
+                                                class="mt-3 btn btn-primary d-flex justify-content-center align-items-center" id="submit-buyer">
+                                                <img class="icon me-2" src="img/icons/arrow-white.svg" >
+                                                <div>Далeе</div>
+                                            </button>
+                                            <!-- </div> -->
                                             <!-- Input Form End -->
 
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </form>
-                        <!-- Buyer End -->
-
-                        <!-- Delivery Start -->
-                        <div class="ordering-left__delivery accordion-item mt-3">
-                            <div class="container-xl">
-                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                    <button class="accordion-button collapsed content-2" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                                        aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                        <div class="headline">Доставка</div>
-                                    </button>
-                                </h2>
-                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                                    aria-labelledby="panelsStayOpen-headingTwo">
-                                    <div class="accordion-body">
-                                        <div class="fw-bold">Способ доставки:</div>
-                                        <!-- Radio Buttons -->
-                                        <div class="d-flex mt-3">
-                                            <div class="form-check">
-                                                <label class="form-check-label" for="pickup">
-                                                    <input class="form-check-input d-none" type="radio"
-                                                        name="inlineRadioOptions" id="pickup" value="option1">
-                                                    <div class="btn btn-radio">
-                                                        Самовывоз
-                                                        <img class="btn-radio-check"
-                                                            src="img/icons/btn-radio-check.svg">
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <div class="form-check ms-4">
-                                                <label class="form-check-label" for="courier">
-                                                    <input class="form-check-input d-none" type="radio"
-                                                        name="inlineRadioOptions" id="courier" value="option1">
-                                                    <div class="btn btn-radio">Курьер
-                                                        <img class="btn-radio-check"
-                                                            src="img/icons/btn-radio-check.svg">
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="fw-bold mt-3">Адрес доставки</div>
-                                        <select class="mt-3 form-select" aria-label="Default select example">
-                                            <option selected>Open this select menu</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        <div class="mt-3 d-flex flex-wrap">
-                                            <button class="btn btn-delivery">
-                                                <img class="icon me-2" src="img/icons/change.svg">
-                                                Изменить
-                                            </button>
-                                            <button class="btn btn-delivery ms-3">
-                                                <img class="icon me-2" src="img/icons/trash-bin.svg">
-                                                Удалить
-                                            </button>
-                                            <button class="btn btn-delivery mt-3">
-                                                <img class="icon me-2" src="img/icons/plus.svg">
-                                                Новый адресс
-                                            </button>
-                                        </div>
-                                        <div class="fw-bold mt-3">Дополнительные параметры доставки (необязательно):
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-3">
-                                            <!-- Date Input -->
-                                            <div class="input-form input-group-date">
-                                                <div class="input-wrapper">
-                                                    <div class="input-group ">
-                                                        <label class="input-label">Укажите дату</label>
-                                                        <div
-                                                            class="d-flex justify-content-between align-items-center my-1">
-                                                            <input type="text" class="form-control input-date"
-                                                                placeholder="Укажите дату">
-                                                            <img class="icon input-icon" src="img/icons/calendar.svg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-check lift-to-floor">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="liftToFloor">
-                                                <label class="form-check-label" for="liftToFloor">
-                                                    подъем на этаж
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <button type="button"
-                                            class="mt-3 btn btn-primary d-flex justify-content-center align-items-center">
-                                            <img class="icon me-2" src="img/icons/arrow-white.svg">
-                                            <div>Далeе</div>
-                                        </button>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
-                        <!-- Delivery End -->
+                    </div>
+                    <!-- Buyer End -->
 
-                        <!-- Payment Start -->
-                        <div class="ordering-left__payment accordion-item mt-3">
-                            <div class="container-xl">
-                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                    <button class="accordion-button collapsed content-3" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                                        aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                        <div class="headline">Способ оплаты</div>
-                                    </button>
-                                </h2>
-                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="panelsStayOpen-headingThree">
-                                    <div class="accordion-body">
-                                        <div class="fw-bold mt-3">Выберите один из доступных способов оплаты
+                    <!-- Delivery Start -->
+                    <div class="ordering-left__delivery accordion-item mt-3">
+                        <div class="container-xl">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed content-2" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    <div class="headline">Доставка</div>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <div class="input-form">
+                                        <form id="form-delivery" class="needs-validation" novalidate>
+                                            <div class="fw-bold">Способ доставки:</div>
                                             <!-- Radio Buttons -->
-                                            <div class="d-flex mt-3 flex-wrap">
-                                                <div class="form-check">
-                                                    <label class="form-check-label" for="cash">
-                                                        <input class="form-check-input d-none" type="radio"
-                                                            name="inlineRadioOptions" id="cash" value="option1">
-                                                        <div class="btn btn-radio">
-                                                            <img class="btn-radio-img" alt="..." src="img/cash.png">
-                                                            <div class="btn-radio-txt">Наличными курьеру</div>
-                                                            <img class="btn-radio-check"
-                                                                src="img/icons/btn-radio-check.svg">
+                                            <div class="input-wrapper">
+                                                <div class="input-group input-group-radios">
+                                                    <div class="d-flex mt-3">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="pickup">
+                                                                <input class="form-check-input d-none" type="radio"
+                                                                    name="inlineRadioOptions" id="pickup" value="pickup"
+                                                                    required>
+                                                                <div class="btn btn-radio">
+                                                                    Самовывоз
+                                                                    <img class="btn-radio-check"
+                                                                        src="img/icons/btn-radio-check.svg">
+                                                                </div>
+                                                                <div class="invalid-feedback">
+                                                                    <img class="icon-small"
+                                                                        src="img/icons/icon-exclamation.svg">
+                                                                    Выберите один из вариантов
+                                                                </div>
+
+                                                            </label>
                                                         </div>
-                                                    </label>
+                                                        <div class="form-check ms-4">
+                                                            <label class="form-check-label" for="courier">
+                                                                <input class="form-check-input d-none" type="radio"
+                                                                    name="inlineRadioOptions" id="courier"
+                                                                    value="courier" required>
+                                                                <div class="btn btn-radio">Курьер
+                                                                    <img class="btn-radio-check"
+                                                                        src="img/icons/btn-radio-check.svg">
+                                                                </div>
+
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="form-check ms-2">
-                                                    <label class="form-check-label" for="yandexMoney">
-                                                        <input class="form-check-input d-none" type="radio"
-                                                            name="inlineRadioOptions" id="yandexMoney" value="option1">
-                                                        <div class="btn btn-radio">
-                                                            <img class="btn-radio-img" alt="..."
-                                                                src="img/yandex-money.png">
-                                                            <div class="btn-radio-txt">Яндекс-деньги</div>
-                                                            <img class="btn-radio-check"
-                                                                src="img/icons/btn-radio-check.svg">
+                                            </div>
+                                            <div class="fw-bold mt-3">Адрес доставки</div>
+                                            <select class="mt-3 form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <div class="mt-3 d-flex flex-wrap">
+                                                <button class="btn btn-delivery">
+                                                    <img class="icon me-2" src="img/icons/change.svg">
+                                                    Изменить
+                                                </button>
+                                                <button class="btn btn-delivery ms-3">
+                                                    <img class="icon me-2" src="img/icons/trash-bin.svg">
+                                                    Удалить
+                                                </button>
+                                                <button class="btn btn-delivery mt-3">
+                                                    <img class="icon me-2" src="img/icons/plus.svg">
+                                                    Новый адресс
+                                                </button>
+                                            </div>
+                                            <div class="fw-bold mt-3">Дополнительные параметры доставки (необязательно):
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <!-- Date Input -->
+                                                <div class="input-form input-group-date">
+                                                    <div class="input-wrapper">
+                                                        <div class="input-group ">
+                                                            <label class="input-label">Укажите дату</label>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center my-1">
+                                                                <input type="text" class="form-control input-date"
+                                                                    placeholder="Укажите дату">
+                                                                <img class="icon input-icon"
+                                                                    src="img/icons/calendar.svg">
+                                                            </div>
                                                         </div>
-                                                    </label>
+                                                    </div>
                                                 </div>
-                                                <div class="form-check mt-3">
-                                                    <label class="form-check-label" for="cberbank">
-                                                        <input class="form-check-input d-none" type="radio"
-                                                            name="inlineRadioOptions" id="cberbank" value="option1">
-                                                        <div class="btn btn-radio">
-                                                            <img class="btn-radio-img" alt="..." src="img/cberbank.png">
-                                                            <div class="btn-radio-txt">Сбербанк перевод</div>
-                                                            <img class="btn-radio-check"
-                                                                src="img/icons/btn-radio-check.svg">
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check ms-2 mt-3">
-                                                    <label class="form-check-label" for="cod">
-                                                        <input class="form-check-input d-none" type="radio"
-                                                            name="inlineRadioOptions" id="cod" value="option1">
-                                                        <div class="btn btn-radio">
-                                                            <img class="btn-radio-img" alt="..." src="img/cod.png">
-                                                            <div class="btn-radio-txt">Наложенный платеж</div>
-                                                            <img class="btn-radio-check"
-                                                                src="img/icons/btn-radio-check.svg">
-                                                        </div>
+                                                <div class="form-check lift-to-floor">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="liftToFloor">
+                                                    <label class="form-check-label" for="liftToFloor">
+                                                        подъем на этаж
                                                     </label>
                                                 </div>
                                             </div>
-                                            <button type="button"
+                                            <button type="submit"
                                                 class="mt-3 btn btn-primary d-flex justify-content-center align-items-center">
                                                 <img class="icon me-2" src="img/icons/arrow-white.svg">
                                                 <div>Далeе</div>
                                             </button>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Payment End -->
                         </div>
                     </div>
-                    <!-- Ordering Left End -->
+                    <!-- Delivery End -->
 
+                    <!-- Payment Start -->
+                    <div class="ordering-left__payment accordion-item mt-3">
+                        <div class="container-xl">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed content-3" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <div class="headline">Способ оплаты</div>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <div class="fw-bold mt-3">Выберите один из доступных способов оплаты</div>
+                                    <div class="input-form">
+                                        <form id="form-payment" class="needs-validation" novalidate>
+                                            <!-- Radio Buttons -->
+                                            <div class="input-wrapper">
+                                                <div class="input-group input-group-radios">
+                                                    <div class="d-flex mt-3 flex-wrap">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="cash">
+                                                                <input class="form-check-input d-none" type="radio"
+                                                                    name="inlineRadioOptions" id="cash" value="cash"
+                                                                    required>
+                                                                <div class="btn btn-radio">
+                                                                    <img class="btn-radio-img" alt="..."
+                                                                        src="img/cash.png">
+                                                                    <div class="btn-radio-txt">Наличными курьеру</div>
+                                                                    <img class="btn-radio-check"
+                                                                        src="img/icons/btn-radio-check.svg">
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check ms-2">
+                                                            <label class="form-check-label" for="yandexMoney">
+                                                                <input class="form-check-input d-none" type="radio"
+                                                                    name="inlineRadioOptions" id="yandexMoney"
+                                                                    value="yandexMoney" required>
+                                                                <div class="btn btn-radio">
+                                                                    <img class="btn-radio-img" alt="..."
+                                                                        src="img/yandex-money.png">
+                                                                    <div class="btn-radio-txt">Яндекс-деньги</div>
+                                                                    <img class="btn-radio-check"
+                                                                        src="img/icons/btn-radio-check.svg">
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mt-3">
+                                                            <label class="form-check-label" for="cberbank">
+                                                                <input class="form-check-input d-none" type="radio"
+                                                                    name="inlineRadioOptions" id="cberbank"
+                                                                    value="cberbank" required>
+                                                                <div class="btn btn-radio">
+                                                                    <img class="btn-radio-img" alt="..."
+                                                                        src="img/cberbank.png">
+                                                                    <div class="btn-radio-txt">Сбербанк перевод</div>
+                                                                    <img class="btn-radio-check"
+                                                                        src="img/icons/btn-radio-check.svg">
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check ms-2 mt-3">
+                                                            <label class="form-check-label" for="cod">
+                                                                <input class="form-check-input d-none" type="radio"
+                                                                    name="inlineRadioOptions" id="cod" value="cod"
+                                                                    required>
 
+                                                                <div class="btn btn-radio">
+                                                                    <img class="btn-radio-img" alt="..."
+                                                                        src="img/cod.png">
+                                                                    <div class="btn-radio-txt">Наложенный платеж</div>
+                                                                    <img class="btn-radio-check"
+                                                                        src="img/icons/btn-radio-check.svg">
+                                                                </div>
+                                                                <div class="invalid-feedback">
+                                                                    <img class="icon-small"
+                                                                        src="img/icons/icon-exclamation.svg">
+                                                                    Выберите один из вариантов
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
+                                            <button type="submit"
+                                                class="mt-3 btn btn-primary d-flex justify-content-center align-items-center">
+                                                <img class="icon me-2" src="img/icons/arrow-white.svg">
+                                                <div>Далeе</div>
+                                            </button>
+                                    </div>
+                                    </form>
 
-
-                    <!-- Ordering Rgiht Start -->
-                    <div class="ordering-right col"></div>
-                    <!-- Ordering Rgiht End -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Payment End -->
+                    </div>
                 </div>
-        </form>
-    </div>
 
-
-
-
-    <!-- Main End -->
-
-
-
-
-
-
-
-    <!-- Footer Start -->
-    <footer>
-        <div class="container-xl">
-            <div class="footer-row1 d-flex justify-content-start pt-3">
-                <a href=""><img src="img/icons/twitter.svg"></a>
-                <a href=""><img src="img/icons/vk.svg"></a>
-                <a href=""><img src="img/icons/facebook.svg"></a>
-                <a href=""><img src="img/icons/instagram.svg"></a>
-            </div>
-            <div class="footer-row2 mt-3 row row-cols-1 row-cols-md-4">
-                <div
-                    class="col col-md-3 col-xl-4 d-flex justify-content-start justify-content-md-center flex-md-column flex-xl-row justify-content-xl-start mt-xl-4">
-                    <a href="tel:+73472949455" class="footer-tel headline-blue">+7 347 294-94-55</a>
-                    <a href="#" class="footer-call-btn">Заказать звонок</a>
+                <!-- Products Header -->
+                <div class="ordering-left__products-header container-xl mt-3 bg-light">
+                    <div class="headline">Товары в заказе</div>
                 </div>
-                <div class="footer-remark col col-md-9 col-xl-8 mt-3 mt-md-0">
-                    *Цены и технические характеристики, представленные в каталоге, носят сугубо информативный характер и
-                    не являются публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса РФ.
-                    Указанные цены, могут быть изменены в любое время без предупреждения. Для получения более подробной
-                    информации звоните нам по телефону: 8 (347) 246-90-22
+                <!-- Products Start -->
+                <div class="ordering-left__products row row-cols-3 g-1-custom">
+                    <!-- Item Start -->
+                    <div class="col-9">
+                        <div class="row row-cols-2 g-1-custom">
+                            <div class="col-3">
+                                <div class="table-row-item">
+                                    <img class="table-img" src="img/product1.png" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="table-row-item">Видеокамера TR-D7111 IR1W - беспроводная 1,3 Мп. IP
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="table-row-item text-center">1 шт</div>
+                    </div>
+                    <div class="col-2">
+                        <div class="table-row-item justify-content-end table-price fw-bold">22 480 ₽</div>
+                    </div>
+                    <!-- Item End -->
+                    <!-- Item Start -->
+                    <div class="col-9">
+                        <div class="row row-cols-2 g-1-custom">
+                            <div class="col-3">
+                                <div class="table-row-item">
+                                    <img class="table-img" src="img/product1.png" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="table-row-item">Видеокамера TR-D7111 IR1W - беспроводная 1,3 Мп. IP
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="table-row-item text-center">1 шт</div>
+                    </div>
+                    <div class="col-2">
+                        <div class="table-row-item justify-content-end table-price fw-bold">22 480 ₽</div>
+                    </div>
+                    <!-- Item End -->
+                    <!-- Item Start -->
+                    <div class="col-9">
+                        <div class="row row-cols-2 g-1-custom">
+                            <div class="col-3">
+                                <div class="table-row-item">
+                                    <img class="table-img" src="img/product1.png" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="table-row-item">Видеокамера TR-D7111 IR1W - беспроводная 1,3 Мп. IP
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="table-row-item text-center">1 шт</div>
+                    </div>
+                    <div class="col-2">
+                        <div class="table-row-item justify-content-end table-price fw-bold">22 480 ₽</div>
+                    </div>
+                    <!-- Item End -->
+
+                </div>
+                <!-- Products End -->
+
+                <!-- Table Total Start -->
+                <div class="ordering-left__products-total container-xl row row-cols-5 g-0 g-1-md-custom">
+                    <div class="col-8 col-md-9">
+                        <div class="table-row-item justify-content-end">
+                            <div class="discount-input__label">Итого</div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <div class="table-row-item justify-content-end table-price table-summ fw-bold">112 246 ₽</div>
+                    </div>
+                </div>
+                <!-- Table Total End -->
+            </div>
+            <!-- Ordering Left End -->
+
+
+            <!-- Ordering Right Start -->
+            <div class="ordering-right bg-light col">
+                <div class="container-xl">
+                    <div class="table-row-item px-0 flex-column">
+                        <div class="w-100">
+                            <div class="discount-input__label">Введите код купона для скидки
+                                (если есть):</div>
+                            <input type="text" class="form-control w-100 mt-2" placeholder="промокод">
+                            <div class="ordering-right__item mt-4">
+                                <div class="ordering-right__item-name">Товары</div>
+                                <div class="ordering-right__item-price">12 246 ₽</div>
+                            </div>
+                            <div class="ordering-right__item">
+                                <div class="ordering-right__item-name">Доставка</div>
+                                <div class="ordering-right__item-price">300 ₽</div>
+                            </div>
+                            <div class="ordering-right__item">
+                                <div class="ordering-right__item-name">Скидка</div>
+                                <div class="ordering-right__item-price">0 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit -->
+                    <div class="d-flex justify-content-end mt-4 w-100">
+                        <button type="submit" class="btn btn-primary disabled">
+                            Оформить заказ
+                            <img class="icon" src="img/icons/arrow-grey.svg">
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="footer-trademark mt-3 pb-3">
-                Интернет-магазин "Smart Security Systems" © 2021
-            </div>
+            <!-- Ordering Right End -->
+
         </div>
-    </footer>
-    <!-- Footer End -->
+
+        <!-- Main End -->
+
+        <!-- Footer Start -->
+        <footer>
+            <div class="container-xl">
+                <div class="footer-row1 d-flex justify-content-start pt-3">
+                    <a href=""><img src="img/icons/twitter.svg"></a>
+                    <a href=""><img src="img/icons/vk.svg"></a>
+                    <a href=""><img src="img/icons/facebook.svg"></a>
+                    <a href=""><img src="img/icons/instagram.svg"></a>
+                </div>
+                <div class="footer-row2 mt-3 row row-cols-1 row-cols-md-4">
+                    <div
+                        class="col col-md-3 col-xl-4 d-flex justify-content-start justify-content-md-center flex-md-column flex-xl-row justify-content-xl-start mt-xl-4">
+                        <a href="tel:+73472949455" class="footer-tel headline-blue">+7 347 294-94-55</a>
+                        <a href="#" class="footer-call-btn">Заказать звонок</a>
+                    </div>
+                    <div class="footer-remark col col-md-9 col-xl-8 mt-3 mt-md-0">
+                        *Цены и технические характеристики, представленные в каталоге, носят сугубо информативный
+                        характер и
+                        не являются публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса
+                        РФ.
+                        Указанные цены, могут быть изменены в любое время без предупреждения. Для получения более
+                        подробной
+                        информации звоните нам по телефону: 8 (347) 246-90-22
+                    </div>
+                </div>
+                <div class="footer-trademark mt-3 pb-3">
+                    Интернет-магазин "Smart Security Systems" © 2021
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
 
 
 
-    <!-- Jquery -->
-    <script src="js/jquery-3.6.2.min.js"></script>
-    <!-- Bootstap Script -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- Owl Carousel Script -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- Main Script -->
-    <script src="js/main.js"></script>
+        <!-- Jquery -->
+        <script src="js/jquery-3.6.2.min.js"></script>
+        <!-- Bootstap Script -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Owl Carousel Script -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- Main Script -->
+        <script src="js/main.js"></script>
 </body>
 
 </html>
