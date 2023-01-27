@@ -241,6 +241,8 @@ let grayDark = "#CCD5DB"; /* mid-grey-l */
 let primaryColor = "#00A0E3";/* light-blue */
 let card = $(".catalog-main__cads .card .row");
 let cardCols = card.find(".col");
+let cardLeftCol = ("col-3");
+let cardRightCol = ("col-9");
 
 $(".1-col-btn").click(function () {
 
@@ -251,12 +253,16 @@ $(".1-col-btn").click(function () {
     manyColsBtnColor.attr("fill", grayDark);
     card.removeClass("row-cols-1");
     card.addClass("row-cols-2");
-    
-    // for (let index = 0; index < cardCols.length; index++) {
-    //   const element = cardCols[index];
-    //   element[0].addClass("col-3");
-      
-    // }
+
+    //////////// change cols
+    for (let index = 0; index < cardCols.length; index++) {
+      const element = cardCols[index];
+      if (index % 2 == 0) {
+        element.classList.add(cardLeftCol);
+      } else {
+        element.classList.add(cardRightCol);
+      }
+    }
   }
 })
 
@@ -269,6 +275,15 @@ $(".many-cols-btn").click(function () {
     oneColBtnColor.attr("fill", grayDark);
     card.removeClass("row-cols-2");
     card.addClass("row-cols-1");
+    //////////// change cols
+    for (let index = 0; index < cardCols.length; index++) {
+      const element = cardCols[index];
+      if (index % 2 == 0) {
+        element.classList.remove(cardLeftCol);
+      } else {
+        element.classList.remove(cardRightCol);
+      }
+    }
   }
 })
 
@@ -490,7 +505,7 @@ let placeholder;
 
 input.focus(function (e) {
   e.preventDefault();
-  $(this).closest(inputGroup).css("padding","0px 0px");
+  $(this).closest(inputGroup).css("padding", "0px 0px");
   $(this).closest(inputGroup).addClass("input-group-focused");
   placeholder = $(this).closest(inputGroup).find(input).attr("placeholder")
 
@@ -505,7 +520,7 @@ input.focus(function (e) {
 });
 input.focusout(function (e) {
   e.preventDefault();
-  $(this).closest(inputGroup).css("padding","11px 0px");
+  $(this).closest(inputGroup).css("padding", "11px 0px");
   $(this).closest(inputGroup).removeClass("input-group-focused");
   $(this).closest(inputGroup).find(input).attr("placeholder", placeholder);
   $(this).closest(inputGroup).find(inputLabel).css("display", "none");
