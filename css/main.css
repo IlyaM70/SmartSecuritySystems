@@ -2043,8 +2043,9 @@ hr {
 .input-form {
     width: 100%;
     max-width: 360px;
-    height: 600px;
+    height: 100%;
     margin: 0 auto;
+    padding-bottom: 24px;
 }
 
 .input-form .input-group {
@@ -2053,6 +2054,7 @@ hr {
     border-radius: 4px;
     flex-direction: column;
     justify-content: space-between;
+    padding: 11px 0;
 }
 
 .input-form .input-group-focused {
@@ -2100,8 +2102,7 @@ hr {
 }
 
 .input-form .input-icon {
-    margin-left: 6px;
-    margin-right: 1px;
+    margin-right: 4px;
 }
 
 .input-form .invalid-feedback {
@@ -2195,6 +2196,23 @@ hr {
 .ordering {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 16px;
+}
+
+@media (min-width:992px) {
+    .ordering {
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width:1200px) {
+    .ordering {
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 60px;
+    }
 }
 
 .ordering .accordion {
@@ -2257,12 +2275,41 @@ hr {
 .ordering .input-form {
     height: unset;
     max-width: unset;
+    padding-bottom: 0;
 }
 
 .ordering-left__buyer .form-check-label {
     padding-left: 6px;
     padding-top: 2px;
 
+}
+
+.ordering-left__buyer #input-wrapper-name,
+.ordering-left__buyer #input-wrapper-tel,
+.ordering-left__buyer #input-wrapper-email {
+    width: 336px;
+}
+
+
+@media (min-width: 768px) {
+    .ordering .headline {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .ordering-left__buyer #input-wrapper-name,
+    .ordering-left__buyer #input-wrapper-tel,
+    .ordering-left__buyer #input-wrapper-email {
+        width: 320px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .ordering .headline {
+        font-size: 24px;
+        line-height: 30px;
+    }
 }
 
 
@@ -2339,7 +2386,7 @@ hr {
 }
 
 .ordering-left__delivery .form-select {
-    width: 100%;
+    width: 336px;
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 4px;
@@ -2362,6 +2409,10 @@ hr {
 
 .btn-delivery:nth-of-type(3) {
     margin-top: 16px;
+}
+
+.btn-delivery:hover {
+    background: var(--bs-gray-200);
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -2502,6 +2553,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-left: 0;
 }
 
+.ordering-left__payment .form-check:nth-of-type(2) {
+    margin-left: 8px;
+}
+
+.ordering-left__payment .form-check:nth-of-type(3) {
+    margin-top: 16px;
+}
+
+.ordering-left__payment .form-check:nth-of-type(4) {
+    margin-top: 16px;
+    margin-left: 8px;
+}
+
 .ordering-left__payment .form-check-label {
     padding-left: 0;
 }
@@ -2511,6 +2575,46 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     line-height: 18px;
 }
 
+.ordering-left__payment .flex-wrap {
+    max-width: 474px;
+}
+
+
+
+
+@media (min-width:992px) {
+    .ordering-left__payment .flex-wrap {
+        max-width: unset;
+    }
+
+    .ordering-left__payment .form-check:nth-of-type(2) {
+        margin-left: 10px;
+    }
+
+    .ordering-left__payment .form-check:nth-of-type(3) {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    .ordering-left__payment .form-check:nth-of-type(4) {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width:1200px) {
+    .ordering-left__payment .form-check:nth-of-type(2) {
+        margin-left: 16px;
+    }
+
+    .ordering-left__payment .form-check:nth-of-type(3) {
+        margin-left: 16px;
+    }
+
+    .ordering-left__payment .form-check:nth-of-type(4) {
+        margin-left: 16px;
+    }
+}
 
 /* //////////Payment End */
 
@@ -2524,7 +2628,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .ordering-left__products {
     margin-top: 0px;
-    width: 100%;
 }
 
 .ordering-left .table-row-item {
@@ -2556,12 +2659,64 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     line-height: 33px;
 }
 
+.ordering-left .table-price {
+    font-weight: 700;
+}
+
+
+
+
+@media (min-width:442px) {
+    .ordering-left .table-img {
+        width: 60px;
+        height: 55px;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width:768px) {
     .g-1-md-custom {
-        --bs-gutter-y: 2px;
+        --bs-gutter-y: 0px;
         --bs-gutter-x: 1px;
     }
 }
+
+@media (min-width:768px) {
+    .ordering-left__products-total {
+        margin-top: 0px;
+    }
+
+    .ordering-left .table-row-item {
+        height: 76px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .ordering-left .table-price {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    .ordering-left .table-summ {
+        font-family: 'Open Sans';
+        font-size: 24px;
+        line-height: 33px;
+        font-feature-settings: normal;
+    }
+
+    .ordering-left .table-img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+
+
 
 /* Products End */
 
@@ -2580,11 +2735,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
+    white-space: normal;
+    width: 240px;
 }
 
 .ordering-right__item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: var(--pz-black);
     margin-top: 16px;
 }
@@ -2602,6 +2760,64 @@ fieldset:disabled .btn {
     border-color: var(--bs-gray-200);
     opacity: var(--bs-btn-disabled-opacity);
 }
+
+.ordering-right hr {
+    color: var(--bs-gray-200)
+}
+
+.btn-submit-order {
+    width: 156px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.ordering-right .table-row-item .form-control {
+    width: 336px !important;
+}
+
+@media (min-width:768px) {
+    .ordering-right .discount-input__label {
+        width: 100%;
+    }
+
+    .ordering-right .table-row-item .form-control {
+        margin-left: 0px;
+    }
+
+    .ordering-right .table-summ {
+        font-size: 21px;
+    }
+
+    .btn-submit-order {
+        font-size: 12px;
+    }
+
+    .ordering-right .table-row-item .form-control {
+        width: 100% !important;
+    }
+}
+
+@media (min-width:778px) {
+    .btn-submit-order {
+        font-size: 13px;
+    }
+}
+
+@media (min-width:992px) {
+    .ordering-right .table-summ {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .ordering-right .discount-input__label {
+        width: 81%;
+    }
+}
+
 
 /* Right End */
 

@@ -483,6 +483,7 @@ let placeholder;
 
 input.focus(function (e) {
   e.preventDefault();
+  $(this).closest(inputGroup).css("padding","0px 0px");
   $(this).closest(inputGroup).addClass("input-group-focused");
   placeholder = $(this).closest(inputGroup).find(input).attr("placeholder")
 
@@ -497,6 +498,7 @@ input.focus(function (e) {
 });
 input.focusout(function (e) {
   e.preventDefault();
+  $(this).closest(inputGroup).css("padding","11px 0px");
   $(this).closest(inputGroup).removeClass("input-group-focused");
   $(this).closest(inputGroup).find(input).attr("placeholder", placeholder);
   $(this).closest(inputGroup).find(inputLabel).css("display", "none");
