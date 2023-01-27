@@ -240,6 +240,7 @@ let manyColsBtnColor = $(".many-cols-btn > g > rect");
 let grayDark = "#CCD5DB"; /* mid-grey-l */
 let primaryColor = "#00A0E3";/* light-blue */
 let card = $(".catalog-main__cads .card .row");
+let cardCols = card.find(".col");
 
 $(".1-col-btn").click(function () {
 
@@ -250,6 +251,12 @@ $(".1-col-btn").click(function () {
     manyColsBtnColor.attr("fill", grayDark);
     card.removeClass("row-cols-1");
     card.addClass("row-cols-2");
+    
+    // for (let index = 0; index < cardCols.length; index++) {
+    //   const element = cardCols[index];
+    //   element[0].addClass("col-3");
+      
+    // }
   }
 })
 

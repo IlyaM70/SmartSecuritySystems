@@ -1216,7 +1216,6 @@ input[type="range"]::-moz-range-thumb {
 .card-in-stock {
     font-size: 11px;
     line-height: 15px;
-    margin-top: 8px;
     margin-bottom: 0;
     display: flex;
     align-items: center;
@@ -1228,6 +1227,7 @@ input[type="range"]::-moz-range-thumb {
     background-color: var(--primary-color);
     border-radius: 5px;
     margin-right: 4px;
+    margin-top: 2px;
 }
 
 /* Img media Start */
@@ -1283,13 +1283,10 @@ input[type="range"]::-moz-range-thumb {
 
 /* 1 column Styles Start */
 
-.catalog-main__cads .row-cols-2 .card-compare {
-    justify-content: start;
+.catalog-main__cads .row-cols-2 .card-text{
+    font-weight: 700;
 }
 
-.catalog-main__cads .row-cols-2 .icon-small {
-    margin-left: 15px;
-}
 
 @media (min-width:992px) {
     .catalog-main__cads .row-cols-2 .card-footer {
@@ -2236,7 +2233,7 @@ hr {
     margin-right: 22px;
 }
 
-.accordion-button:not(.collapsed)::after {
+.ordering .accordion-button:not(.collapsed)::after {
     transform: none;
     background: var(--primary-color);
 }
