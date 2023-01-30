@@ -241,8 +241,8 @@ let grayDark = "#CCD5DB"; /* mid-grey-l */
 let primaryColor = "#00A0E3";/* light-blue */
 let card = $(".catalog-main__cads .card .row");
 let cardCols = card.find(".col");
-let cardLeftCol = ("col-3");
-let cardRightCol = ("col-9");
+let cardLeftCol = ['col-4','col-sm-3','col-md-2'];
+let cardRightCol = ["col-8", "col-sm-9", "col-md-10"];
 
 $(".1-col-btn").click(function () {
 
@@ -258,9 +258,9 @@ $(".1-col-btn").click(function () {
     for (let index = 0; index < cardCols.length; index++) {
       const element = cardCols[index];
       if (index % 2 == 0) {
-        element.classList.add(cardLeftCol);
+        element.classList.add(...cardLeftCol);
       } else {
-        element.classList.add(cardRightCol);
+        element.classList.add(...cardRightCol);
       }
     }
   }
@@ -279,9 +279,9 @@ $(".many-cols-btn").click(function () {
     for (let index = 0; index < cardCols.length; index++) {
       const element = cardCols[index];
       if (index % 2 == 0) {
-        element.classList.remove(cardLeftCol);
+        element.classList.remove(...cardLeftCol);
       } else {
-        element.classList.remove(cardRightCol);
+        element.classList.remove(...cardRightCol);
       }
     }
   }

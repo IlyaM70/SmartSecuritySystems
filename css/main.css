@@ -22,6 +22,7 @@
     /* pz/black */
     --grey-white: #FAFAFA;
     /* grey-white */
+
 }
 
 .navbar-dark {
@@ -646,7 +647,6 @@ a:hover {
     font-size: 20px;
     line-height: 23px;
     font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #000000;
     display: flex;
 }
 
@@ -820,8 +820,17 @@ a:hover {
     font-size: 11px;
     line-height: 15px;
     color: var(--bs-black);
-    background-color: var(--bs-white);
+}
+
+.security-systems__body .container-xl {
     padding-bottom: 60px;
+}
+
+@media (min-width:768px) {
+    .security-systems__body {
+        font-size: 14px;
+        line-height: 20px
+    }
 }
 
 .headline-blue {
@@ -1230,6 +1239,28 @@ input[type="range"]::-moz-range-thumb {
     margin-top: 2px;
 }
 
+.card-in-stock-txt {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card-description {
+    display: none;
+}
+
+.card-stock-and-chosen {
+    display: flex;
+}
+
+.card-prices {
+    display: flex;
+}
+
+.card-footer-1col {
+    display: none;
+}
+
 /* Img media Start */
 @media (min-width:550px) {
     .catalog-main__cads .card-img-top {
@@ -1283,10 +1314,96 @@ input[type="range"]::-moz-range-thumb {
 
 /* 1 column Styles Start */
 
-.catalog-main__cads .row-cols-2 .card-text{
+.catalog-main__cads .row-cols-2 .card-text {
     font-weight: 700;
 }
 
+
+.catalog-main__cads .row-cols-2 .card-description {
+    display: block;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    margin-top: 10px;
+}
+
+.catalog-main__cads .row-cols-2 .card-stock-and-chosen {
+    display: none;
+}
+
+.catalog-main__cads .row-cols-2 .card-prices {
+    display: none;
+}
+
+.catalog-main__cads .row-cols-2 .card-footer-1col {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 8px;
+    border-top: 1px solid #E9E9E9;
+}
+
+.card-body-right {
+    display: none;
+    width: 26%;
+    margin-left: 20px;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.card-footer-1col .card-price {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--bs-black);
+}
+
+.card-body-right .card-price {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--bs-black);
+}
+
+.catalog-main__cads .row-cols-2 .card-img-top {
+    aspect-ratio: 1/1 !important;
+    width: 100% !important;
+    margin: 8px auto !important;
+}
+
+.card-buy-btn {
+    border-radius: 2px;
+    padding: 5px;
+    padding-right: 7px;
+}
+
+@media (min-width:768px) {
+    .catalog-main__cads .row-cols-2 .card-body {
+        display: flex;
+        height: 100%;
+    }
+
+    .catalog-main__cads .row-cols-2 .card-body-right {
+        display: flex;
+    }
+
+    .catalog-main__cads .row-cols-2 .card-footer-1col {
+        display: none;
+    }
+
+    .card-buy-btn {
+        padding: 8px;
+        padding-right: 10px;
+    }
+}
 
 @media (min-width:992px) {
     .catalog-main__cads .row-cols-2 .card-footer {
@@ -2823,6 +2940,59 @@ fieldset:disabled .btn {
 
 
 /* /////////////////////Ordering Page End///////////////////////// */
+
+.about-store-logo{
+    width: 195px;
+    height:94px ;
+}
+
+/* /////////////////////Contacts Page Start///////////////////////// */
+.contacts-page__body .container-xl {
+    padding-bottom: 16px;
+}
+
+
+.contacts-page__contacts-item {
+    display: flex;
+    align-items: center;
+}
+
+.contacts__item-txt {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.contacts-page__requisites {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media (min-width:768px) {
+    .contacts-page__requisites {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.contacts-page__map-header-btn {
+    padding: 12px 16px;
+    background: var(--bs-white);
+    border: 1px solid var(--bs-gray-200);
+    border-radius: 2px;
+}
+.contacts-page__map-header-btn .active {
+    border: 1px solid var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+/* /////////////////////Contacts Page End///////////////////////// */
 
 
 
