@@ -241,7 +241,7 @@ let grayDark = "#CCD5DB"; /* mid-grey-l */
 let primaryColor = "#00A0E3";/* light-blue */
 let card = $(".catalog-main__cads .card .row");
 let cardCols = card.find(".col");
-let cardLeftCol = ['col-4','col-sm-3','col-md-2'];
+let cardLeftCol = ['col-4', 'col-sm-3', 'col-md-2'];
 let cardRightCol = ["col-8", "col-sm-9", "col-md-10"];
 
 $(".1-col-btn").click(function () {
@@ -607,4 +607,95 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 /////////////////////////////Phone Mask End
+
+//////////////////////// Contacts Page Map Toggle///////////////////
+
+let mapToggle1 = $("#map-toggle-1");
+let mapToggle2 = $("#map-toggle-2");
+
+let map1 = $("#map-1");
+let map2 = $("#map-2");
+
+
+
+mapToggle1.click(function (e) { 
+  e.preventDefault();
+  if ($(this).hasClass("active")) {
+    
+  } else {
+    $(this).addClass("active");
+    mapToggle2.removeClass("active");
+    map2.removeClass("active");
+    map1.addClass("active");
+  }
+});
+
+
+mapToggle2.click(function (e) { 
+  e.preventDefault();
+  if ($(this).hasClass("active")) {
+    
+  } else {
+    $(this).addClass("active");
+    mapToggle1.removeClass("active");
+    map1.removeClass("active");
+    map2.addClass("active");
+  }
+});
+
+//////////////////////// User Page Change info btn///////////////////
+
+
+let userChangebtn = $(".your-account__btn");
+let userMobileForm = $("#your-account__form-mobile");
+let userMobileDesktop = $("#your-account__form-desktop");
+let info = $(".your-account__info");
+
+userChangebtn.click(function (e) { 
+  e.preventDefault();
+  if (window.innerWidth<768) {
+    userMobileForm.css("display","block");
+    userChangebtn.css("display","none");
+    info.css("display","none");
+  } else {
+    userMobileDesktop.css("display","block");
+    userChangebtn.css("display","none");
+  }
+  
+});
+
+
+
+//////////////////////// User Page Change Accodrion Button///////////////////
+
+let accordionBtn = $(".user-main .accordion-button");
+let accordionArrow = $(".last-orders-header-left__icon");
+let userPage = "/user-account.html"
+
+if (location.pathname == userPage) {
+  
+$(document).ready(function () {
+  
+ accordionBtn.first().find(accordionArrow).css("transform","rotate(0deg)");
+
+
+});
+} 
+
+accordionBtn.click(function () { 
+  //console.log($(this).find(accordionArrow).css("transform"));
+  if ($(this).find(accordionArrow).css("transform") == "matrix(1, 0, 0, 1, 0, 0)") {
+    $(this).find(accordionArrow).css("transform","matrix(-1, 0, 0, -1, 0, 0)");
+  } else {
+    $(this).find(accordionArrow).css("transform","matrix(1, 0, 0, 1, 0, 0)");
+  }
+});
+
+
+
+
+
+
+
+
 

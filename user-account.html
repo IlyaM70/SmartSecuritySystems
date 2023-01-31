@@ -714,13 +714,20 @@
 
 
 
+    <!-- User Header -->
+    <div class="container-xl mt-3">
+        <div class="d-flex d-xl-none justify-content-start align-items-center">
+            <div class="headline">Кабинет Пользователя</div>
+        </div>
+    </div>
+
     <!-- User Main Start -->
     <div class="user-main container-xl mt-4">
         <div class="row cols-1 cols-xl-2 g-xl-3">
             <!-- User Left Start -->
             <div class="col-0 d-none d-xl-flex flex-column col-xl-3 ps-xl-0 w-23">
                 <div class="user-left bg-light">
-                    <div class="user-left-item user-left-header">Управление</div>
+                    <div class="user-left-item user-header">Управление</div>
                     <div class="user-left-item hover-border">
                         <img class="icon" src="img/icons/user-blue.svg">
                         <a href="">Профиль пользователя</a>
@@ -741,15 +748,343 @@
             </div>
             <!-- User Left End -->
 
-            <!-- User Rgiht Start-->
+            <!-- User Right Start-->
             <div class="col-12 col-xl-9 col-xl-9-custom pe-xl-0">
                 <div class="user-right">
-                    <div class="your-account">
+                    <!-- Your account Start -->
+                    <div class="your-account bg-light">
+                        <div class="container-xl">
+                            <div class="user-header ps-0">Ваша учетная запись</div>
+                            <div class="your-account__info mt-3">
+                                <div class="your-account__name">Николаев Александр Александрович</div>
+                                <div class="your-account__e-mail mt-2">a.nokolaev@mail.ru</div>
+                                <div class="your-account__tel mt-2">+7 (317) 12 34 567</div>
+                                <button class="mt-3 btn your-account__btn">Изменить</button>
+                            </div>
 
+                            <!-- Form Mobile Start -->
+                            <div class="your-account__form input-form ordering mt-3" id="your-account__form-mobile">
+                                <form id="form-buyer" class="needs-validation" novalidate>
+
+                                    <div>Тип покупателя:</div>
+                                    <div class="input-wrapper">
+                                        <div class="input-group input-group-radios">
+                                            <div class="d-flex mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="individual" value="individual"
+                                                        required>
+                                                    <label class="form-check-label" for="individual">Физическое
+                                                        лицо</label>
+
+                                                </div>
+                                                <div class="form-check ms-3">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="legal" value="legal" required>
+                                                    <label class="form-check-label" for="legal">Юридическое
+                                                        лицо</label>
+                                                    <div class="invalid-feedback">
+                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
+                                                        Выберите один из вариантов
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">Контактные данные:</div>
+
+
+
+                                    <div class="input-wrapper" id="input-wrapper-name">
+                                        <div class="input-group">
+                                            <label class="input-label">ФИО*</label>
+                                            <div class="d-flex justify-content-between align-items-center my-1">
+                                                <input type="text" class="form-control" placeholder="ФИО*" required>
+                                                <div class="invalid-feedback">
+                                                    <img class="icon-small" src="img/icons/icon-exclamation.svg">
+                                                    Заполните поле
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-lg-flex">
+                                        <div class="input-wrapper" id="input-wrapper-tel">
+                                            <div class="input-group mt-3">
+                                                <label class="input-label">Телефон*</label>
+                                                <div class="d-flex justify-content-between align-items-center my-1">
+                                                    <input type="tel" id="online_phone" name="phone" maxlength="50"
+                                                        pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                                                        class="form-control" placeholder="Телефон*" required>
+                                                    <div class="invalid-feedback">
+                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
+                                                        Введите корректный номер телефона
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="input-wrapper ms-lg-2" id="input-wrapper-email">
+                                            <div class="input-group mt-3">
+                                                <label class="input-label">E-mail (необязательно)</label>
+                                                <div class="d-flex justify-content-between align-items-center my-1">
+                                                    <input type="email" class="form-control"
+                                                        placeholder="E-mail (необязательно)*" required>
+                                                    <div class="invalid-feedback">
+                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
+                                                        Введите корректный e-mail адресс
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Submit -->
+                                    <button type="submit"
+                                        class="mt-3 btn btn-primary d-flex justify-content-center align-items-center"
+                                        id="submit-buyer">
+                                        <div>Сохранить</div>
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- Form Mobile End -->
+
+                            <!-- Form Desktop Start -->
+                            <div class="your-account__form input-form ordering mt-3" id="your-account__form-desktop">
+                                <form id="form-buyer" class="needs-validation" novalidate>
+
+                                    <div>Тип покупателя:</div>
+                                    <div class="input-wrapper">
+                                        <div class="input-group input-group-radios">
+                                            <div class="d-flex mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="individual" value="individual"
+                                                        required>
+                                                    <label class="form-check-label" for="individual">Физическое
+                                                        лицо</label>
+
+                                                </div>
+                                                <div class="form-check ms-3">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="legal" value="legal" required>
+                                                    <label class="form-check-label" for="legal">Юридическое
+                                                        лицо</label>
+                                                    <div class="invalid-feedback">
+                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
+                                                        Выберите один из вариантов
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">Контактные данные:</div>
+
+
+
+                                    <div class="input-wrapper" id="input-wrapper-name">
+                                        <div class="input-group">
+                                            <label class="input-label">Фамилия*</label>
+                                            <div class="d-flex justify-content-between align-items-center my-1">
+                                                <input type="text" class="form-control" placeholder="Фамилия*" required>
+                                                <div class="invalid-feedback">
+                                                    <img class="icon-small" src="img/icons/icon-exclamation.svg">
+                                                    Заполните поле
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-wrapper" id="input-wrapper-name">
+                                        <div class="input-group mt-3">
+                                            <label class="input-label">Имя*</label>
+                                            <div class="d-flex justify-content-between align-items-center my-1">
+                                                <input type="text" class="form-control" placeholder="Имя*" required>
+                                                <div class="invalid-feedback">
+                                                    <img class="icon-small" src="img/icons/icon-exclamation.svg">
+                                                    Заполните поле
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-wrapper" id="input-wrapper-name">
+                                        <div class="input-group mt-3">
+                                            <label class="input-label">Отчество*</label>
+                                            <div class="d-flex justify-content-between align-items-center my-1">
+                                                <input type="text" class="form-control" placeholder="Отчество*"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    <img class="icon-small" src="img/icons/icon-exclamation.svg">
+                                                    Заполните поле
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="input-wrapper" id="input-wrapper-tel">
+                                            <div class="input-group mt-3">
+                                                <label class="input-label">Телефон*</label>
+                                                <div class="d-flex justify-content-between align-items-center my-1">
+                                                    <input type="tel" id="online_phone" name="phone" maxlength="50"
+                                                        pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                                                        class="form-control" placeholder="Телефон*" required>
+                                                    <div class="invalid-feedback">
+                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
+                                                        Введите корректный номер телефона
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="input-wrapper" id="input-wrapper-email">
+                                            <div class="input-group mt-3">
+                                                <label class="input-label">E-mail (необязательно)</label>
+                                                <div class="d-flex justify-content-between align-items-center my-1">
+                                                    <input type="email" class="form-control"
+                                                        placeholder="E-mail (необязательно)*" required>
+                                                    <div class="invalid-feedback">
+                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
+                                                        Введите корректный e-mail адресс
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Submit -->
+                                    <button type="submit"
+                                        class="mt-3 btn btn-primary d-flex justify-content-center align-items-center"
+                                        id="submit-buyer">
+                                        <div>Сохранить</div>
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- Form Desktop End -->
+
+                        </div>
                     </div>
+                    <!-- Your account End -->
+
+
+                    <!-- Links To Another Part -->
+                    <div class="your-account__link-block bg-light mt-3">
+                        <div class="container-xl">
+                            <div class="d-flex your-account__link-item">
+                                <img class="icon" src="img/icons/map-blue.svg">
+                                <a href="" class="ms-3 your-account__link-txt">Адреса доставки</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="your-account__link-block bg-light mt-3">
+                        <div class="container-xl">
+                            <div class="d-flex your-account__link-item">
+                                <img class="icon" src="img/icons/heart-blue.svg">
+                                <a href="" class="ms-3 your-account__link-txt">Избранное</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Last Orders Header -->
+                    <div class="container-xl mt-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex ps-lg-3 align-items-center w-75">
+                                <div class="headline">Последние заказы</div>
+                            </div>
+                            <a href="" class="link-colored d-none d-md-inline">Все  заказы</a>
+                            <a href="" class="link-next-arrow d-dlock d-md-none">
+                                <img class="icon" src="img/icons/arrow-white.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Last Orders Body Start -->
+                    <div class="your-account__last-orders  accordion mt-3" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="last-orders-header d-flex flex-column">
+                                        <div class="d-flex last-orders-header-left">
+                                            <img class="last-orders-header-left__icon" src="img/icons/accordion-arrow-black.svg">
+                                            <div class="last-orders-header-left__number user-header ms-3">Заказ: №18278 </div>
+                                            <div class="last-orders-header-left__date ms-3">от 2021-01-31</div>
+                                        </div>
+                                        <div class="d-flex last-orders-header-right mt-3  align-items-center">
+                                            <div class="last-orders-header-right__status">Подтвержден</div>
+                                            <div class="last-orders-header-right__cancel d-flex ms-4">
+                                                <div>Отменить заказ</div>
+                                                <img src="img/icons/cancel-red.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Last Orders Body End -->
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
-            <!-- User Rgiht End-->
+            <!-- User Right End-->
         </div>
     </div>
     <!-- User Main End -->

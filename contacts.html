@@ -797,20 +797,28 @@
 
     <!-- Header -->
     <div class="contacts-page__map-header container-xl mt-3 mt-md-4 px-0">
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="d-flex ps-lg-3 align-items-center w-50">
+        <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+            <div class="d-flex align-items-center w-100 ps-4">
                 <img class="icon-big" src="img/icons/location.svg">
                 <div class="headline ms-2">На карте</div>
             </div>
-            <div class="d-flex">
-                <button class="contacts-page__map-header-btn btn">Магазин</button>
-                <button class="contacts-page__map-header-btn btn ms-3">Установочный центр</button>
+            <div class="d-flex my-3 w-100 ps-3 ps-md-0 justify-content-md-end">
+                <button class="contacts-page__map-header-btn btn active" id="map-toggle-1">Магазин</button>
+                <button class="contacts-page__map-header-btn btn ms-3" id="map-toggle-2">Установочный центр</button>
             </div>
         </div>
     </div>
     <!-- Map Body Start -->
-    <div class="contacts-page__map-body container-xl">
+    <div class="contacts-page__map-body container-xl px-0 bg-light">
+        <div class="contacts-page__map active" id="map-1">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A090c27e185185302e1a802fb758fbe87f84cf9f09f6269b124cd7e4d2716d0a6&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="contacts-page__map" id="map-2">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acc98ea99d693b38bc5a5fd41035c165dfc69ef39a1901afceb5bc4570016dbeb&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
 
+        </div>
     </div>
     <!-- Map Body End -->
 
