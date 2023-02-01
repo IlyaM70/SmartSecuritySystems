@@ -22,7 +22,9 @@
     /* pz/black */
     --grey-white: #FAFAFA;
     /* grey-white */
-
+    --black: #000000;
+    --orange:#F2994A;
+    --green:#27AE60;
 }
 
 .navbar-dark {
@@ -595,7 +597,9 @@ a:hover {
     border-radius: 60px;
     padding-left: 2px;
 }
-
+.link-previous-arrow {
+    transform: rotate(180deg);
+}
 
 /* Cards Block Media Start */
 @media(min-width:768px) {
@@ -1255,6 +1259,9 @@ input[type="range"]::-moz-range-thumb {
 
 .card-prices {
     display: flex;
+}
+.card-price{
+    color: var(--black);
 }
 
 .card-footer-1col {
@@ -2306,6 +2313,9 @@ hr {
     margin-left: 10px;
 }
 
+
+
+/* Your Account Start */
 .your-account {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -2353,17 +2363,31 @@ hr {
     display: none;
 }
 
-.your-account__last-orders .accordion-item {
-    padding-left: 12px;
-    padding-right: 12px;
+.your-account__last-orders .accordion-item,
+.your-account__last-orders .accordion-button {
     background: var(--grey-white);
 }
 
+
+
+.your-account__last-orders .accordion-item {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .your-account__last-orders .accordion-button {
-    background: var(--grey-white);
     padding-top: 12px;
     padding-bottom: 12px;
 }
+
+.your-account__last-orders .accordion-header {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* Your Account end */
+
+/* Last Orders Start */
 
 .last-orders-header-left__number {
     padding: 0;
@@ -2395,13 +2419,81 @@ hr {
     color: var(--bs-white);
 }
 
+.status-on-the-way {
+    background: var(--orange);
+}
+.status-delivered {
+    background: var(--green);
+}
+.status-canceled {
+    background: var(--bs-red);
+}
+
+
 .last-orders-header-right__cancel {
     color: var(--bs-red);
     white-space: nowrap;
 }
 
+.last-orders__item {
+    background: var(--bs-white);
+    border-bottom: 1px solid var(--bs-gray-100);
+    padding: 6px 11px;
+}
+
+.last-orders__header-item-left-2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.last-orders__price {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--black);
+}
+
+.last-orders__item-left-img {
+    width: 80px;
+    height: 80px;
+}
+
+.last-orders__item-txt {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.last-orders__item-left {
+    width: 72%;
+}
 
 
+@media (min-width:768px) {
+    .last-orders__price {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .last-orders__item {
+        padding: 12px 16px;
+    }
+
+    .last-orders__item-left-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .last-orders__item-txt {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+
+/* Last Orders End */
 
 
 /* /////////////////////User Page End/////////////////////// */
@@ -2729,7 +2821,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         width: 35%;
     }
 
-    
+
 }
 
 @media (min-width:1100px) {

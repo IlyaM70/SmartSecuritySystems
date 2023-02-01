@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Security Systems - User</title>
+    <title>Smart Security Systems - My Orders</title>
     <!-- Style Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Owl Carousel -->
@@ -714,12 +714,7 @@
 
 
 
-    <!-- User Header -->
-    <div class="container-xl mt-3">
-        <div class="d-flex d-xl-none justify-content-start align-items-center">
-            <div class="headline">Кабинет Пользователя</div>
-        </div>
-    </div>
+    
 
     <!-- User Main Start -->
     <div class="user-main container-xl mt-4 pb-3">
@@ -747,229 +742,16 @@
             <!-- User Right Start-->
             <div class="col-12 col-xl-9 col-xl-9-custom pe-xl-0">
                 <div class="user-right">
-                    <!-- Your account Start -->
-                    <div class="your-account bg-light">
-                        <div class="container-xl">
-                            <div class="user-header ps-0">Ваша учетная запись</div>
-                            <div class="your-account__info mt-3">
-                                <div class="your-account__name">Николаев Александр Александрович</div>
-                                <div class="your-account__e-mail mt-2">a.nokolaev@mail.ru</div>
-                                <div class="your-account__tel mt-2">+7 (317) 12 34 567</div>
-                                <button class="mt-3 btn your-account__btn">Изменить</button>
-                            </div>
-
-                            <!-- Form Mobile Start -->
-                            <div class="your-account__form input-form ordering mt-3" id="your-account__form-mobile">
-                                <form id="form-buyer" class="needs-validation" novalidate>
-
-                                    <div>Тип покупателя:</div>
-                                    <div class="input-wrapper">
-                                        <div class="input-group input-group-radios">
-                                            <div class="d-flex mt-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio"
-                                                        name="inlineRadioOptions" id="individual" value="individual"
-                                                        required>
-                                                    <label class="form-check-label" for="individual">Физическое
-                                                        лицо</label>
-
-                                                </div>
-                                                <div class="form-check ms-3">
-                                                    <input class="form-check-input" type="radio"
-                                                        name="inlineRadioOptions" id="legal" value="legal" required>
-                                                    <label class="form-check-label" for="legal">Юридическое
-                                                        лицо</label>
-                                                    <div class="invalid-feedback">
-                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                        Выберите один из вариантов
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-3">Контактные данные:</div>
-
-
-
-                                    <div class="input-wrapper" id="input-wrapper-name">
-                                        <div class="input-group">
-                                            <label class="input-label">ФИО*</label>
-                                            <div class="d-flex justify-content-between align-items-center my-1">
-                                                <input type="text" class="form-control" placeholder="ФИО*" required>
-                                                <div class="invalid-feedback">
-                                                    <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                    Заполните поле
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="d-lg-flex">
-                                        <div class="input-wrapper" id="input-wrapper-tel">
-                                            <div class="input-group mt-3">
-                                                <label class="input-label">Телефон*</label>
-                                                <div class="d-flex justify-content-between align-items-center my-1">
-                                                    <input type="tel" id="online_phone" name="phone" maxlength="50"
-                                                        pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-                                                        class="form-control" placeholder="Телефон*" required>
-                                                    <div class="invalid-feedback">
-                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                        Введите корректный номер телефона
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="input-wrapper ms-lg-2" id="input-wrapper-email">
-                                            <div class="input-group mt-3">
-                                                <label class="input-label">E-mail (необязательно)</label>
-                                                <div class="d-flex justify-content-between align-items-center my-1">
-                                                    <input type="email" class="form-control"
-                                                        placeholder="E-mail (необязательно)*" required>
-                                                    <div class="invalid-feedback">
-                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                        Введите корректный e-mail адресс
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- Submit -->
-                                    <button type="submit"
-                                        class="mt-3 btn btn-primary d-flex justify-content-center align-items-center"
-                                        id="submit-buyer">
-                                        <div>Сохранить</div>
-                                    </button>
-                                </form>
-                            </div>
-                            <!-- Form Mobile End -->
-
-                            <!-- Form Desktop Start -->
-                            <div class="your-account__form input-form ordering mt-3" id="your-account__form-desktop">
-                                <form id="form-buyer" class="needs-validation" novalidate>
-
-                                    <div>Тип покупателя:</div>
-                                    <div class="input-wrapper">
-                                        <div class="input-group input-group-radios">
-                                            <div class="d-flex mt-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio"
-                                                        name="inlineRadioOptions" id="individual" value="individual"
-                                                        required>
-                                                    <label class="form-check-label" for="individual">Физическое
-                                                        лицо</label>
-
-                                                </div>
-                                                <div class="form-check ms-3">
-                                                    <input class="form-check-input" type="radio"
-                                                        name="inlineRadioOptions" id="legal" value="legal" required>
-                                                    <label class="form-check-label" for="legal">Юридическое
-                                                        лицо</label>
-                                                    <div class="invalid-feedback">
-                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                        Выберите один из вариантов
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-3">Контактные данные:</div>
-
-
-
-                                    <div class="input-wrapper" id="input-wrapper-name">
-                                        <div class="input-group">
-                                            <label class="input-label">Фамилия*</label>
-                                            <div class="d-flex justify-content-between align-items-center my-1">
-                                                <input type="text" class="form-control" placeholder="Фамилия*" required>
-                                                <div class="invalid-feedback">
-                                                    <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                    Заполните поле
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="input-wrapper" id="input-wrapper-name">
-                                        <div class="input-group mt-3">
-                                            <label class="input-label">Имя*</label>
-                                            <div class="d-flex justify-content-between align-items-center my-1">
-                                                <input type="text" class="form-control" placeholder="Имя*" required>
-                                                <div class="invalid-feedback">
-                                                    <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                    Заполните поле
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="input-wrapper" id="input-wrapper-name">
-                                        <div class="input-group mt-3">
-                                            <label class="input-label">Отчество*</label>
-                                            <div class="d-flex justify-content-between align-items-center my-1">
-                                                <input type="text" class="form-control" placeholder="Отчество*"
-                                                    required>
-                                                <div class="invalid-feedback">
-                                                    <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                    Заполните поле
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="">
-                                        <div class="input-wrapper" id="input-wrapper-tel">
-                                            <div class="input-group mt-3">
-                                                <label class="input-label">Телефон*</label>
-                                                <div class="d-flex justify-content-between align-items-center my-1">
-                                                    <input type="tel" id="online_phone" name="phone" maxlength="50"
-                                                        pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-                                                        class="form-control" placeholder="Телефон*" required>
-                                                    <div class="invalid-feedback">
-                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                        Введите корректный номер телефона
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="input-wrapper" id="input-wrapper-email">
-                                            <div class="input-group mt-3">
-                                                <label class="input-label">E-mail (необязательно)</label>
-                                                <div class="d-flex justify-content-between align-items-center my-1">
-                                                    <input type="email" class="form-control"
-                                                        placeholder="E-mail (необязательно)*" required>
-                                                    <div class="invalid-feedback">
-                                                        <img class="icon-small" src="img/icons/icon-exclamation.svg">
-                                                        Введите корректный e-mail адресс
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- Submit -->
-                                    <button type="submit"
-                                        class="mt-3 btn btn-primary d-flex justify-content-center align-items-center"
-                                        id="submit-buyer">
-                                        <div>Сохранить</div>
-                                    </button>
-                                </form>
-                            </div>
-                            <!-- Form Desktop End -->
-
-                        </div>
-                    </div>
-                    <!-- Your account End -->
 
                     <!-- Last Orders Header -->
                     <div class="container-xl mt-3">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex ps-lg-3 align-items-center w-75">
-                                <div class="headline">Последние заказы</div>
-                            </div>
-                            <a href="" class="link-colored d-none d-md-inline">Все заказы</a>
-                            <a href="" class="link-next-arrow d-dlock d-md-none">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <a href="" class="link-next-arrow link-previous-arrow d-dlock d-xl-none">
                                 <img class="icon" src="img/icons/arrow-white.svg">
                             </a>
+                            <div class="d-flex ps-lg-3 align-items-center w-75 ms-3 ms-lg-0">
+                                <div class="headline">Мои заказы</div>
+                            </div>
                         </div>
                     </div>
                     <!-- Last Orders Body Start -->
@@ -1317,98 +1099,12 @@
                     </div>
                     <!-- Last Orders Body End -->
 
-
-
-
-                    <!-- Chosen Start -->
-                    <div class="mt-5">
-                        <div class="d-flex justify-content-between align-item-center align-items-md-end">
-                            <div class="d-flex ps-lg-3">
-                                <div class="headline ms-2">Избранное</div>
-                            </div>
-                            <a href="" class="link-colored d-none d-md-inline">Все товары</a>
-                            <a href="" class="link-next-arrow d-dlock d-md-none">
-                                <img class="icon" src="img/icons/arrow-white.svg">
-                            </a>
-                        </div>
-                        <!--  Cards Start -->
-                        <div class="row row-cols-2 row-cols-md-4 g-2 g-lg-3 mt-2 mt-md-4">
-                            <!--  Card 1 Start -->
-                            <div class="col">
-                                <div class="card h-100">
-                                    <a href="" class="d-flex w-100">
-                                        <img src="img/card1.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                    <div class="card-body">
-                                        <a href="" class="card-text">StarterKit Ajax (Контрольная панель + Датчик
-                                            движения ...</a>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="card-price">1 600 ₽</div>
-                                        <div class="card-old-price"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--  Card 1 End -->
-                            <!--  Card 2 Start -->
-                            <div class="col">
-                                <div class="card h-100">
-                                    <a href="" class="d-flex w-100">
-                                        <img src="img/card2.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                    <div class="card-body">
-                                        <a href="" class="card-text">SpaceControl Брелок для управления системой Ajax
-                                            ...</a>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="card-price">1 600 ₽</div>
-                                        <div class="card-old-price">2 600</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--  Card 2 End -->
-                            <!--  Card 3 Start -->
-                            <div class="col">
-                                <div class="card h-100">
-                                    <a href="" class="d-flex w-100">
-                                        <img src="img/card3.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                    <div class="card-body">
-                                        <a class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">14 990</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--  Card 3 End -->
-                            <!--  Card 4 Start -->
-                            <div class="col">
-                                <div class="card h-100">
-                                    <a href="" class="d-flex w-100">
-                                        <img src="img/card4.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                    <div class="card-body">
-                                        <a href="" class="card-text">StarterKit Ajax (Контрольная панель + Датчик
-                                            движения ...</a>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="card-price">1 600 ₽</div>
-                                        <div class="card-old-price"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--  Card 4 End -->
-
-                        </div>
-                        <!-- Chosen End -->
-                    </div>
                 </div>
-                <!-- User Right End-->
             </div>
+            <!-- User Right End-->
         </div>
-        <!-- User Main End -->
+    </div>
+    <!-- User Main End -->
 
     </div>
 

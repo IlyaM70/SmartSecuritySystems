@@ -610,8 +610,17 @@ function mask(e) {
   setCursorPosition(i, this)
 }
 window.addEventListener("DOMContentLoaded", function () {
-  var input = document.querySelector("#online_phone");
-  input.addEventListener("input", mask, false);
+  //var input = document.querySelector("#online_phone");
+  //input.addEventListener("input", mask, false);
+
+
+  var input = $("input[name='phone']");
+
+  input.each(function (index, element) {
+    element.addEventListener("input", mask, false);
+  });
+
+
   //input.focus();
   //setCursorPosition(3, input);
 });
@@ -765,14 +774,24 @@ if (location.pathname == userPage) {
 }
 
 accordionBtn.click(function () {
-  //console.log($(this).find(accordionArrow).css("transform"));
-  if ($(this).find(accordionArrow).css("transform") == "matrix(1, 0, 0, 1, 0, 0)") {
-    $(this).find(accordionArrow).css("transform", "matrix(-1, 0, 0, -1, 0, 0)");
-  } else {
-    $(this).find(accordionArrow).css("transform", "matrix(1, 0, 0, 1, 0, 0)");
-  }
-});
 
+  $(accordionBtn).each(function (index, element) {
+
+    ///// arrow icon to rotate
+    let icon = element.children[0].children[0].children[0].children[0];
+
+    //console.log(element.getAttribute("aria-expanded"));
+    if (element.getAttribute("aria-expanded") == "true") {
+      //console.log(icon.style.transform);
+      icon.style.transform = "rotate(0deg)";
+    } else {
+      icon.style.transform = "rotate(-180deg)";
+    }
+
+
+  });
+
+});
 
 
 
