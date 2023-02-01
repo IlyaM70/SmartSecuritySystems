@@ -505,7 +505,12 @@ let placeholder;
 
 input.focus(function (e) {
   e.preventDefault();
-  $(this).closest(inputGroup).css("padding", "0px 0px");
+
+  if (!$(this).closest(inputGroup).hasClass("delivery-adress-input")) {
+    $(this).closest(inputGroup).css("padding", "0px 0px");
+  }
+
+
   $(this).closest(inputGroup).addClass("input-group-focused");
   placeholder = $(this).closest(inputGroup).find(input).attr("placeholder")
 
@@ -520,7 +525,12 @@ input.focus(function (e) {
 });
 input.focusout(function (e) {
   e.preventDefault();
-  $(this).closest(inputGroup).css("padding", "11px 0px");
+
+  if (!$(this).closest(inputGroup).hasClass("delivery-adress-input")) {
+    $(this).closest(inputGroup).css("padding", "11px 0px");
+  }
+
+
   $(this).closest(inputGroup).removeClass("input-group-focused");
   $(this).closest(inputGroup).find(input).attr("placeholder", placeholder);
   $(this).closest(inputGroup).find(inputLabel).css("display", "none");
@@ -608,6 +618,78 @@ window.addEventListener("DOMContentLoaded", function () {
 
 /////////////////////////////Phone Mask End
 
+///////////////////////////// Adress input Start
+
+let readonly = $(".delivery-adress-input-readonly");
+
+let changeAdress = $(".btn-edit");
+let btnEdit = $("#btn-edit-edit");
+let btnSave = $("#btn-edit-save");
+
+
+let adressInput = $(".delivery-adress-input input");
+let adressInputParent = $(".delivery-adress-input");
+
+let focusClass = "focused";
+
+let adressValue;
+
+
+changeAdress.click(function (e) {
+  e.preventDefault();
+
+  //console.log(readonly.css("display"));
+
+  if (readonly.css("display") == "block") {
+    //console.log("true");
+
+    // change edition
+    readonly.css("display", "none");
+    adressInput.removeClass("d-none");
+    adressInput.focus();
+    adressInput.addClass(focusClass);
+    adressInputParent.addClass(focusClass);
+
+    // change button
+    btnEdit.css("display", "none");
+
+    btnSave.addClass("d-flex");
+    btnSave.removeClass("d-none");
+
+
+
+  } else {
+
+
+    //save input value
+    console.log(adressInput.val());
+    adressValue = adressInput.val();
+    readonly.text(adressValue);
+
+    // change edition
+    readonly.css("display", "block");
+    adressInput.addClass("d-none");
+    adressInput.removeClass(focusClass);
+    adressInputParent.removeClass(focusClass);
+
+    // change button
+    btnEdit.css("display", "flex");
+
+    btnSave.removeClass("d-flex");
+    btnSave.addClass("d-none");
+
+  }
+
+});
+
+
+///////////////////////////// Adress input End
+
+
+
+
+
+
 //////////////////////// Contacts Page Map Toggle///////////////////
 
 let mapToggle1 = $("#map-toggle-1");
@@ -618,10 +700,10 @@ let map2 = $("#map-2");
 
 
 
-mapToggle1.click(function (e) { 
+mapToggle1.click(function (e) {
   e.preventDefault();
   if ($(this).hasClass("active")) {
-    
+
   } else {
     $(this).addClass("active");
     mapToggle2.removeClass("active");
@@ -631,10 +713,10 @@ mapToggle1.click(function (e) {
 });
 
 
-mapToggle2.click(function (e) { 
+mapToggle2.click(function (e) {
   e.preventDefault();
   if ($(this).hasClass("active")) {
-    
+
   } else {
     $(this).addClass("active");
     mapToggle1.removeClass("active");
@@ -651,17 +733,17 @@ let userMobileForm = $("#your-account__form-mobile");
 let userMobileDesktop = $("#your-account__form-desktop");
 let info = $(".your-account__info");
 
-userChangebtn.click(function (e) { 
+userChangebtn.click(function (e) {
   e.preventDefault();
-  if (window.innerWidth<768) {
-    userMobileForm.css("display","block");
-    userChangebtn.css("display","none");
-    info.css("display","none");
+  if (window.innerWidth < 768) {
+    userMobileForm.css("display", "block");
+    userChangebtn.css("display", "none");
+    info.css("display", "none");
   } else {
-    userMobileDesktop.css("display","block");
-    userChangebtn.css("display","none");
+    userMobileDesktop.css("display", "block");
+    userChangebtn.css("display", "none");
   }
-  
+
 });
 
 
@@ -673,21 +755,21 @@ let accordionArrow = $(".last-orders-header-left__icon");
 let userPage = "/user-account.html"
 
 if (location.pathname == userPage) {
-  
-$(document).ready(function () {
-  
- accordionBtn.first().find(accordionArrow).css("transform","rotate(0deg)");
+
+  $(document).ready(function () {
+
+    accordionBtn.first().find(accordionArrow).css("transform", "rotate(0deg)");
 
 
-});
-} 
+  });
+}
 
-accordionBtn.click(function () { 
+accordionBtn.click(function () {
   //console.log($(this).find(accordionArrow).css("transform"));
   if ($(this).find(accordionArrow).css("transform") == "matrix(1, 0, 0, 1, 0, 0)") {
-    $(this).find(accordionArrow).css("transform","matrix(-1, 0, 0, -1, 0, 0)");
+    $(this).find(accordionArrow).css("transform", "matrix(-1, 0, 0, -1, 0, 0)");
   } else {
-    $(this).find(accordionArrow).css("transform","matrix(1, 0, 0, 1, 0, 0)");
+    $(this).find(accordionArrow).css("transform", "matrix(1, 0, 0, 1, 0, 0)");
   }
 });
 

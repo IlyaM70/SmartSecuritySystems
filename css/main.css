@@ -2283,14 +2283,14 @@ hr {
 
 /* /////////////////////User Page Start/////////////////////// */
 
-.user-left{
+.user-left {
     flex: 1;
 }
 
 .user-left-item {
     padding: 12px 16px;
     margin-top: 10px;
-    
+
 }
 
 .user-header {
@@ -2606,14 +2606,40 @@ hr {
     display: none;
 }
 
-.ordering-left__delivery .form-select {
-    width: 336px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+.input-form .delivery-adress-input,
+.input-form .delivery-adress-input input {
+    background: var(--bs-gray-100);
+}
+
+.input-form .delivery-adress-input {
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
     border-radius: 4px;
     font-size: 13px;
     line-height: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+
+.input-form .delivery-adress-input input {
+    padding-right: 10px;
+}
+
+.delivery-adress-input-readonly {
+    height: 100%;
+    min-height: 20px;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.input-wrapper .focused,
+.input-form .delivery-adress-input .focused {
+    background-color: var(--bs-white);
+}
+
 
 .btn-delivery {
     background: var(--bs-gray-100);
@@ -2703,17 +2729,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         width: 35%;
     }
 
-    .btn-delivery:nth-of-type(1) {
-        margin-left: 16px;
-    }
-
-    .btn-delivery:nth-of-type(2) {
-        margin-left: 16px;
-    }
-
-    .btn-delivery:nth-of-type(3) {
-        margin-left: 16px;
-    }
+    
 }
 
 @media (min-width:1100px) {

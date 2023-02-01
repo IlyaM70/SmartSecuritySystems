@@ -910,31 +910,39 @@
                                             <div class="fw-bold mt-3">Адрес доставки</div>
 
                                             <div class="d-flex flex-column flex-lg-row">
-                                                <select class="mt-3 form-select" aria-label="Default select example">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
+
+                                                <div class="input-wrapper w-100 mt-3" id="input-wrapper-adress">
+                                                    <div class="delivery-adress-input input-group ">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center my-1">
+                                                            <span class="delivery-adress-input-readonly"></span>
+                                                            <input type="text" class="form-control d-none" required>
+                                                            <div class="invalid-feedback">
+                                                                <img class="icon-small"
+                                                                    src="img/icons/icon-exclamation.svg">
+                                                                Заполните поле
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
                                                 <div class="mt-3 d-flex flex-wrap flex-lg-nowrap">
-                                                    <button class="btn btn-delivery">
+                                                    <button class="ms-lg-3 btn btn-delivery btn-edit" type="button" id="btn-edit-edit">
                                                         <img class="icon me-2" src="img/icons/change.svg">
                                                         Изменить
                                                     </button>
-                                                    <button class="btn btn-delivery">
-                                                        <img class="icon me-2" src="img/icons/trash-bin.svg">
-                                                        Удалить
-                                                    </button>
-                                                    <button class="btn btn-delivery">
-                                                        <img class="icon me-2" src="img/icons/plus.svg">
-                                                        Новый адресс
+                                                    <button type="button"
+                                                        class="ms-lg-3 btn btn-primary btn-edit d-none justify-content-center align-items-center" id="btn-edit-save">
+                                                        <img class="icon me-2" src="img/icons/check-big-white.svg">
+                                                        <div>Сохранить</div>
                                                     </button>
                                                 </div>
                                             </div>
 
                                             <div class="fw-bold mt-3">Дополнительные параметры доставки (необязательно):
                                             </div>
-                                            <div class="d-flex justify-content-start justify-content-lg-between  mt-3">
+                                            <div class="d-flex justify-content-start mt-3">
                                                 <!-- Date Input -->
                                                 <div class="input-form input-group-date">
                                                     <div class="input-wrapper">
@@ -950,7 +958,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-check lift-to-floor ms-5 ms-lg-0">
+                                                <div class="form-check lift-to-floor ms-5">
                                                     <input class="form-check-input" type="checkbox" value=""
                                                         id="liftToFloor">
                                                     <label class="form-check-label" for="liftToFloor">
