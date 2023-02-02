@@ -1190,7 +1190,7 @@ input[type="range"]::-moz-range-thumb {
     color: var(--bs-black);
 }
 
-.filter .sidebar-search{
+.filter .sidebar-search {
     width: 328px;
 }
 
@@ -3246,6 +3246,162 @@ fieldset:disabled .btn {
 /* /////////////////////Contacts Page End///////////////////////// */
 
 
+
+/* /////////////////////News Page Start///////////////////////// */
+
+/* Headline */
+.news-page .headline {
+    font-size: 36px;
+}
+
+.news-page .link-colored {
+    width: 101px;
+}
+
+@media (min-width:576px) {
+    .news-page .link-colored {
+        width: 205px;
+    }
+}
+
+
+.overwlow-elipsis-multyple {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+@media (min-width:390px) {
+    .overwlow-elipsis-multyple {
+        -webkit-line-clamp: 2;
+    }
+}
+
+@media (min-width:450px) {
+    .overwlow-elipsis-multyple {
+        -webkit-line-clamp: 3;
+    }
+}
+
+@media (min-width:768px) {
+    .overwlow-elipsis-multyple {
+        -webkit-line-clamp: 2;
+    }
+}
+
+@media (min-width:992px) {
+    .overwlow-elipsis-multyple {
+        -webkit-line-clamp: 3;
+    }
+}
+
+@media (min-width:1100px) {
+    .overwlow-elipsis-multyple {
+        -webkit-line-clamp: 4;
+    }
+}
+
+@media (min-width:1200px) {
+    .overwlow-elipsis-multyple {
+        -webkit-line-clamp: 5;
+    }
+}
+
+.border-radius-0 {
+    border-radius: 0;
+}
+
+.news-page__card-date {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    color: var(--bs-gray-dark);
+}
+
+@media (min-width:1200px) {
+    .news-page__card-date {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.news-page__card-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--primary-color);
+}
+
+@media (min-width:1200px) {
+    .news-page__card-title {
+        font-size: 16px;
+        line-height: 22px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+}
+
+/* /////////////////////News Page End/////////////////////////// */
+
+/* /////////////////////Reviews Page Start/////////////////////////// */
+
+.reviews-page .headline {
+    font-size: 22px;
+}
+
+@media (min-width:410px) {
+    .reviews-page .headline {
+        font-size: 28px;
+    }
+}
+
+@media (min-width:492px) {
+    .reviews-page .headline {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 576px) {
+    .reviews-page .link-colored {
+        width: 101px;
+    }
+}
+
+
+@media (min-width:630px) {
+    .reviews-page .link-colored {
+        width: 205px;
+    }
+}
+
+.reviews-page .overwlow-elipsis-multyple{
+    -webkit-line-clamp: 2;
+}
+
+@media (min-width:450px) {
+    .reviews-page .overwlow-elipsis-multyple{
+        -webkit-line-clamp: 3;
+    }
+}
+
+@media (min-width:504px) {
+    .reviews-page .overwlow-elipsis-multyple{
+        -webkit-line-clamp: 4;
+    }
+}
+@media (min-width:576px) {
+    .reviews-page .overwlow-elipsis-multyple{
+        -webkit-line-clamp: 5;
+    }
+}
+@media (min-width:768px) {
+    .reviews-page .overwlow-elipsis-multyple{
+        -webkit-line-clamp: 10;
+    }
+}
+
+/* /////////////////////Reviews Page End/////////////////////////// */
 
 
 /* Footer Start */
