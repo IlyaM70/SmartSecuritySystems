@@ -1123,6 +1123,7 @@
     </div>
     <!-- Catalog Sort Start -->
     <div class="catalog-sort container-xl">
+
         <div class="d-flex d-xl-none">
             <!-- Filter Collapse Button Start -->
             <a class="" data-bs-toggle="collapse" href="#filter-collapse" role="button" aria-expanded="false"
@@ -1184,9 +1185,35 @@
     <!-- Catalog Sort End -->
 
     <!-- Filter Collapse Start -->
-    <div class="collapse" id="filter-collapse">
+    <div class="mt-4 collapse" id="filter-collapse">
         <div class="filter">
-            <div class="headline-blue text-black pt-3">Фильтры продукции</div>
+            <!-- <div class="headline-blue text-black pt-3">Фильтры продукции</div> -->
+
+
+            <div class="sidebar-search form-group pt-3">
+                <img class="search-svg" src="img/icons/search.svg"></img>
+                <input type="text" class="form-control" placeholder="поиск по категории">
+            </div>
+
+            <div class="mt-5 d-flex align-items-start flex-column">
+                <div class="d-flex align-items-center">
+                    <div class="">Сортировать по</div>
+                    <select class="ms-2 form-select" aria-label="Default select example">
+                        <option selected>Сперва дешевле</option>
+                        <option value="1">Сперва дороже</option>
+                        <option value="2">Рейтинг</option>
+                    </select>
+                </div>
+               <div class="mt-5 d-flex align-items-center">
+                    <div class="">Товаров на странице</div>
+                    <select class="ms-2 form-select" aria-label="Default select example">
+                        <option selected>16</option>
+                        <option value="1">32</option>
+                        <option value="2">64</option>
+                    </select>
+               </div>
+            </div>
+
 
             <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
 

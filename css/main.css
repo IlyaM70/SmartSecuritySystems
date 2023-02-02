@@ -23,8 +23,8 @@
     --grey-white: #FAFAFA;
     /* grey-white */
     --black: #000000;
-    --orange:#F2994A;
-    --green:#27AE60;
+    --orange: #F2994A;
+    --green: #27AE60;
 }
 
 .navbar-dark {
@@ -597,6 +597,7 @@ a:hover {
     border-radius: 60px;
     padding-left: 2px;
 }
+
 .link-previous-arrow {
     transform: rotate(180deg);
 }
@@ -1189,6 +1190,10 @@ input[type="range"]::-moz-range-thumb {
     color: var(--bs-black);
 }
 
+.filter .sidebar-search{
+    width: 328px;
+}
+
 /* Filter  End */
 
 
@@ -1260,7 +1265,8 @@ input[type="range"]::-moz-range-thumb {
 .card-prices {
     display: flex;
 }
-.card-price{
+
+.card-price {
     color: var(--black);
 }
 
@@ -1450,6 +1456,12 @@ input[type="range"]::-moz-range-thumb {
     border-radius: 2px;
     background-color: var(--bs-white);
     padding: 5px 8px;
+}
+
+.sidebar-search .form-control::placeholder {
+    font-style: italic;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 .sidebar-search .search-svg {
@@ -2422,9 +2434,11 @@ hr {
 .status-on-the-way {
     background: var(--orange);
 }
+
 .status-delivered {
     background: var(--green);
 }
+
 .status-canceled {
     background: var(--bs-red);
 }
