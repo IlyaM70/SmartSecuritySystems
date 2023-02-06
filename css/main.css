@@ -329,6 +329,24 @@ a:hover {
     --bs-btn-padding-y: 6px;
 }
 
+.dropend .btn.show {
+    border: none;
+}
+
+.dropend .btn:first-child:active{
+    border: none;
+}
+
+.dropend:focus-visible{
+    outline: none;
+}
+
+.dropend .btn:focus{
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
 
 /* Catalog Dropdown End*/
 /* Header Row 3 End */

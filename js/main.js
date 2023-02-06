@@ -476,12 +476,18 @@ let dropdownParent = $(".hover-dropend");
 let dropdownBtn = $(".hover-dropend .btn");
 
 
+dropdownBtn.click(function (e) {
+  dropdownBtn.css("border","none");
+});
+
 if ($(window).width() > 991) {
   dropdownParent.hover(function () {
     $(this).find('.btn').trigger("click");
-
+    $(this).addClass('hover-border');
+    
   }, function () {
     $(this).find('.dropdown-menu').removeClass("show");
+    $(this).removeClass('hover-border');
   }
   );
 
