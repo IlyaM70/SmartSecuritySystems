@@ -333,15 +333,15 @@ a:hover {
     border: none;
 }
 
-.dropend .btn:first-child:active{
+.dropend .btn:first-child:active {
     border: none;
 }
 
-.dropend:focus-visible{
+.dropend:focus-visible {
     outline: none;
 }
 
-.dropend .btn:focus{
+.dropend .btn:focus {
     border: none;
     outline: 0;
     box-shadow: none;
@@ -1435,6 +1435,9 @@ input[type="range"]::-moz-range-thumb {
         padding-right: 10px;
     }
 }
+
+
+
 
 @media (min-width:992px) {
     .catalog-main__cads .row-cols-2 .card-footer {
@@ -2643,11 +2646,7 @@ hr {
 }
 
 
-@media (min-width:992px) {
-    .input-grop-allwidth {
-        width: 648px;
-    }
-}
+
 
 
 
@@ -2704,6 +2703,11 @@ hr {
     padding-right: 0;
 }
 
+@media (min-width:992px) {
+    .input-grop-allwidth {
+        width: 648px !important;
+    }
+}
 
 
 /* //////////Delivery Start */
