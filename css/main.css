@@ -2620,6 +2620,18 @@ hr {
     width: 336px;
 }
 
+.resize-none {
+    resize: none;
+}
+
+
+@media (min-width:992px) {
+    .input-grop-allwidth {
+        width: 648px;
+    }
+}
+
+
 
 @media (min-width: 768px) {
     .ordering .headline {
