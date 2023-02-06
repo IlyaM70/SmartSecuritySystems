@@ -1105,1195 +1105,1222 @@
     </header>
     <!-- Header End -->
 
-    <!-- BreadCrumbs Start -->
-    <div class="container-xl mt-3 d-xl-none">
-        <nav style="--bs-breadcrumb-divider: url(../img/icons/breadcrumb.svg);" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Главная страница</a></li>
-                <li class="breadcrumb-item"><a href="#">Личный кабинет</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a>Избранное</a></li>
-            </ol>
-        </nav>
-    </div>
-    <!-- BreadCrumbs End -->
+    <div class="chosen-page">
+        <!-- BreadCrumbs Start -->
+        <div class="container-xl mt-3 d-xl-none">
+            <nav style="--bs-breadcrumb-divider: url(../img/icons/breadcrumb.svg);" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная страница</a></li>
+                    <li class="breadcrumb-item"><a href="#">Личный кабинет</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a>Избранное</a></li>
+                </ol>
+            </nav>
+        </div>
+        <!-- BreadCrumbs End -->
 
-    <!-- Catalog Header Start -->
-    <div class="container-xl mt-3 d-xl-none">
-        <div class="d-flex justify-content-start align-items-center">
-            <a href="" class="link-next-arrow link-previous-arrow d-dlock d-xl-none">
-                <img class="icon" src="img/icons/arrow-white.svg">
-            </a>
-            <div class="d-flex ps-lg-3 align-items-center w-75 ms-3 ms-lg-0">
-                <div class="headline">Избранное</div>
+        <!-- Catalog Header Start -->
+        <div class="container-xl mt-3 d-xl-none">
+            <div class="d-flex justify-content-start align-items-center">
+                <a href="" class="link-next-arrow link-previous-arrow d-dlock d-xl-none">
+                    <img class="icon" src="img/icons/arrow-white.svg">
+                </a>
+                <div class="d-flex ps-lg-3 align-items-center w-75 ms-3 ms-lg-0">
+                    <div class="headline">Избранное</div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Catalog Sort Start -->
-    <div class="catalog-sort container-xl d-xl-none">
+        <!-- Catalog Sort Start -->
+        <div class="catalog-sort container-xl d-xl-none">
 
-        <div class="d-flex d-xl-none">
-            <!-- Filter Collapse Button Start -->
-            <a class="" data-bs-toggle="collapse" href="#filter-collapse" role="button" aria-expanded="false"
-                aria-controls="collapseExample">
-                <img class="icon c-pointer" src="img/icons/filter.svg">
-            </a>
-            <!-- Filter Collapse Button End -->
-            <div class="ms-3">Фильтры продукции</div>
-        </div>
-        <div class="d-none d-xl-flex align-items-center">
-            <div class="">Сортировать по</div>
-            <select class="ms-2 form-select" aria-label="Default select example">
-                <option selected>Сперва дешевле</option>
-                <option value="1">Сперва дороже</option>
-                <option value="2">Рейтинг</option>
-            </select>
-            <div class="ms-2">Товаров на странице</div>
-            <select class="ms-2 form-select" aria-label="Default select example">
-                <option selected>16</option>
-                <option value="1">32</option>
-                <option value="2">64</option>
-            </select>
-        </div>
-        <div class="d-flex">
-            <!-- 1 col btn Start -->
-            <svg class="1-col-btn icon c-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_85_2473)">
-                    <path
-                        d="M0 0V6H6V0H0ZM9.375 0V6H24V0H9.375ZM0 9V15H6V9H0ZM9.375 9V15H24V9H9.375ZM0 18V24H6V18H0ZM9.375 18V24H24V18H9.375Z"
-                        fill="#CCD5DB" />
-                </g>
-                <defs>
-                    <clipPath id="clip0_85_2473">
-                        <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                </defs>
-            </svg>
-            <!-- 1 col btn End -->
-
-            <!-- many cols btn Start -->
-            <svg class="many-cols-btn icon c-pointer ms-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_85_2474)">
-                    <rect width="10" height="10" fill="#00A0E3" />
-                    <rect y="14" width="10" height="10" fill="#00A0E3" />
-                    <rect x="14" y="14" width="10" height="10" fill="#00A0E3" />
-                    <rect x="14" width="10" height="10" fill="#00A0E3" />
-                </g>
-                <defs>
-                    <clipPath id="clip0_85_2474">
-                        <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                </defs>
-            </svg>
-            <!-- many cols btn End -->
-        </div>
-    </div>
-    <!-- Catalog Sort End -->
-
-    <!-- Filter Collapse Start -->
-    <div class="mt-4 collapse" id="filter-collapse">
-        <div class="filter">
-            <!-- <div class="headline-blue text-black pt-3">Фильтры продукции</div> -->
-
-
-            <div class="sidebar-search form-group pt-3">
-                <img class="search-svg" src="img/icons/search.svg"></img>
-                <input type="text" class="form-control" placeholder="поиск по категории">
+            <div class="d-flex d-xl-none">
+                <!-- Filter Collapse Button Start -->
+                <a class="" data-bs-toggle="collapse" href="#filter-collapse" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <img class="icon c-pointer" src="img/icons/filter.svg">
+                </a>
+                <!-- Filter Collapse Button End -->
+                <div class="ms-3">Фильтры продукции</div>
             </div>
-
-            <div class="mt-5 d-flex align-items-start flex-column">
-                <div class="d-flex align-items-center">
-                    <div class="">Сортировать по</div>
-                    <select class="ms-2 form-select" aria-label="Default select example">
-                        <option selected>Сперва дешевле</option>
-                        <option value="1">Сперва дороже</option>
-                        <option value="2">Рейтинг</option>
-                    </select>
-                </div>
-                <div class="mt-5 d-flex align-items-center">
-                    <div class="">Товаров на странице</div>
-                    <select class="ms-2 form-select" aria-label="Default select example">
-                        <option selected>16</option>
-                        <option value="1">32</option>
-                        <option value="2">64</option>
-                    </select>
-                </div>
+            <div class="d-none d-xl-flex align-items-center">
+                <div class="">Сортировать по</div>
+                <select class="ms-2 form-select" aria-label="Default select example">
+                    <option selected>Сперва дешевле</option>
+                    <option value="1">Сперва дороже</option>
+                    <option value="2">Рейтинг</option>
+                </select>
+                <div class="ms-2">Товаров на странице</div>
+                <select class="ms-2 form-select" aria-label="Default select example">
+                    <option selected>16</option>
+                    <option value="1">32</option>
+                    <option value="2">64</option>
+                </select>
             </div>
+            <div class="d-flex">
+                <!-- 1 col btn Start -->
+                <svg class="1-col-btn icon c-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_85_2473)">
+                        <path
+                            d="M0 0V6H6V0H0ZM9.375 0V6H24V0H9.375ZM0 9V15H6V9H0ZM9.375 9V15H24V9H9.375ZM0 18V24H6V18H0ZM9.375 18V24H24V18H9.375Z"
+                            fill="#CCD5DB" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_85_2473">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <!-- 1 col btn End -->
 
-
-            <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
-
-                <!-- Filter Item 1 Start -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                            aria-controls="panelsStayOpen-collapseOne">
-                            <span class="filter-header">Цена</span>
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                        aria-labelledby="panelsStayOpen-headingOne">
-
-                        <!-- Price Range Slider Start -->
-                        <div class="d-flex">
-                            <div class="wrapper">
-                                <div class="price-input">
-                                    <div class="field">
-                                        <input type="number" class="input-min" placeholder="От">
-                                    </div>
-                                    <div class="field">
-                                        <input type="number" class="input-max" placeholder="До">
-                                    </div>
-                                </div>
-                                <div class="slider">
-                                    <div class="progress"></div>
-                                </div>
-                                <div class="range-input">
-                                    <input type="range" class="range-min" min="0" max="100000" value="0" step="1000">
-                                    <input type="range" class="range-max" min="0" max="100000" value="100000"
-                                        step="1000">
-
-                                    <div class="marker marker-0"></div>
-                                    <div class="marker marker-20"></div>
-                                    <div class="marker marker-40"></div>
-                                    <div class="marker marker-60"></div>
-                                    <div class="marker marker-80"></div>
-                                    <div class="marker marker-100"></div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Price Range Slider End -->
-                    </div>
-                </div>
-                <!-- Filter Item 1 End -->
-
+                <!-- many cols btn Start -->
+                <svg class="many-cols-btn icon c-pointer ms-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_85_2474)">
+                        <rect width="10" height="10" fill="#00A0E3" />
+                        <rect y="14" width="10" height="10" fill="#00A0E3" />
+                        <rect x="14" y="14" width="10" height="10" fill="#00A0E3" />
+                        <rect x="14" width="10" height="10" fill="#00A0E3" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_85_2474">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <!-- many cols btn End -->
             </div>
         </div>
-    </div>
-    <!-- Filter Collapse End -->
-    <!-- Catalog Header End -->
+        <!-- Catalog Sort End -->
+
+        <!-- Filter Collapse Start -->
+        <div class="mt-4 collapse" id="filter-collapse">
+            <div class="filter">
+                <!-- <div class="headline-blue text-black pt-3">Фильтры продукции</div> -->
 
 
-
-    <!-- Catalog Main Start -->
-    <div class="catalog-main container-xl mt-2 mt-md-3 position-relative mb-3">
-        <div class="row cols-1 cols-xl-2 g-xl-3">
-            <!-- Side Bar Start -->
-            <div class="catalog-main__sidebar col-0 d-none d-xl-flex flex-column col-xl-3  ps-xl-0 w-23">
-
-                <!-- User Left Start -->
-                <div class="user-left bg-light">
-                    <div class="user-left-item user-header">Управление</div>
-                    <div class="user-left-item hover-border">
-                        <img class="icon" src="img/icons/user-blue.svg">
-                        <a href="">Профиль пользователя</a>
-                    </div>
-                    <div class="user-left-item hover-border">
-                        <img class="icon" src="img/icons/cart-blue.svg">
-                        <a href="">Мои заказы</a>
-                    </div>
-                    <div class="user-left-item hover-border">
-                        <img class="icon" src="img/icons/heart-blue.svg">
-                        <a href="">Избранное</a>
-                    </div>
-                </div>
-                <!-- User Left End -->
-
-
-
-
-                <!-- Filter Start -->
-                <div class="filter mt-3">
-                    <div class="headline-blue text-black pt-3">Фильтры продукции</div>
-
-                    <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
-
-                        <!-- Filter Item 1 Start -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                                    aria-controls="panelsStayOpen-collapseOne">
-                                    <span class="filter-header">Цена</span>
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingOne">
-
-                                <!-- Price Range Slider Start -->
-                                <div class="d-flex">
-                                    <div class="wrapper">
-                                        <div class="price-input">
-                                            <div class="field">
-                                                <input type="number" class="input-min" placeholder="От">
-                                            </div>
-                                            <div class="field">
-                                                <input type="number" class="input-max" placeholder="До">
-                                            </div>
-                                        </div>
-                                        <div class="slider">
-                                            <div class="progress"></div>
-                                        </div>
-                                        <div class="range-input">
-                                            <input type="range" class="range-min" min="0" max="100000" value="0"
-                                                step="1000">
-                                            <input type="range" class="range-max" min="0" max="100000" value="100000"
-                                                step="1000">
-
-                                            <div class="marker marker-0"></div>
-                                            <div class="marker marker-20"></div>
-                                            <div class="marker marker-40"></div>
-                                            <div class="marker marker-60"></div>
-                                            <div class="marker marker-80"></div>
-                                            <div class="marker marker-100"></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Price Range Slider End -->
-                            </div>
-                        </div>
-                        <!-- Filter Item 1 End -->
-
-                    </div>
-                </div>
-                <!-- Filter End -->
-
-
-            </div>
-            <!-- Side Bar End -->
-
-            <!-- Cards Start-->
-            <div class="col-12 col-xl-9 col-xl-9-custom pe-xl-0">
-
-                <!-- Header Desktop -->
-                <div class="container-xl mt-3 d-none d-xl-block">
-                    <div class="d-flex justify-content-start align-items-center">
-                        <div class="d-flex align-items-center w-75">
-                            <div class="headline">Избранное</div>
-                        </div>
-                    </div>
+                <div class="sidebar-search form-group pt-3">
+                    <img class="search-svg" src="img/icons/search.svg"></img>
+                    <input type="text" class="form-control" placeholder="поиск по категории">
                 </div>
 
-                <!-- Catalog Sort Start -->
-                <div class="catalog-sort container-xl d-none d-xl-flex">
-
-                    <div class="d-none d-xl-flex align-items-center">
+                <div class="mt-5 d-flex align-items-start flex-column">
+                    <div class="d-flex align-items-center">
                         <div class="">Сортировать по</div>
                         <select class="ms-2 form-select" aria-label="Default select example">
                             <option selected>Сперва дешевле</option>
                             <option value="1">Сперва дороже</option>
                             <option value="2">Рейтинг</option>
                         </select>
-                        <div class="ms-2">Товаров на странице</div>
+                    </div>
+                    <div class="mt-5 d-flex align-items-center">
+                        <div class="">Товаров на странице</div>
                         <select class="ms-2 form-select" aria-label="Default select example">
                             <option selected>16</option>
                             <option value="1">32</option>
                             <option value="2">64</option>
                         </select>
                     </div>
-                    <div class="d-flex">
-                        <!-- 1 col btn Start -->
-                        <svg class="1-col-btn icon c-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_85_2473)">
-                                <path
-                                    d="M0 0V6H6V0H0ZM9.375 0V6H24V0H9.375ZM0 9V15H6V9H0ZM9.375 9V15H24V9H9.375ZM0 18V24H6V18H0ZM9.375 18V24H24V18H9.375Z"
-                                    fill="#CCD5DB" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_85_2473">
-                                    <rect width="24" height="24" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <!-- 1 col btn End -->
-
-                        <!-- many cols btn Start -->
-                        <svg class="many-cols-btn icon c-pointer ms-3" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_85_2474)">
-                                <rect width="10" height="10" fill="#00A0E3" />
-                                <rect y="14" width="10" height="10" fill="#00A0E3" />
-                                <rect x="14" y="14" width="10" height="10" fill="#00A0E3" />
-                                <rect x="14" width="10" height="10" fill="#00A0E3" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_85_2474">
-                                    <rect width="24" height="24" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <!-- many cols btn End -->
-                    </div>
                 </div>
-                <!-- Catalog Sort End -->
 
-                <!-- Main Start -->
-                <div class="catalog-main__cads row row-cols-2 g-2 row-cols-md-3 g-md-3 mt-xl-3 cols-toggle">
-                    <!-- Cards  Item Start -->
-                    <div class="col">
-                        <div class="card h-100 ">
-                            <div class="row g-0 row-cols-1 w-100">
-                                <div class="col">
-                                    <a href="" class="w-100 d-flex h-100 align-items-center">
-                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column">
-                                            <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                            <div class="card-description card-text">ELTRONIC EL-1020 акустическая
-                                                колонка
-                                                2*10" динамика 1*5" повторитель
-                                                Режимы воспроизведения:
-                                                - Bluetooth - Внешний накопитель - Aux</div>
+
+                <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
+
+                    <!-- Filter Item 1 Start -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <span class="filter-header">Цена</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+
+                            <!-- Price Range Slider Start -->
+                            <div class="d-flex">
+                                <div class="wrapper">
+                                    <div class="price-input">
+                                        <div class="field">
+                                            <input type="number" class="input-min" placeholder="От">
                                         </div>
-                                        <div
-                                            class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
-                                            <div class="card-in-stock">
-                                                <div class="dot"></div>
-                                                <div class="card-in-stock-txt">есть на складе</div>
-                                            </div>
-                                            <a href=""><img class="icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        </div>
-                                        <div class="card-body-right">
-                                            <div class="card-price">14 990 ₽</div>
-                                            <div class="d-flex flex-column">
-                                                <div class="card-in-stock">
-                                                    <div class="dot"></div>
-                                                    <div class="card-in-stock-txt">есть на складе</div>
-                                                </div>
-                                                <div class="mt-3 d-flex justify-content-between align-items-center">
-                                                    <a href=""><img class="me-4 icon c-pointer"
-                                                            src="img/icons/heart-red.svg"></a>
-                                                    <button class="card-buy-btn btn btn-primary">
-                                                        <img class="icon" src="img/icons/cart-white.svg">
-                                                    </button>
-                                                </div>
-                                            </div>
+                                        <div class="field">
+                                            <input type="number" class="input-max" placeholder="До">
                                         </div>
                                     </div>
-                                    <div class="card-prices card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">15 000</div>
+                                    <div class="slider">
+                                        <div class="progress"></div>
                                     </div>
-                                </div>
-                                <div class="card-footer-1col card-footer">
-                                    <div class="d-flex jusctify-content-between">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="ms-4 card-in-stock">
-                                            <div class="dot"></div>
-                                            <div class="card-in-stock-txt">есть на складе</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href=""><img class="me-4 icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        <button class="card-buy-btn btn btn-primary">
-                                            <img class="icon" src="img/icons/cart-white.svg">
-                                        </button>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="100000" value="0"
+                                            step="1000">
+                                        <input type="range" class="range-max" min="0" max="100000" value="100000"
+                                            step="1000">
+
+                                        <div class="marker marker-0"></div>
+                                        <div class="marker marker-20"></div>
+                                        <div class="marker marker-40"></div>
+                                        <div class="marker marker-60"></div>
+                                        <div class="marker marker-80"></div>
+                                        <div class="marker marker-100"></div>
+
                                     </div>
                                 </div>
                             </div>
+                            <!-- Price Range Slider End -->
                         </div>
                     </div>
-                    <!-- Cards Item End -->
-                    <!-- Cards  Item Start -->
-                    <div class="col">
-                        <div class="card h-100 ">
-                            <div class="row g-0 row-cols-1 w-100">
-                                <div class="col">
-                                    <a href="" class="w-100 d-flex h-100 align-items-center">
-                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column">
-                                            <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                            <div class="card-description card-text">ELTRONIC EL-1020 акустическая
-                                                колонка
-                                                2*10" динамика 1*5" повторитель
-                                                Режимы воспроизведения:
-                                                - Bluetooth - Внешний накопитель - Aux</div>
-                                        </div>
-                                        <div
-                                            class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
-                                            <div class="card-in-stock">
-                                                <div class="dot"></div>
-                                                <div class="card-in-stock-txt">есть на складе</div>
-                                            </div>
-                                            <a href=""><img class="icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        </div>
-                                        <div class="card-body-right">
-                                            <div class="card-price">14 990 ₽</div>
-                                            <div class="d-flex flex-column">
-                                                <div class="card-in-stock">
-                                                    <div class="dot"></div>
-                                                    <div class="card-in-stock-txt">есть на складе</div>
-                                                </div>
-                                                <div class="mt-3 d-flex justify-content-between align-items-center">
-                                                    <a href=""><img class="me-4 icon c-pointer"
-                                                            src="img/icons/heart-red.svg"></a>
-                                                    <button class="card-buy-btn btn btn-primary">
-                                                        <img class="icon" src="img/icons/cart-white.svg">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-prices card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">15 000</div>
-                                    </div>
-                                </div>
-                                <div class="card-footer-1col card-footer">
-                                    <div class="d-flex jusctify-content-between">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="ms-4 card-in-stock">
-                                            <div class="dot"></div>
-                                            <div class="card-in-stock-txt">есть на складе</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href=""><img class="me-4 icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        <button class="card-buy-btn btn btn-primary">
-                                            <img class="icon" src="img/icons/cart-white.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cards Item End -->
-                    <!-- Cards  Item Start -->
-                    <div class="col">
-                        <div class="card h-100 ">
-                            <div class="row g-0 row-cols-1 w-100">
-                                <div class="col">
-                                    <a href="" class="w-100 d-flex h-100 align-items-center">
-                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column">
-                                            <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                            <div class="card-description card-text">ELTRONIC EL-1020 акустическая
-                                                колонка
-                                                2*10" динамика 1*5" повторитель
-                                                Режимы воспроизведения:
-                                                - Bluetooth - Внешний накопитель - Aux</div>
-                                        </div>
-                                        <div
-                                            class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
-                                            <div class="card-in-stock">
-                                                <div class="dot"></div>
-                                                <div class="card-in-stock-txt">есть на складе</div>
-                                            </div>
-                                            <a href=""><img class="icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        </div>
-                                        <div class="card-body-right">
-                                            <div class="card-price">14 990 ₽</div>
-                                            <div class="d-flex flex-column">
-                                                <div class="card-in-stock">
-                                                    <div class="dot"></div>
-                                                    <div class="card-in-stock-txt">есть на складе</div>
-                                                </div>
-                                                <div class="mt-3 d-flex justify-content-between align-items-center">
-                                                    <a href=""><img class="me-4 icon c-pointer"
-                                                            src="img/icons/heart-red.svg"></a>
-                                                    <button class="card-buy-btn btn btn-primary">
-                                                        <img class="icon" src="img/icons/cart-white.svg">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-prices card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">15 000</div>
-                                    </div>
-                                </div>
-                                <div class="card-footer-1col card-footer">
-                                    <div class="d-flex jusctify-content-between">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="ms-4 card-in-stock">
-                                            <div class="dot"></div>
-                                            <div class="card-in-stock-txt">есть на складе</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href=""><img class="me-4 icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        <button class="card-buy-btn btn btn-primary">
-                                            <img class="icon" src="img/icons/cart-white.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cards Item End -->
-                    <!-- Cards  Item Start -->
-                    <div class="col">
-                        <div class="card h-100 ">
-                            <div class="row g-0 row-cols-1 w-100">
-                                <div class="col">
-                                    <a href="" class="w-100 d-flex h-100 align-items-center">
-                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column">
-                                            <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                            <div class="card-description card-text">ELTRONIC EL-1020 акустическая
-                                                колонка
-                                                2*10" динамика 1*5" повторитель
-                                                Режимы воспроизведения:
-                                                - Bluetooth - Внешний накопитель - Aux</div>
-                                        </div>
-                                        <div
-                                            class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
-                                            <div class="card-in-stock">
-                                                <div class="dot"></div>
-                                                <div class="card-in-stock-txt">есть на складе</div>
-                                            </div>
-                                            <a href=""><img class="icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        </div>
-                                        <div class="card-body-right">
-                                            <div class="card-price">14 990 ₽</div>
-                                            <div class="d-flex flex-column">
-                                                <div class="card-in-stock">
-                                                    <div class="dot"></div>
-                                                    <div class="card-in-stock-txt">есть на складе</div>
-                                                </div>
-                                                <div class="mt-3 d-flex justify-content-between align-items-center">
-                                                    <a href=""><img class="me-4 icon c-pointer"
-                                                            src="img/icons/heart-red.svg"></a>
-                                                    <button class="card-buy-btn btn btn-primary">
-                                                        <img class="icon" src="img/icons/cart-white.svg">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-prices card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">15 000</div>
-                                    </div>
-                                </div>
-                                <div class="card-footer-1col card-footer">
-                                    <div class="d-flex jusctify-content-between">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="ms-4 card-in-stock">
-                                            <div class="dot"></div>
-                                            <div class="card-in-stock-txt">есть на складе</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href=""><img class="me-4 icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        <button class="card-buy-btn btn btn-primary">
-                                            <img class="icon" src="img/icons/cart-white.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cards Item End -->
-                    <!-- Cards  Item Start -->
-                    <div class="col">
-                        <div class="card h-100 ">
-                            <div class="row g-0 row-cols-1 w-100">
-                                <div class="col">
-                                    <a href="" class="w-100 d-flex h-100 align-items-center">
-                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column">
-                                            <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                            <div class="card-description card-text">ELTRONIC EL-1020 акустическая
-                                                колонка
-                                                2*10" динамика 1*5" повторитель
-                                                Режимы воспроизведения:
-                                                - Bluetooth - Внешний накопитель - Aux</div>
-                                        </div>
-                                        <div
-                                            class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
-                                            <div class="card-in-stock">
-                                                <div class="dot"></div>
-                                                <div class="card-in-stock-txt">есть на складе</div>
-                                            </div>
-                                            <a href=""><img class="icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        </div>
-                                        <div class="card-body-right">
-                                            <div class="card-price">14 990 ₽</div>
-                                            <div class="d-flex flex-column">
-                                                <div class="card-in-stock">
-                                                    <div class="dot"></div>
-                                                    <div class="card-in-stock-txt">есть на складе</div>
-                                                </div>
-                                                <div class="mt-3 d-flex justify-content-between align-items-center">
-                                                    <a href=""><img class="me-4 icon c-pointer"
-                                                            src="img/icons/heart-red.svg"></a>
-                                                    <button class="card-buy-btn btn btn-primary">
-                                                        <img class="icon" src="img/icons/cart-white.svg">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-prices card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">15 000</div>
-                                    </div>
-                                </div>
-                                <div class="card-footer-1col card-footer">
-                                    <div class="d-flex jusctify-content-between">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="ms-4 card-in-stock">
-                                            <div class="dot"></div>
-                                            <div class="card-in-stock-txt">есть на складе</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href=""><img class="me-4 icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        <button class="card-buy-btn btn btn-primary">
-                                            <img class="icon" src="img/icons/cart-white.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cards Item End -->
-                    <!-- Cards  Item Start -->
-                    <div class="col">
-                        <div class="card h-100 ">
-                            <div class="row g-0 row-cols-1 w-100">
-                                <div class="col">
-                                    <a href="" class="w-100 d-flex h-100 align-items-center">
-                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column">
-                                            <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                            <div class="card-description card-text">ELTRONIC EL-1020 акустическая
-                                                колонка
-                                                2*10" динамика 1*5" повторитель
-                                                Режимы воспроизведения:
-                                                - Bluetooth - Внешний накопитель - Aux</div>
-                                        </div>
-                                        <div
-                                            class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
-                                            <div class="card-in-stock">
-                                                <div class="dot"></div>
-                                                <div class="card-in-stock-txt">есть на складе</div>
-                                            </div>
-                                            <a href=""><img class="icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        </div>
-                                        <div class="card-body-right">
-                                            <div class="card-price">14 990 ₽</div>
-                                            <div class="d-flex flex-column">
-                                                <div class="card-in-stock">
-                                                    <div class="dot"></div>
-                                                    <div class="card-in-stock-txt">есть на складе</div>
-                                                </div>
-                                                <div class="mt-3 d-flex justify-content-between align-items-center">
-                                                    <a href=""><img class="me-4 icon c-pointer"
-                                                            src="img/icons/heart-red.svg"></a>
-                                                    <button class="card-buy-btn btn btn-primary">
-                                                        <img class="icon" src="img/icons/cart-white.svg">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-prices card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">15 000</div>
-                                    </div>
-                                </div>
-                                <div class="card-footer-1col card-footer">
-                                    <div class="d-flex jusctify-content-between">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="ms-4 card-in-stock">
-                                            <div class="dot"></div>
-                                            <div class="card-in-stock-txt">есть на складе</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href=""><img class="me-4 icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        <button class="card-buy-btn btn btn-primary">
-                                            <img class="icon" src="img/icons/cart-white.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cards Item End -->
-                    <!-- Cards  Item Start -->
-                    <div class="col">
-                        <div class="card h-100 ">
-                            <div class="row g-0 row-cols-1 w-100">
-                                <div class="col">
-                                    <a href="" class="w-100 d-flex h-100 align-items-center">
-                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column">
-                                            <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                            <div class="card-description card-text">ELTRONIC EL-1020 акустическая
-                                                колонка
-                                                2*10" динамика 1*5" повторитель
-                                                Режимы воспроизведения:
-                                                - Bluetooth - Внешний накопитель - Aux</div>
-                                        </div>
-                                        <div
-                                            class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
-                                            <div class="card-in-stock">
-                                                <div class="dot"></div>
-                                                <div class="card-in-stock-txt">есть на складе</div>
-                                            </div>
-                                            <a href=""><img class="icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        </div>
-                                        <div class="card-body-right">
-                                            <div class="card-price">14 990 ₽</div>
-                                            <div class="d-flex flex-column">
-                                                <div class="card-in-stock">
-                                                    <div class="dot"></div>
-                                                    <div class="card-in-stock-txt">есть на складе</div>
-                                                </div>
-                                                <div class="mt-3 d-flex justify-content-between align-items-center">
-                                                    <a href=""><img class="me-4 icon c-pointer"
-                                                            src="img/icons/heart-red.svg"></a>
-                                                    <button class="card-buy-btn btn btn-primary">
-                                                        <img class="icon" src="img/icons/cart-white.svg">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-prices card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">15 000</div>
-                                    </div>
-                                </div>
-                                <div class="card-footer-1col card-footer">
-                                    <div class="d-flex jusctify-content-between">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="ms-4 card-in-stock">
-                                            <div class="dot"></div>
-                                            <div class="card-in-stock-txt">есть на складе</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href=""><img class="me-4 icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        <button class="card-buy-btn btn btn-primary">
-                                            <img class="icon" src="img/icons/cart-white.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cards Item End -->
-                    <!-- Cards  Item Start -->
-                    <div class="col">
-                        <div class="card h-100 ">
-                            <div class="row g-0 row-cols-1 w-100">
-                                <div class="col">
-                                    <a href="" class="w-100 d-flex h-100 align-items-center">
-                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column">
-                                            <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                            <div class="card-description card-text">ELTRONIC EL-1020 акустическая
-                                                колонка
-                                                2*10" динамика 1*5" повторитель
-                                                Режимы воспроизведения:
-                                                - Bluetooth - Внешний накопитель - Aux</div>
-                                        </div>
-                                        <div
-                                            class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
-                                            <div class="card-in-stock">
-                                                <div class="dot"></div>
-                                                <div class="card-in-stock-txt">есть на складе</div>
-                                            </div>
-                                            <a href=""><img class="icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        </div>
-                                        <div class="card-body-right">
-                                            <div class="card-price">14 990 ₽</div>
-                                            <div class="d-flex flex-column">
-                                                <div class="card-in-stock">
-                                                    <div class="dot"></div>
-                                                    <div class="card-in-stock-txt">есть на складе</div>
-                                                </div>
-                                                <div class="mt-3 d-flex justify-content-between align-items-center">
-                                                    <a href=""><img class="me-4 icon c-pointer"
-                                                            src="img/icons/heart-red.svg"></a>
-                                                    <button class="card-buy-btn btn btn-primary">
-                                                        <img class="icon" src="img/icons/cart-white.svg">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-prices card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">15 000</div>
-                                    </div>
-                                </div>
-                                <div class="card-footer-1col card-footer">
-                                    <div class="d-flex jusctify-content-between">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="ms-4 card-in-stock">
-                                            <div class="dot"></div>
-                                            <div class="card-in-stock-txt">есть на складе</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href=""><img class="me-4 icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        <button class="card-buy-btn btn btn-primary">
-                                            <img class="icon" src="img/icons/cart-white.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cards Item End -->
-                    <!-- Cards  Item Start -->
-                    <div class="col">
-                        <div class="card h-100 ">
-                            <div class="row g-0 row-cols-1 w-100">
-                                <div class="col">
-                                    <a href="" class="w-100 d-flex h-100 align-items-center">
-                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column">
-                                            <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                            <div class="card-description card-text">ELTRONIC EL-1020 акустическая
-                                                колонка
-                                                2*10" динамика 1*5" повторитель
-                                                Режимы воспроизведения:
-                                                - Bluetooth - Внешний накопитель - Aux</div>
-                                        </div>
-                                        <div
-                                            class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
-                                            <div class="card-in-stock">
-                                                <div class="dot"></div>
-                                                <div class="card-in-stock-txt">есть на складе</div>
-                                            </div>
-                                            <a href=""><img class="icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        </div>
-                                        <div class="card-body-right">
-                                            <div class="card-price">14 990 ₽</div>
-                                            <div class="d-flex flex-column">
-                                                <div class="card-in-stock">
-                                                    <div class="dot"></div>
-                                                    <div class="card-in-stock-txt">есть на складе</div>
-                                                </div>
-                                                <div class="mt-3 d-flex justify-content-between align-items-center">
-                                                    <a href=""><img class="me-4 icon c-pointer"
-                                                            src="img/icons/heart-red.svg"></a>
-                                                    <button class="card-buy-btn btn btn-primary">
-                                                        <img class="icon" src="img/icons/cart-white.svg">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-prices card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">15 000</div>
-                                    </div>
-                                </div>
-                                <div class="card-footer-1col card-footer">
-                                    <div class="d-flex jusctify-content-between">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="ms-4 card-in-stock">
-                                            <div class="dot"></div>
-                                            <div class="card-in-stock-txt">есть на складе</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href=""><img class="me-4 icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        <button class="card-buy-btn btn btn-primary">
-                                            <img class="icon" src="img/icons/cart-white.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cards Item End -->
-                    <!-- Cards  Item Start -->
-                    <div class="col">
-                        <div class="card h-100 ">
-                            <div class="row g-0 row-cols-1 w-100">
-                                <div class="col">
-                                    <a href="" class="w-100 d-flex h-100 align-items-center">
-                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column">
-                                            <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                            <div class="card-description card-text">ELTRONIC EL-1020 акустическая
-                                                колонка
-                                                2*10" динамика 1*5" повторитель
-                                                Режимы воспроизведения:
-                                                - Bluetooth - Внешний накопитель - Aux</div>
-                                        </div>
-                                        <div
-                                            class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
-                                            <div class="card-in-stock">
-                                                <div class="dot"></div>
-                                                <div class="card-in-stock-txt">есть на складе</div>
-                                            </div>
-                                            <a href=""><img class="icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        </div>
-                                        <div class="card-body-right">
-                                            <div class="card-price">14 990 ₽</div>
-                                            <div class="d-flex flex-column">
-                                                <div class="card-in-stock">
-                                                    <div class="dot"></div>
-                                                    <div class="card-in-stock-txt">есть на складе</div>
-                                                </div>
-                                                <div class="mt-3 d-flex justify-content-between align-items-center">
-                                                    <a href=""><img class="me-4 icon c-pointer"
-                                                            src="img/icons/heart-red.svg"></a>
-                                                    <button class="card-buy-btn btn btn-primary">
-                                                        <img class="icon" src="img/icons/cart-white.svg">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-prices card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">15 000</div>
-                                    </div>
-                                </div>
-                                <div class="card-footer-1col card-footer">
-                                    <div class="d-flex jusctify-content-between">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="ms-4 card-in-stock">
-                                            <div class="dot"></div>
-                                            <div class="card-in-stock-txt">есть на складе</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href=""><img class="me-4 icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        <button class="card-buy-btn btn btn-primary">
-                                            <img class="icon" src="img/icons/cart-white.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cards Item End -->
-                    <!-- Cards  Item Start -->
-                    <div class="col">
-                        <div class="card h-100 ">
-                            <div class="row g-0 row-cols-1 w-100">
-                                <div class="col">
-                                    <a href="" class="w-100 d-flex h-100 align-items-center">
-                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column">
-                                            <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                            <div class="card-description card-text">ELTRONIC EL-1020 акустическая
-                                                колонка
-                                                2*10" динамика 1*5" повторитель
-                                                Режимы воспроизведения:
-                                                - Bluetooth - Внешний накопитель - Aux</div>
-                                        </div>
-                                        <div
-                                            class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
-                                            <div class="card-in-stock">
-                                                <div class="dot"></div>
-                                                <div class="card-in-stock-txt">есть на складе</div>
-                                            </div>
-                                            <a href=""><img class="icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        </div>
-                                        <div class="card-body-right">
-                                            <div class="card-price">14 990 ₽</div>
-                                            <div class="d-flex flex-column">
-                                                <div class="card-in-stock">
-                                                    <div class="dot"></div>
-                                                    <div class="card-in-stock-txt">есть на складе</div>
-                                                </div>
-                                                <div class="mt-3 d-flex justify-content-between align-items-center">
-                                                    <a href=""><img class="me-4 icon c-pointer"
-                                                            src="img/icons/heart-red.svg"></a>
-                                                    <button class="card-buy-btn btn btn-primary">
-                                                        <img class="icon" src="img/icons/cart-white.svg">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-prices card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">15 000</div>
-                                    </div>
-                                </div>
-                                <div class="card-footer-1col card-footer">
-                                    <div class="d-flex jusctify-content-between">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="ms-4 card-in-stock">
-                                            <div class="dot"></div>
-                                            <div class="card-in-stock-txt">есть на складе</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href=""><img class="me-4 icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        <button class="card-buy-btn btn btn-primary">
-                                            <img class="icon" src="img/icons/cart-white.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cards Item End -->
-                    <!-- Cards  Item Start -->
-                    <div class="col">
-                        <div class="card h-100 ">
-                            <div class="row g-0 row-cols-1 w-100">
-                                <div class="col">
-                                    <a href="" class="w-100 d-flex h-100 align-items-center">
-                                        <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <div class="card-body">
-                                        <div class="d-flex flex-column">
-                                            <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
-                                            <div class="card-description card-text">ELTRONIC EL-1020 акустическая
-                                                колонка
-                                                2*10" динамика 1*5" повторитель
-                                                Режимы воспроизведения:
-                                                - Bluetooth - Внешний накопитель - Aux</div>
-                                        </div>
-                                        <div
-                                            class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
-                                            <div class="card-in-stock">
-                                                <div class="dot"></div>
-                                                <div class="card-in-stock-txt">есть на складе</div>
-                                            </div>
-                                            <a href=""><img class="icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        </div>
-                                        <div class="card-body-right">
-                                            <div class="card-price">14 990 ₽</div>
-                                            <div class="d-flex flex-column">
-                                                <div class="card-in-stock">
-                                                    <div class="dot"></div>
-                                                    <div class="card-in-stock-txt">есть на складе</div>
-                                                </div>
-                                                <div class="mt-3 d-flex justify-content-between align-items-center">
-                                                    <a href=""><img class="me-4 icon c-pointer"
-                                                            src="img/icons/heart-red.svg"></a>
-                                                    <button class="card-buy-btn btn btn-primary">
-                                                        <img class="icon" src="img/icons/cart-white.svg">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-prices card-footer">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="card-old-price">15 000</div>
-                                    </div>
-                                </div>
-                                <div class="card-footer-1col card-footer">
-                                    <div class="d-flex jusctify-content-between">
-                                        <div class="card-price">14 990 ₽</div>
-                                        <div class="ms-4 card-in-stock">
-                                            <div class="dot"></div>
-                                            <div class="card-in-stock-txt">есть на складе</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a href=""><img class="me-4 icon c-pointer" src="img/icons/heart-red.svg"></a>
-                                        <button class="card-buy-btn btn btn-primary">
-                                            <img class="icon" src="img/icons/cart-white.svg">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Cards Item End -->
+                    <!-- Filter Item 1 End -->
 
                 </div>
-                <!-- Main End -->
-
-                <!-- Pagination Start -->
-                <nav aria-label="Page navigation example" class="mt-2 pagination-wrapper">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Start">
-                                <span aria-hidden="true"><img src="img/icons/start.svg"></span>
-                            </a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true"><img src="img/icons/previous.svg"></span>
-                            </a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true"><img src="img/icons/next.svg"></span>
-                            </a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="End">
-                                <span aria-hidden="true"><img src="img/icons/end.svg"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- Pagination End -->
-
-
-
             </div>
-            <!-- Cards End-->
         </div>
-    </div>
-    <!-- Catalog Main End -->
+        <!-- Filter Collapse End -->
+        <!-- Catalog Header End -->
 
-   
+
+
+        <!-- Catalog Main Start -->
+        <div class="catalog-main container-xl mt-2 mt-md-3 position-relative mb-3">
+            <div class="row cols-1 cols-xl-2 g-xl-3">
+                <!-- Side Bar Start -->
+                <div class="catalog-main__sidebar col-0 d-none d-xl-flex flex-column col-xl-3  ps-xl-0 w-23">
+
+                    <!-- User Left Start -->
+                    <div class="user-left bg-light">
+                        <div class="user-left-item user-header">Управление</div>
+                        <div class="user-left-item hover-border">
+                            <img class="icon" src="img/icons/user-blue.svg">
+                            <a href="">Профиль пользователя</a>
+                        </div>
+                        <div class="user-left-item hover-border">
+                            <img class="icon" src="img/icons/cart-blue.svg">
+                            <a href="">Мои заказы</a>
+                        </div>
+                        <div class="user-left-item hover-border">
+                            <img class="icon" src="img/icons/heart-blue.svg">
+                            <a href="">Избранное</a>
+                        </div>
+                    </div>
+                    <!-- User Left End -->
+
+
+
+
+                    <!-- Filter Start -->
+                    <div class="filter mt-3">
+                        <div class="headline-blue text-black pt-3">Фильтры продукции</div>
+
+                        <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
+
+                            <!-- Filter Item 1 Start -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        <span class="filter-header">Цена</span>
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+
+                                    <!-- Price Range Slider Start -->
+                                    <div class="d-flex">
+                                        <div class="wrapper">
+                                            <div class="price-input">
+                                                <div class="field">
+                                                    <input type="number" class="input-min" placeholder="От">
+                                                </div>
+                                                <div class="field">
+                                                    <input type="number" class="input-max" placeholder="До">
+                                                </div>
+                                            </div>
+                                            <div class="slider">
+                                                <div class="progress"></div>
+                                            </div>
+                                            <div class="range-input">
+                                                <input type="range" class="range-min" min="0" max="100000" value="0"
+                                                    step="1000">
+                                                <input type="range" class="range-max" min="0" max="100000"
+                                                    value="100000" step="1000">
+
+                                                <div class="marker marker-0"></div>
+                                                <div class="marker marker-20"></div>
+                                                <div class="marker marker-40"></div>
+                                                <div class="marker marker-60"></div>
+                                                <div class="marker marker-80"></div>
+                                                <div class="marker marker-100"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Price Range Slider End -->
+                                </div>
+                            </div>
+                            <!-- Filter Item 1 End -->
+
+                        </div>
+                    </div>
+                    <!-- Filter End -->
+
+
+                </div>
+                <!-- Side Bar End -->
+
+                <!-- Cards Start-->
+                <div class="col-12 col-xl-9 col-xl-9-custom pe-xl-0">
+
+                    <!-- Header Desktop -->
+                    <div class="container-xl mt-3 d-none d-xl-block">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div class="d-flex align-items-center w-75">
+                                <div class="headline">Избранное</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Catalog Sort Start -->
+                    <div class="catalog-sort container-xl d-none d-xl-flex">
+
+                        <div class="d-none d-xl-flex align-items-center">
+                            <div class="">Сортировать по</div>
+                            <select class="ms-2 form-select" aria-label="Default select example">
+                                <option selected>Сперва дешевле</option>
+                                <option value="1">Сперва дороже</option>
+                                <option value="2">Рейтинг</option>
+                            </select>
+                            <div class="ms-2">Товаров на странице</div>
+                            <select class="ms-2 form-select" aria-label="Default select example">
+                                <option selected>16</option>
+                                <option value="1">32</option>
+                                <option value="2">64</option>
+                            </select>
+                        </div>
+                        <div class="d-flex">
+                            <!-- 1 col btn Start -->
+                            <svg class="1-col-btn icon c-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_85_2473)">
+                                    <path
+                                        d="M0 0V6H6V0H0ZM9.375 0V6H24V0H9.375ZM0 9V15H6V9H0ZM9.375 9V15H24V9H9.375ZM0 18V24H6V18H0ZM9.375 18V24H24V18H9.375Z"
+                                        fill="#CCD5DB" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_85_2473">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <!-- 1 col btn End -->
+
+                            <!-- many cols btn Start -->
+                            <svg class="many-cols-btn icon c-pointer ms-3" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_85_2474)">
+                                    <rect width="10" height="10" fill="#00A0E3" />
+                                    <rect y="14" width="10" height="10" fill="#00A0E3" />
+                                    <rect x="14" y="14" width="10" height="10" fill="#00A0E3" />
+                                    <rect x="14" width="10" height="10" fill="#00A0E3" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_85_2474">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <!-- many cols btn End -->
+                        </div>
+                    </div>
+                    <!-- Catalog Sort End -->
+
+                    <!-- Main Start -->
+                    <div class="catalog-main__cads row row-cols-2 g-2 row-cols-md-3 g-md-3 mt-xl-3 cols-toggle">
+                        <!-- Cards  Item Start -->
+                        <div class="col">
+                            <div class="card h-100 ">
+                                <div class="row g-0 row-cols-1 w-100">
+                                    <div class="col">
+                                        <a href="" class="w-100 d-flex h-100 align-items-center">
+                                            <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column">
+                                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                                <div class="card-description card-text">ELTRONIC EL-1020 акустическая
+                                                    колонка
+                                                    2*10" динамика 1*5" повторитель
+                                                    Режимы воспроизведения:
+                                                    - Bluetooth - Внешний накопитель - Aux</div>
+                                            </div>
+                                            <div
+                                                class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
+                                                <div class="card-in-stock">
+                                                    <div class="dot"></div>
+                                                    <div class="card-in-stock-txt">есть на складе</div>
+                                                </div>
+                                                <a href=""><img class="icon c-pointer"
+                                                        src="img/icons/heart-red.svg"></a>
+                                            </div>
+                                            <div class="card-body-right">
+                                                <div class="card-price">14 990 ₽</div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="card-in-stock">
+                                                        <div class="dot"></div>
+                                                        <div class="card-in-stock-txt">есть на складе</div>
+                                                    </div>
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                        <a href=""><img class="me-4 icon c-pointer"
+                                                                src="img/icons/heart-red.svg"></a>
+                                                        <button class="card-buy-btn btn btn-primary">
+                                                            <img class="icon" src="img/icons/cart-white.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-prices card-footer">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="card-old-price">15 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-1col card-footer">
+                                        <div class="d-flex jusctify-content-between">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="ms-4 card-in-stock">
+                                                <div class="dot"></div>
+                                                <div class="card-in-stock-txt">есть на складе</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href=""><img class="me-4 icon c-pointer"
+                                                    src="img/icons/heart-red.svg"></a>
+                                            <button class="card-buy-btn btn btn-primary">
+                                                <img class="icon" src="img/icons/cart-white.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cards Item End -->
+                        <!-- Cards  Item Start -->
+                        <div class="col">
+                            <div class="card h-100 ">
+                                <div class="row g-0 row-cols-1 w-100">
+                                    <div class="col">
+                                        <a href="" class="w-100 d-flex h-100 align-items-center">
+                                            <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column">
+                                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                                <div class="card-description card-text">ELTRONIC EL-1020 акустическая
+                                                    колонка
+                                                    2*10" динамика 1*5" повторитель
+                                                    Режимы воспроизведения:
+                                                    - Bluetooth - Внешний накопитель - Aux</div>
+                                            </div>
+                                            <div
+                                                class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
+                                                <div class="card-in-stock">
+                                                    <div class="dot"></div>
+                                                    <div class="card-in-stock-txt">есть на складе</div>
+                                                </div>
+                                                <a href=""><img class="icon c-pointer"
+                                                        src="img/icons/heart-red.svg"></a>
+                                            </div>
+                                            <div class="card-body-right">
+                                                <div class="card-price">14 990 ₽</div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="card-in-stock">
+                                                        <div class="dot"></div>
+                                                        <div class="card-in-stock-txt">есть на складе</div>
+                                                    </div>
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                        <a href=""><img class="me-4 icon c-pointer"
+                                                                src="img/icons/heart-red.svg"></a>
+                                                        <button class="card-buy-btn btn btn-primary">
+                                                            <img class="icon" src="img/icons/cart-white.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-prices card-footer">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="card-old-price">15 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-1col card-footer">
+                                        <div class="d-flex jusctify-content-between">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="ms-4 card-in-stock">
+                                                <div class="dot"></div>
+                                                <div class="card-in-stock-txt">есть на складе</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href=""><img class="me-4 icon c-pointer"
+                                                    src="img/icons/heart-red.svg"></a>
+                                            <button class="card-buy-btn btn btn-primary">
+                                                <img class="icon" src="img/icons/cart-white.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cards Item End -->
+                        <!-- Cards  Item Start -->
+                        <div class="col">
+                            <div class="card h-100 ">
+                                <div class="row g-0 row-cols-1 w-100">
+                                    <div class="col">
+                                        <a href="" class="w-100 d-flex h-100 align-items-center">
+                                            <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column">
+                                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                                <div class="card-description card-text">ELTRONIC EL-1020 акустическая
+                                                    колонка
+                                                    2*10" динамика 1*5" повторитель
+                                                    Режимы воспроизведения:
+                                                    - Bluetooth - Внешний накопитель - Aux</div>
+                                            </div>
+                                            <div
+                                                class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
+                                                <div class="card-in-stock">
+                                                    <div class="dot"></div>
+                                                    <div class="card-in-stock-txt">есть на складе</div>
+                                                </div>
+                                                <a href=""><img class="icon c-pointer"
+                                                        src="img/icons/heart-red.svg"></a>
+                                            </div>
+                                            <div class="card-body-right">
+                                                <div class="card-price">14 990 ₽</div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="card-in-stock">
+                                                        <div class="dot"></div>
+                                                        <div class="card-in-stock-txt">есть на складе</div>
+                                                    </div>
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                        <a href=""><img class="me-4 icon c-pointer"
+                                                                src="img/icons/heart-red.svg"></a>
+                                                        <button class="card-buy-btn btn btn-primary">
+                                                            <img class="icon" src="img/icons/cart-white.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-prices card-footer">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="card-old-price">15 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-1col card-footer">
+                                        <div class="d-flex jusctify-content-between">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="ms-4 card-in-stock">
+                                                <div class="dot"></div>
+                                                <div class="card-in-stock-txt">есть на складе</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href=""><img class="me-4 icon c-pointer"
+                                                    src="img/icons/heart-red.svg"></a>
+                                            <button class="card-buy-btn btn btn-primary">
+                                                <img class="icon" src="img/icons/cart-white.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cards Item End -->
+                        <!-- Cards  Item Start -->
+                        <div class="col">
+                            <div class="card h-100 ">
+                                <div class="row g-0 row-cols-1 w-100">
+                                    <div class="col">
+                                        <a href="" class="w-100 d-flex h-100 align-items-center">
+                                            <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column">
+                                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                                <div class="card-description card-text">ELTRONIC EL-1020 акустическая
+                                                    колонка
+                                                    2*10" динамика 1*5" повторитель
+                                                    Режимы воспроизведения:
+                                                    - Bluetooth - Внешний накопитель - Aux</div>
+                                            </div>
+                                            <div
+                                                class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
+                                                <div class="card-in-stock">
+                                                    <div class="dot"></div>
+                                                    <div class="card-in-stock-txt">есть на складе</div>
+                                                </div>
+                                                <a href=""><img class="icon c-pointer"
+                                                        src="img/icons/heart-red.svg"></a>
+                                            </div>
+                                            <div class="card-body-right">
+                                                <div class="card-price">14 990 ₽</div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="card-in-stock">
+                                                        <div class="dot"></div>
+                                                        <div class="card-in-stock-txt">есть на складе</div>
+                                                    </div>
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                        <a href=""><img class="me-4 icon c-pointer"
+                                                                src="img/icons/heart-red.svg"></a>
+                                                        <button class="card-buy-btn btn btn-primary">
+                                                            <img class="icon" src="img/icons/cart-white.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-prices card-footer">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="card-old-price">15 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-1col card-footer">
+                                        <div class="d-flex jusctify-content-between">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="ms-4 card-in-stock">
+                                                <div class="dot"></div>
+                                                <div class="card-in-stock-txt">есть на складе</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href=""><img class="me-4 icon c-pointer"
+                                                    src="img/icons/heart-red.svg"></a>
+                                            <button class="card-buy-btn btn btn-primary">
+                                                <img class="icon" src="img/icons/cart-white.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cards Item End -->
+                        <!-- Cards  Item Start -->
+                        <div class="col">
+                            <div class="card h-100 ">
+                                <div class="row g-0 row-cols-1 w-100">
+                                    <div class="col">
+                                        <a href="" class="w-100 d-flex h-100 align-items-center">
+                                            <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column">
+                                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                                <div class="card-description card-text">ELTRONIC EL-1020 акустическая
+                                                    колонка
+                                                    2*10" динамика 1*5" повторитель
+                                                    Режимы воспроизведения:
+                                                    - Bluetooth - Внешний накопитель - Aux</div>
+                                            </div>
+                                            <div
+                                                class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
+                                                <div class="card-in-stock">
+                                                    <div class="dot"></div>
+                                                    <div class="card-in-stock-txt">есть на складе</div>
+                                                </div>
+                                                <a href=""><img class="icon c-pointer"
+                                                        src="img/icons/heart-red.svg"></a>
+                                            </div>
+                                            <div class="card-body-right">
+                                                <div class="card-price">14 990 ₽</div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="card-in-stock">
+                                                        <div class="dot"></div>
+                                                        <div class="card-in-stock-txt">есть на складе</div>
+                                                    </div>
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                        <a href=""><img class="me-4 icon c-pointer"
+                                                                src="img/icons/heart-red.svg"></a>
+                                                        <button class="card-buy-btn btn btn-primary">
+                                                            <img class="icon" src="img/icons/cart-white.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-prices card-footer">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="card-old-price">15 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-1col card-footer">
+                                        <div class="d-flex jusctify-content-between">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="ms-4 card-in-stock">
+                                                <div class="dot"></div>
+                                                <div class="card-in-stock-txt">есть на складе</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href=""><img class="me-4 icon c-pointer"
+                                                    src="img/icons/heart-red.svg"></a>
+                                            <button class="card-buy-btn btn btn-primary">
+                                                <img class="icon" src="img/icons/cart-white.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cards Item End -->
+                        <!-- Cards  Item Start -->
+                        <div class="col">
+                            <div class="card h-100 ">
+                                <div class="row g-0 row-cols-1 w-100">
+                                    <div class="col">
+                                        <a href="" class="w-100 d-flex h-100 align-items-center">
+                                            <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column">
+                                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                                <div class="card-description card-text">ELTRONIC EL-1020 акустическая
+                                                    колонка
+                                                    2*10" динамика 1*5" повторитель
+                                                    Режимы воспроизведения:
+                                                    - Bluetooth - Внешний накопитель - Aux</div>
+                                            </div>
+                                            <div
+                                                class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
+                                                <div class="card-in-stock">
+                                                    <div class="dot"></div>
+                                                    <div class="card-in-stock-txt">есть на складе</div>
+                                                </div>
+                                                <a href=""><img class="icon c-pointer"
+                                                        src="img/icons/heart-red.svg"></a>
+                                            </div>
+                                            <div class="card-body-right">
+                                                <div class="card-price">14 990 ₽</div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="card-in-stock">
+                                                        <div class="dot"></div>
+                                                        <div class="card-in-stock-txt">есть на складе</div>
+                                                    </div>
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                        <a href=""><img class="me-4 icon c-pointer"
+                                                                src="img/icons/heart-red.svg"></a>
+                                                        <button class="card-buy-btn btn btn-primary">
+                                                            <img class="icon" src="img/icons/cart-white.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-prices card-footer">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="card-old-price">15 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-1col card-footer">
+                                        <div class="d-flex jusctify-content-between">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="ms-4 card-in-stock">
+                                                <div class="dot"></div>
+                                                <div class="card-in-stock-txt">есть на складе</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href=""><img class="me-4 icon c-pointer"
+                                                    src="img/icons/heart-red.svg"></a>
+                                            <button class="card-buy-btn btn btn-primary">
+                                                <img class="icon" src="img/icons/cart-white.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cards Item End -->
+                        <!-- Cards  Item Start -->
+                        <div class="col">
+                            <div class="card h-100 ">
+                                <div class="row g-0 row-cols-1 w-100">
+                                    <div class="col">
+                                        <a href="" class="w-100 d-flex h-100 align-items-center">
+                                            <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column">
+                                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                                <div class="card-description card-text">ELTRONIC EL-1020 акустическая
+                                                    колонка
+                                                    2*10" динамика 1*5" повторитель
+                                                    Режимы воспроизведения:
+                                                    - Bluetooth - Внешний накопитель - Aux</div>
+                                            </div>
+                                            <div
+                                                class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
+                                                <div class="card-in-stock">
+                                                    <div class="dot"></div>
+                                                    <div class="card-in-stock-txt">есть на складе</div>
+                                                </div>
+                                                <a href=""><img class="icon c-pointer"
+                                                        src="img/icons/heart-red.svg"></a>
+                                            </div>
+                                            <div class="card-body-right">
+                                                <div class="card-price">14 990 ₽</div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="card-in-stock">
+                                                        <div class="dot"></div>
+                                                        <div class="card-in-stock-txt">есть на складе</div>
+                                                    </div>
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                        <a href=""><img class="me-4 icon c-pointer"
+                                                                src="img/icons/heart-red.svg"></a>
+                                                        <button class="card-buy-btn btn btn-primary">
+                                                            <img class="icon" src="img/icons/cart-white.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-prices card-footer">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="card-old-price">15 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-1col card-footer">
+                                        <div class="d-flex jusctify-content-between">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="ms-4 card-in-stock">
+                                                <div class="dot"></div>
+                                                <div class="card-in-stock-txt">есть на складе</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href=""><img class="me-4 icon c-pointer"
+                                                    src="img/icons/heart-red.svg"></a>
+                                            <button class="card-buy-btn btn btn-primary">
+                                                <img class="icon" src="img/icons/cart-white.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cards Item End -->
+                        <!-- Cards  Item Start -->
+                        <div class="col">
+                            <div class="card h-100 ">
+                                <div class="row g-0 row-cols-1 w-100">
+                                    <div class="col">
+                                        <a href="" class="w-100 d-flex h-100 align-items-center">
+                                            <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column">
+                                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                                <div class="card-description card-text">ELTRONIC EL-1020 акустическая
+                                                    колонка
+                                                    2*10" динамика 1*5" повторитель
+                                                    Режимы воспроизведения:
+                                                    - Bluetooth - Внешний накопитель - Aux</div>
+                                            </div>
+                                            <div
+                                                class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
+                                                <div class="card-in-stock">
+                                                    <div class="dot"></div>
+                                                    <div class="card-in-stock-txt">есть на складе</div>
+                                                </div>
+                                                <a href=""><img class="icon c-pointer"
+                                                        src="img/icons/heart-red.svg"></a>
+                                            </div>
+                                            <div class="card-body-right">
+                                                <div class="card-price">14 990 ₽</div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="card-in-stock">
+                                                        <div class="dot"></div>
+                                                        <div class="card-in-stock-txt">есть на складе</div>
+                                                    </div>
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                        <a href=""><img class="me-4 icon c-pointer"
+                                                                src="img/icons/heart-red.svg"></a>
+                                                        <button class="card-buy-btn btn btn-primary">
+                                                            <img class="icon" src="img/icons/cart-white.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-prices card-footer">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="card-old-price">15 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-1col card-footer">
+                                        <div class="d-flex jusctify-content-between">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="ms-4 card-in-stock">
+                                                <div class="dot"></div>
+                                                <div class="card-in-stock-txt">есть на складе</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href=""><img class="me-4 icon c-pointer"
+                                                    src="img/icons/heart-red.svg"></a>
+                                            <button class="card-buy-btn btn btn-primary">
+                                                <img class="icon" src="img/icons/cart-white.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cards Item End -->
+                        <!-- Cards  Item Start -->
+                        <div class="col">
+                            <div class="card h-100 ">
+                                <div class="row g-0 row-cols-1 w-100">
+                                    <div class="col">
+                                        <a href="" class="w-100 d-flex h-100 align-items-center">
+                                            <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column">
+                                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                                <div class="card-description card-text">ELTRONIC EL-1020 акустическая
+                                                    колонка
+                                                    2*10" динамика 1*5" повторитель
+                                                    Режимы воспроизведения:
+                                                    - Bluetooth - Внешний накопитель - Aux</div>
+                                            </div>
+                                            <div
+                                                class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
+                                                <div class="card-in-stock">
+                                                    <div class="dot"></div>
+                                                    <div class="card-in-stock-txt">есть на складе</div>
+                                                </div>
+                                                <a href=""><img class="icon c-pointer"
+                                                        src="img/icons/heart-red.svg"></a>
+                                            </div>
+                                            <div class="card-body-right">
+                                                <div class="card-price">14 990 ₽</div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="card-in-stock">
+                                                        <div class="dot"></div>
+                                                        <div class="card-in-stock-txt">есть на складе</div>
+                                                    </div>
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                        <a href=""><img class="me-4 icon c-pointer"
+                                                                src="img/icons/heart-red.svg"></a>
+                                                        <button class="card-buy-btn btn btn-primary">
+                                                            <img class="icon" src="img/icons/cart-white.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-prices card-footer">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="card-old-price">15 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-1col card-footer">
+                                        <div class="d-flex jusctify-content-between">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="ms-4 card-in-stock">
+                                                <div class="dot"></div>
+                                                <div class="card-in-stock-txt">есть на складе</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href=""><img class="me-4 icon c-pointer"
+                                                    src="img/icons/heart-red.svg"></a>
+                                            <button class="card-buy-btn btn btn-primary">
+                                                <img class="icon" src="img/icons/cart-white.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cards Item End -->
+                        <!-- Cards  Item Start -->
+                        <div class="col">
+                            <div class="card h-100 ">
+                                <div class="row g-0 row-cols-1 w-100">
+                                    <div class="col">
+                                        <a href="" class="w-100 d-flex h-100 align-items-center">
+                                            <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column">
+                                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                                <div class="card-description card-text">ELTRONIC EL-1020 акустическая
+                                                    колонка
+                                                    2*10" динамика 1*5" повторитель
+                                                    Режимы воспроизведения:
+                                                    - Bluetooth - Внешний накопитель - Aux</div>
+                                            </div>
+                                            <div
+                                                class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
+                                                <div class="card-in-stock">
+                                                    <div class="dot"></div>
+                                                    <div class="card-in-stock-txt">есть на складе</div>
+                                                </div>
+                                                <a href=""><img class="icon c-pointer"
+                                                        src="img/icons/heart-red.svg"></a>
+                                            </div>
+                                            <div class="card-body-right">
+                                                <div class="card-price">14 990 ₽</div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="card-in-stock">
+                                                        <div class="dot"></div>
+                                                        <div class="card-in-stock-txt">есть на складе</div>
+                                                    </div>
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                        <a href=""><img class="me-4 icon c-pointer"
+                                                                src="img/icons/heart-red.svg"></a>
+                                                        <button class="card-buy-btn btn btn-primary">
+                                                            <img class="icon" src="img/icons/cart-white.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-prices card-footer">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="card-old-price">15 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-1col card-footer">
+                                        <div class="d-flex jusctify-content-between">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="ms-4 card-in-stock">
+                                                <div class="dot"></div>
+                                                <div class="card-in-stock-txt">есть на складе</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href=""><img class="me-4 icon c-pointer"
+                                                    src="img/icons/heart-red.svg"></a>
+                                            <button class="card-buy-btn btn btn-primary">
+                                                <img class="icon" src="img/icons/cart-white.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cards Item End -->
+                        <!-- Cards  Item Start -->
+                        <div class="col">
+                            <div class="card h-100 ">
+                                <div class="row g-0 row-cols-1 w-100">
+                                    <div class="col">
+                                        <a href="" class="w-100 d-flex h-100 align-items-center">
+                                            <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column">
+                                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                                <div class="card-description card-text">ELTRONIC EL-1020 акустическая
+                                                    колонка
+                                                    2*10" динамика 1*5" повторитель
+                                                    Режимы воспроизведения:
+                                                    - Bluetooth - Внешний накопитель - Aux</div>
+                                            </div>
+                                            <div
+                                                class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
+                                                <div class="card-in-stock">
+                                                    <div class="dot"></div>
+                                                    <div class="card-in-stock-txt">есть на складе</div>
+                                                </div>
+                                                <a href=""><img class="icon c-pointer"
+                                                        src="img/icons/heart-red.svg"></a>
+                                            </div>
+                                            <div class="card-body-right">
+                                                <div class="card-price">14 990 ₽</div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="card-in-stock">
+                                                        <div class="dot"></div>
+                                                        <div class="card-in-stock-txt">есть на складе</div>
+                                                    </div>
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                        <a href=""><img class="me-4 icon c-pointer"
+                                                                src="img/icons/heart-red.svg"></a>
+                                                        <button class="card-buy-btn btn btn-primary">
+                                                            <img class="icon" src="img/icons/cart-white.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-prices card-footer">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="card-old-price">15 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-1col card-footer">
+                                        <div class="d-flex jusctify-content-between">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="ms-4 card-in-stock">
+                                                <div class="dot"></div>
+                                                <div class="card-in-stock-txt">есть на складе</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href=""><img class="me-4 icon c-pointer"
+                                                    src="img/icons/heart-red.svg"></a>
+                                            <button class="card-buy-btn btn btn-primary">
+                                                <img class="icon" src="img/icons/cart-white.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cards Item End -->
+                        <!-- Cards  Item Start -->
+                        <div class="col">
+                            <div class="card h-100 ">
+                                <div class="row g-0 row-cols-1 w-100">
+                                    <div class="col">
+                                        <a href="" class="w-100 d-flex h-100 align-items-center">
+                                            <img src="img/card5.png" class="card-img-top img-fluid" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column">
+                                                <a href="" class="card-text">Контакт GSM-10 с внешней антенной</a>
+                                                <div class="card-description card-text">ELTRONIC EL-1020 акустическая
+                                                    колонка
+                                                    2*10" динамика 1*5" повторитель
+                                                    Режимы воспроизведения:
+                                                    - Bluetooth - Внешний накопитель - Aux</div>
+                                            </div>
+                                            <div
+                                                class="mt-3 card-stock-and-chosen justify-content-between align-items-center">
+                                                <div class="card-in-stock">
+                                                    <div class="dot"></div>
+                                                    <div class="card-in-stock-txt">есть на складе</div>
+                                                </div>
+                                                <a href=""><img class="icon c-pointer"
+                                                        src="img/icons/heart-red.svg"></a>
+                                            </div>
+                                            <div class="card-body-right">
+                                                <div class="card-price">14 990 ₽</div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="card-in-stock">
+                                                        <div class="dot"></div>
+                                                        <div class="card-in-stock-txt">есть на складе</div>
+                                                    </div>
+                                                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                                                        <a href=""><img class="me-4 icon c-pointer"
+                                                                src="img/icons/heart-red.svg"></a>
+                                                        <button class="card-buy-btn btn btn-primary">
+                                                            <img class="icon" src="img/icons/cart-white.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-prices card-footer">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="card-old-price">15 000</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-1col card-footer">
+                                        <div class="d-flex jusctify-content-between">
+                                            <div class="card-price">14 990 ₽</div>
+                                            <div class="ms-4 card-in-stock">
+                                                <div class="dot"></div>
+                                                <div class="card-in-stock-txt">есть на складе</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <a href=""><img class="me-4 icon c-pointer"
+                                                    src="img/icons/heart-red.svg"></a>
+                                            <button class="card-buy-btn btn btn-primary">
+                                                <img class="icon" src="img/icons/cart-white.svg">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cards Item End -->
+
+                    </div>
+                    <!-- Main End -->
+
+                    <!-- Pagination Start -->
+                    <nav aria-label="Page navigation example" class="mt-2 pagination-wrapper">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Start">
+                                    <span aria-hidden="true"><img src="img/icons/start.svg"></span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><img src="img/icons/previous.svg"></span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><img src="img/icons/next.svg"></span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="End">
+                                    <span aria-hidden="true"><img src="img/icons/end.svg"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Pagination End -->
+
+
+
+                </div>
+                <!-- Cards End-->
+            </div>
+        </div>
+        <!-- Catalog Main End -->
+    </div>
+
+
 
 
 

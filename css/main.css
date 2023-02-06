@@ -2509,6 +2509,13 @@ hr {
 
 /* Last Orders End */
 
+/* Chosen */
+
+.chosen-page .user-left {
+    flex: 0;
+    padding-bottom: 10px;
+}
+
 
 /* /////////////////////User Page End/////////////////////// */
 
@@ -3375,28 +3382,30 @@ fieldset:disabled .btn {
     }
 }
 
-.reviews-page .overwlow-elipsis-multyple{
+.reviews-page .overwlow-elipsis-multyple {
     -webkit-line-clamp: 2;
 }
 
 @media (min-width:450px) {
-    .reviews-page .overwlow-elipsis-multyple{
+    .reviews-page .overwlow-elipsis-multyple {
         -webkit-line-clamp: 3;
     }
 }
 
 @media (min-width:504px) {
-    .reviews-page .overwlow-elipsis-multyple{
+    .reviews-page .overwlow-elipsis-multyple {
         -webkit-line-clamp: 4;
     }
 }
+
 @media (min-width:576px) {
-    .reviews-page .overwlow-elipsis-multyple{
+    .reviews-page .overwlow-elipsis-multyple {
         -webkit-line-clamp: 5;
     }
 }
+
 @media (min-width:768px) {
-    .reviews-page .overwlow-elipsis-multyple{
+    .reviews-page .overwlow-elipsis-multyple {
         -webkit-line-clamp: 10;
     }
 }
